@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SK hynix News Intelligence</title>
+  <link rel="stylesheet" href="style.css?v=4.3" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">SK hynix NEWS INTELLIGENCE · v4.3</p>
+        <h1>뉴스를 열기 전에<br>핵심부터 파악하세요.</h1>
+        <p class="sub">SK hynix Newsroom의 새 글만 누적하고, 핵심과 활용 포인트를 한 화면에서 확인합니다.</p>
+      </div>
+    </header>
+
+    <section id="dashboard" class="dashboard">
+      <div class="metric">
+        <div class="metric-label">LAST CHECK</div>
+        <div id="last-check" class="metric-value">-</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">NEW ARTICLES</div>
+        <div id="new-count" class="metric-value">-</div>
+      </div>
+      <div class="metric">
+        <div class="metric-label">TOTAL</div>
+        <div id="total-count" class="metric-value">-</div>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <input id="search" type="search" placeholder="HBM, AI, 양산, 패키징 등 검색" />
+      <select id="importance-filter">
+        <option value="0">양산기술 관련성</option>
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★ 이상</option>
+      </select>
+      <button id="reload">새로고침</button>
+    </section>
+
+    <p id="status">기사 데이터를 불러오는 중...</p>
+    <section id="articles" class="grid"></section>
+  </main>
+
+  <script src="app.js?v=4.3"></script>
+</body>
+</html>
