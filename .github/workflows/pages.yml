@@ -4,6 +4,9 @@ on:
   push:
     branches: ["main"]
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Daily News Update"]
+    types: [completed]
 
 permissions:
   contents: read
@@ -16,6 +19,8 @@ concurrency:
 
 jobs:
   deploy:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -23,8 +28,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout latest main
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
