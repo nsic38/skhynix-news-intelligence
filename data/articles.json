@@ -523,31 +523,5 @@
     },
     "one_liner": "경영진에게 직접 듣는 SK하이닉스의 미래 전략… “인재에 아낌없이 투자해 기술 경쟁력 유지” ▲ SK하이닉스 비전을 공유하는 SK하이닉스 김종환 부사장(DRAM개발 총괄) 이날 행사에서 참가자들의 호응이 가장 컸던 때는...",
     "importance": 4
-  },
-  {
-    "id": "81b5b7c05cbc",
-    "title": "Heritage",
-    "url": "https://news.skhynix.co.kr/heritage",
-    "published": "",
-    "source": "SK hynix Newsroom",
-    "tags": [],
-    "created_at": "2026-09-10T07:25:59+09:00",
-    "content_source": "meta",
-    "main_point": "SK하이닉스 뉴스룸'은 SK하이닉스의 다양한 소식과 반도체 시장의 변화하는 트렌드를 전달합니다",
-    "key_points": [
-      "SK하이닉스 뉴스룸'은 SK하이닉스의 다양한 소식과 반도체 시장의 변화하는 트렌드를 전달합니다"
-    ],
-    "category": "Company / General",
-    "why_it_matters": "SK하이닉스 뉴스룸'은 SK하이닉스의 다양한 소식과 반도체 시장의 변화하는 트렌드를 전달합니다. 이 변화는 회사가 중요하게 보는 이슈가 향후 기술·사업 우선순위를 판단하는 단서가 된다는 점에서 중요합니다.",
-    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 뉴스룸'은 SK하이닉스의 다양한 소식과 반도체 시장의 변화하는 트렌드를 전달합니다'을 회사 전략과 산업 흐름을 이해하는 배경자료로 활용할 수 있습니다.",
-    "job_relevance": {
-      "role": "양산기술",
-      "score": 1,
-      "reason": "양산·공정 직접 연관 키워드가 적음",
-      "dimensions": [],
-      "matched_keywords": []
-    },
-    "one_liner": "SK하이닉스 뉴스룸'은 SK하이닉스의 다양한 소식과 반도체 시장의 변화하는 트렌드를 전달합니다",
-    "importance": 1
   }
 ]
