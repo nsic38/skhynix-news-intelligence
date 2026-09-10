@@ -53,6 +53,8 @@ BLOCKED_PATHS = {
     "/about/",
     "/terms",
     "/terms/",
+    "/heritage",
+    "/heritage/",
 }
 
 BLOCKED_TITLE_WORDS = (
@@ -62,6 +64,7 @@ BLOCKED_TITLE_WORDS = (
     "개인정보 처리방침",
     "이용약관",
     "저작권 정책",
+    "Heritage",
 )
 
 session = requests.Session()
@@ -151,6 +154,13 @@ def clean_existing_articles(articles: list[dict]) -> tuple[list[dict], int]:
             removed += 1
             continue
 
+        # 뉴스 기사라면 게시일이 있어야 한다.
+        # Heritage/운영정책/소개 등 고정 페이지는 보통 published가 비어 있으므로 제거.
+        published = clean_text(article.get("published", ""))
+        if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", published):
+            removed += 1
+            continue
+
         ntitle = normalize_title(title)
 
         if url in seen_urls or ntitle in seen_titles:
@@ -217,6 +227,10 @@ def fetch_rss_entries() -> list:
             continue
 
         if "shorts" in " ".join(tags).lower():
+            continue
+
+        # 게시일이 없는 RSS 항목은 뉴스 기사로 저장하지 않는다.
+        if not parse_date(entry):
             continue
 
         ntitle = normalize_title(title)
