@@ -11,7 +11,7 @@ from urllib.parse import urlsplit, urlunsplit
 import feedparser
 import requests
 
-from analyzer import analyze_article
+from analyzer import analyze_article, refresh_saved_role_analysis
 
 BASE_URL = "https://news.skhynix.co.kr/"
 RSS_URL = "https://news.skhynix.co.kr/feed/"
@@ -37,34 +37,15 @@ HEADERS = {
     "Referer": BASE_URL,
 }
 
-# 기사로 절대 취급하면 안 되는 고정 페이지
 BLOCKED_PATHS = {
-    "",
-    "/",
-    "/all",
-    "/all/",
-    "/policy",
-    "/policy/",
-    "/privacy",
-    "/privacy/",
-    "/guide",
-    "/guide/",
-    "/about",
-    "/about/",
-    "/terms",
-    "/terms/",
-    "/heritage",
-    "/heritage/",
+    "", "/", "/all", "/all/", "/policy", "/policy/", "/privacy", "/privacy/",
+    "/guide", "/guide/", "/about", "/about/", "/terms", "/terms/",
+    "/heritage", "/heritage/",
 }
 
 BLOCKED_TITLE_WORDS = (
-    "뉴스룸 운영정책",
-    "뉴스룸 이용안내",
-    "개인정보처리방침",
-    "개인정보 처리방침",
-    "이용약관",
-    "저작권 정책",
-    "Heritage",
+    "뉴스룸 운영정책", "뉴스룸 이용안내", "개인정보처리방침",
+    "개인정보 처리방침", "이용약관", "저작권 정책", "Heritage",
 )
 
 session = requests.Session()
@@ -101,10 +82,7 @@ def load_json(path: Path, default):
 
 def save_json(path: Path, value) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(value, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
+    path.write_text(json.dumps(value, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def is_blocked_item(title: str, url: str) -> bool:
@@ -113,22 +91,13 @@ def is_blocked_item(title: str, url: str) -> bool:
 
     if path in BLOCKED_PATHS:
         return True
-
     if any(word in title for word in BLOCKED_TITLE_WORDS):
         return True
-
     if any(
         part in path
         for part in (
-            "/tag/",
-            "/category/",
-            "/author/",
-            "/page/",
-            "/feed/",
-            "/search",
-            "/shorts/",
-            "/wp-",
-            "/media-library",
+            "/tag/", "/category/", "/author/", "/page/", "/feed/",
+            "/search", "/shorts/", "/wp-", "/media-library",
         )
     ):
         return True
@@ -146,23 +115,16 @@ def clean_existing_articles(articles: list[dict]) -> tuple[list[dict], int]:
         title = clean_text(article.get("title", ""))
         url = normalize_url(article.get("url", ""))
 
-        if not title or not url:
+        if not title or not url or is_blocked_item(title, url):
             removed += 1
             continue
 
-        if is_blocked_item(title, url):
-            removed += 1
-            continue
-
-        # 뉴스 기사라면 게시일이 있어야 한다.
-        # Heritage/운영정책/소개 등 고정 페이지는 보통 published가 비어 있으므로 제거.
         published = clean_text(article.get("published", ""))
         if not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", published):
             removed += 1
             continue
 
         ntitle = normalize_title(title)
-
         if url in seen_urls or ntitle in seen_titles:
             removed += 1
             continue
@@ -194,13 +156,8 @@ def parse_date(entry) -> str:
 
 
 def fetch_rss_entries() -> list:
-    """
-    GitHub Actions에서 feedparser가 URL을 직접 열면 차단될 수 있어
-    requests.Session + 브라우저형 헤더로 XML을 먼저 받는다.
-    """
     response = session.get(RSS_URL, timeout=TIMEOUT)
     response.raise_for_status()
-
     feed = feedparser.parse(response.content)
 
     if not getattr(feed, "entries", []):
@@ -213,28 +170,20 @@ def fetch_rss_entries() -> list:
     for entry in feed.entries[:RSS_SCAN_LIMIT]:
         title = clean_text(getattr(entry, "title", ""))
         url = normalize_url(getattr(entry, "link", ""))
-
         tags = [
             getattr(tag, "term", "")
             for tag in (getattr(entry, "tags", []) or [])
             if getattr(tag, "term", "")
         ]
 
-        if not title or not url:
+        if not title or not url or is_blocked_item(title, url):
             continue
-
-        if is_blocked_item(title, url):
-            continue
-
         if "shorts" in " ".join(tags).lower():
             continue
-
-        # 게시일이 없는 RSS 항목은 뉴스 기사로 저장하지 않는다.
         if not parse_date(entry):
             continue
 
         ntitle = normalize_title(title)
-
         if url in seen_urls or ntitle in seen_titles:
             continue
 
@@ -246,10 +195,6 @@ def fetch_rss_entries() -> list:
 
 
 def fetch_article_text(url: str) -> tuple[str, str, list[str]]:
-    """
-    새 기사만 본문을 읽는다.
-    페이지 전체가 아니라 본문 문단 위주로 수집해 메뉴/관련기사 오염을 줄인다.
-    """
     from bs4 import BeautifulSoup
 
     response = session.get(
@@ -261,14 +206,10 @@ def fetch_article_text(url: str) -> tuple[str, str, list[str]]:
         },
     )
     response.raise_for_status()
-
     soup = BeautifulSoup(response.text, "html.parser")
 
     description = ""
-    for attrs in (
-        {"property": "og:description"},
-        {"name": "description"},
-    ):
+    for attrs in ({"property": "og:description"}, {"name": "description"}):
         node = soup.find("meta", attrs=attrs)
         if node and node.get("content"):
             value = clean_text(node["content"])
@@ -282,8 +223,9 @@ def fetch_article_text(url: str) -> tuple[str, str, list[str]]:
         if value and value not in tags:
             tags.append(value)
 
-    # JSON-LD articleBody 우선
     body = ""
+
+    # 구조화된 articleBody가 있으면 최우선
     for script in soup.find_all("script", attrs={"type": "application/ld+json"}):
         raw = script.string or script.get_text()
         if not raw:
@@ -294,7 +236,6 @@ def fetch_article_text(url: str) -> tuple[str, str, list[str]]:
             continue
 
         stack = data if isinstance(data, list) else [data]
-
         for obj in stack:
             if not isinstance(obj, dict):
                 continue
@@ -306,23 +247,15 @@ def fetch_article_text(url: str) -> tuple[str, str, list[str]]:
             if isinstance(article_body, str) and len(clean_text(article_body)) > len(body):
                 body = clean_text(article_body)
 
-    # articleBody가 없을 때는 실제 문단을 모은다.
+    # articleBody가 없으면 본문 문단 후보 중 가장 긴 것을 사용
     if len(body) < 200:
         for bad in soup(["script", "style", "noscript", "nav", "footer", "header", "aside", "form"]):
             bad.decompose()
 
         selectors = (
-            "article p",
-            ".article-content p",
-            ".entry-content p",
-            ".post-content p",
-            ".view_cont p",
-            ".view-content p",
-            ".news-content p",
-            "main p",
+            "article p", ".article-content p", ".entry-content p", ".post-content p",
+            ".view_cont p", ".view-content p", ".news-content p", "main p",
         )
-
-        candidates = []
 
         for selector in selectors:
             paragraphs = []
@@ -330,7 +263,6 @@ def fetch_article_text(url: str) -> tuple[str, str, list[str]]:
 
             for p in soup.select(selector):
                 text = clean_text(p.get_text(" ", strip=True))
-
                 if len(text) < 35:
                     continue
 
@@ -338,14 +270,8 @@ def fetch_article_text(url: str) -> tuple[str, str, list[str]]:
                 if any(
                     junk in low
                     for junk in (
-                        "copyright",
-                        "무단전재",
-                        "재배포",
-                        "개인정보처리방침",
-                        "뉴스룸 이용안내",
-                        "뉴스룸 운영정책",
-                        "관련기사",
-                        "구독하기",
+                        "copyright", "무단전재", "재배포", "개인정보처리방침",
+                        "뉴스룸 이용안내", "뉴스룸 운영정책", "관련기사", "구독하기",
                     )
                 ):
                     continue
@@ -370,7 +296,6 @@ def build_record(entry) -> dict:
     rss_description = clean_text(
         getattr(entry, "summary", "") or getattr(entry, "description", "")
     )
-
     rss_tags = [
         getattr(tag, "term", "")
         for tag in (getattr(entry, "tags", []) or [])
@@ -423,17 +348,40 @@ def main() -> int:
         },
     )
 
-    # 1) 기존 DB 청소
     articles, removed = clean_existing_articles(articles)
     if removed:
         print(f"비기사/중복 기존 데이터 {removed}개 제거")
+
+    # v5.0 migration:
+    # 기존 기사에 role_analysis가 아직 없을 때만 딱 한 번 본문을 읽어
+    # 모든 직무 관련성을 생성한다. 다음 실행부터는 다시 읽지 않는다.
+    migrated = 0
+    for article in articles:
+        if article.get("role_analysis"):
+            continue
+
+        migration_body = ""
+        try:
+            _, migration_body, page_tags = fetch_article_text(article.get("url", ""))
+            if page_tags:
+                merged_tags = list(article.get("tags", []))
+                for tag in page_tags:
+                    if tag not in merged_tags:
+                        merged_tags.append(tag)
+                article["tags"] = merged_tags
+        except Exception as exc:
+            print(f"  -> 기존 기사 직무분석용 본문 요청 실패: {article.get('title', '')} / {exc}")
+
+        refresh_saved_role_analysis(article, migration_body)
+        migrated += 1
+
+    if migrated:
+        print(f"기존 기사 직무별 분석 {migrated}개 생성")
 
     try:
         entries = fetch_rss_entries()
     except Exception as exc:
         print(f"RSS 확인 실패: {exc}")
-
-        # 기존 데이터 청소 결과는 저장
         save_json(DATA_FILE, articles)
 
         checked_at = now_iso()
@@ -441,8 +389,6 @@ def main() -> int:
         state["last_new_count"] = 0
         state["total_articles"] = len(articles)
         save_json(STATE_FILE, state)
-
-        # 자동화 전체 실패 대신 0으로 종료해 다음 날 다시 시도
         return 0
 
     existing_urls = {normalize_url(a.get("url", "")) for a in articles}
@@ -459,7 +405,6 @@ def main() -> int:
 
             if url in existing_urls or normalize_title(title) in existing_titles:
                 continue
-
             targets.append(entry)
 
         print(f"기존 기사 {len(articles)}개 / 새 기사 {len(targets)}개")
@@ -496,20 +441,20 @@ def main() -> int:
     )
 
     checked_at = now_iso()
-
     save_json(DATA_FILE, articles)
 
     state["last_checked_at"] = checked_at
     state["last_new_count"] = len(added)
     state["total_articles"] = len(articles)
-
     if added:
         state["last_updated_at"] = checked_at
-
     save_json(STATE_FILE, state)
 
     print()
-    print(f"완료: 새 기사 {len(added)}개 / 누적 {len(articles)}개 / 기존 잘못된 항목 제거 {removed}개")
+    print(
+        f"완료: 새 기사 {len(added)}개 / 누적 {len(articles)}개 / "
+        f"기존 잘못된 항목 제거 {removed}개 / 직무 프로필 8개 지원"
+    )
     return 0
 
 

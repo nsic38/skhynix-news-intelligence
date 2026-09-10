@@ -4,7 +4,7 @@ import math
 import re
 from collections import Counter
 
-from job_profiles import DEFAULT_ROLE, score_role_relevance
+from job_profiles import DEFAULT_ROLE, ROLE_PROFILES, list_roles, score_role_relevance
 
 STOPWORDS = {
     "그리고","그러나","또한","대한","통해","위해","이번","관련","있는","하는","한다","했다",
@@ -39,7 +39,6 @@ BOILERPLATE_WORDS = (
     "출처","source","사진","이미지","copyright","저작권","무단전재",
     "재배포","관련기사","구독","sns","기자="
 )
-
 
 TOPICS = [
     {
@@ -102,13 +101,10 @@ def is_junk(text: str) -> bool:
 
     if not text or low in {"source", "출처", "media", "press", "story", "fact", "ir"}:
         return True
-
     if any(word.lower() in low for word in BOILERPLATE_WORDS):
         return True
-
     if "http://" in low or "https://" in low:
         return True
-
     return False
 
 
@@ -122,7 +118,6 @@ def sentences(text: str) -> list[str]:
 
     for part in parts:
         part = clean(part.strip(" •-\t"))
-
         if len(part) < 28 or len(part) > 380:
             continue
         if is_junk(part):
@@ -157,7 +152,6 @@ def semantic_score(sentence: str) -> float:
 
     if any(marker in sentence for marker in ("하면서", "따라", "때문", "이에", "따라서", "동시에", "넘어")):
         score += 1.15
-
     if re.search(r"\d", sentence):
         score += 0.25
 
@@ -174,32 +168,26 @@ def jaccard(a: str, b: str) -> float:
 
 def rewrite_point(sentence: str) -> str:
     text = clean(sentence)
-
     text = re.sub(
         r"^(한편|또한|아울러|특히|이날|이어|그러면서|그는|회사는)\s*[,，]?\s*",
         "",
-        text
+        text,
     )
-
     text = re.sub(
         r"\s*(?:라고|고)\s*(?:밝혔다|말했다|설명했다|강조했다|전했다|덧붙였다)\.?\s*$",
         "",
-        text
+        text,
     )
-
     text = text.strip(" \"'“”‘’")
     text = trim(text, 150)
-
     if text.endswith("."):
         text = text[:-1]
-
     return text
 
 
 def ranked_points(title: str, body: str, description: str) -> list[tuple[float, str]]:
     source = body if len(clean(body)) >= 120 else description
     pool = sentences(source)
-
     if not pool:
         return []
 
@@ -218,7 +206,6 @@ def ranked_points(title: str, body: str, description: str) -> list[tuple[float, 
         score = semantic_score(sentence) + content_score + title_score + position_score
 
         point = rewrite_point(sentence)
-
         if len(point) < 25 or is_junk(point):
             continue
 
@@ -240,18 +227,11 @@ def extract_key_points(title: str, body: str, description: str, limit: int = 3) 
 
 
 def build_main_point(title: str, body: str, description: str, key_points: list[str]) -> str:
-    """
-    제목 바로 아래 한 줄은 메타 설명이 아니라 가장 핵심적인 '변화/의미' 문장.
-    """
     ranked = ranked_points(title, body, description)
-
     if ranked:
-        # semantic signal이 높은 첫 문장을 메인 포인트로 사용
         return trim(ranked[0][1], 125)
-
     if key_points:
         return trim(key_points[0], 125)
-
     return trim(title, 125)
 
 
@@ -265,10 +245,8 @@ def detect_topic(title: str, tags: list[str], body: str, key_points: list[str]) 
 
     for topic in TOPICS:
         score = 0.0
-
         for key in topic["keys"]:
             k = key.lower()
-
             if k in title_text:
                 score += 4.0
             if k in focus_text:
@@ -276,8 +254,6 @@ def detect_topic(title: str, tags: list[str], body: str, key_points: list[str]) 
             if k in body_text:
                 score += 0.7
 
-        # 양산/공정/수율이 제목이나 핵심 포인트에 직접 등장하면
-        # 단순히 HBM이라는 이유만으로 HBM 일반 기사로 분류하지 않음.
         if topic["category"] == "Manufacturing":
             direct = ("양산", "수율", "공정", "생산", "제조", "불량")
             score += sum(2.2 for word in direct if word in title_text)
@@ -295,19 +271,9 @@ def detect_topic(title: str, tags: list[str], body: str, key_points: list[str]) 
         "impact": "회사가 중요하게 보는 이슈가 향후 기술·사업 우선순위를 판단하는 단서가 된다는 점",
     }
 
-def build_why_it_matters(
-    *,
-    main_point: str,
-    key_points: list[str],
-    topic: dict,
-) -> str:
-    """
-    카테고리 고정 문구가 아니라 해당 기사 main point + 보조 point를 근거로 생성.
-    """
-    second = next(
-        (point for point in key_points if point != main_point),
-        ""
-    )
+
+def build_why_it_matters(*, main_point: str, key_points: list[str], topic: dict) -> str:
+    second = next((point for point in key_points if point != main_point), "")
 
     if second:
         return (
@@ -316,43 +282,88 @@ def build_why_it_matters(
             f"이 두 변화는 {topic['impact']}에서 중요합니다."
         )
 
-    return (
-        f"{main_point}. "
-        f"이 변화는 {topic['impact']}에서 중요합니다."
-    )
+    return f"{main_point}. 이 변화는 {topic['impact']}에서 중요합니다."
 
 
-def build_what_you_get(
-    *,
-    main_point: str,
-    job_relevance: dict,
-) -> str:
-    role = job_relevance["role"]
-    score = job_relevance["score"]
-    dimensions = job_relevance.get("dimensions", [])
-
-    if dimensions:
-        dimension_text = "·".join(dimensions[:3])
-    else:
-        dimension_text = "기술·사업 배경"
+def build_role_takeaway(*, main_point: str, role_relevance: dict) -> str:
+    role = role_relevance["role"]
+    score = role_relevance["score"]
+    dimensions = role_relevance.get("dimensions", [])
+    lens = role_relevance.get("lens", ROLE_PROFILES[role]["lens"])
+    dimension_text = "·".join(dimensions[:3]) if dimensions else "직접 연관 신호"
 
     if score >= 4:
         return (
-            f"{role} 관점에서는 {dimension_text} 등과 직접 연결되는 기사입니다. "
-            f"면접에서는 '{trim(main_point, 90)}'이라는 내용을 근거로 "
-            f"기술 변화가 공정 안정성·수율·생산성에 어떤 요구를 만드는지 연결해 설명할 수 있습니다."
+            f"{role} 관점에서는 {dimension_text}가 핵심 연결점입니다. "
+            f"'{trim(main_point, 88)}'이라는 내용을 {lens} 관점으로 연결하면 "
+            f"직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
         )
 
     if score == 3:
         return (
-            f"{role}와 직접적인 공정 이슈는 아니지만 {dimension_text} 관점의 배경지식으로 유용합니다. "
-            f"'{trim(main_point, 90)}'이 향후 양산 현장에 어떤 영향을 줄지 연결해서 생각해볼 수 있습니다."
+            f"{role} 실무와 중간 정도의 관련성이 있습니다. "
+            f"{dimension_text}를 중심으로 '{trim(main_point, 82)}'이 "
+            f"{lens}에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
         )
 
     return (
         f"{role} 직접 관련성은 낮은 편입니다. "
-        f"다만 '{trim(main_point, 90)}'을 회사 전략과 산업 흐름을 이해하는 배경자료로 활용할 수 있습니다."
+        f"다만 '{trim(main_point, 88)}'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
     )
+
+
+def build_all_role_analysis(
+    *,
+    title: str,
+    main_point: str,
+    key_points: list[str],
+    body: str,
+    tags: list[str],
+) -> dict:
+    results = {}
+
+    for role in list_roles():
+        relevance = score_role_relevance(
+            role,
+            title=title,
+            main_point=main_point,
+            key_points=key_points,
+            body=body,
+            tags=tags,
+        )
+        relevance["what_you_get"] = build_role_takeaway(
+            main_point=main_point,
+            role_relevance=relevance,
+        )
+        results[role] = relevance
+
+    return results
+
+
+def refresh_saved_role_analysis(article: dict, body: str = "") -> dict:
+    """
+    기존 articles.json에 직무별 관련성을 추가한다.
+    body가 전달되면 본문까지 사용하고, 없으면 저장된 핵심 정보만 사용한다.
+    """
+    role_analysis = build_all_role_analysis(
+        title=article.get("title", ""),
+        main_point=article.get("main_point") or article.get("one_liner", ""),
+        key_points=article.get("key_points", []),
+        body=body,
+        tags=article.get("tags", []),
+    )
+
+    article["role_analysis"] = role_analysis
+    default = role_analysis[DEFAULT_ROLE]
+
+    # 이전 프론트엔드와의 호환성 유지
+    article["job_relevance"] = {
+        k: v for k, v in default.items() if k != "what_you_get"
+    }
+    article["takeaway"] = default["what_you_get"]
+    article["importance"] = default["score"]
+
+    return article
 
 
 def analyze_article(title: str, description: str, body: str, tags: list[str]) -> dict:
@@ -360,8 +371,13 @@ def analyze_article(title: str, description: str, body: str, tags: list[str]) ->
     main_point = build_main_point(title, body, description, key_points)
     topic = detect_topic(title, tags, body, key_points)
 
-    job_relevance = score_role_relevance(
-        DEFAULT_ROLE,
+    why_it_matters = build_why_it_matters(
+        main_point=main_point,
+        key_points=key_points,
+        topic=topic,
+    )
+
+    role_analysis = build_all_role_analysis(
         title=title,
         main_point=main_point,
         key_points=key_points,
@@ -369,26 +385,20 @@ def analyze_article(title: str, description: str, body: str, tags: list[str]) ->
         tags=tags,
     )
 
-    why_it_matters = build_why_it_matters(
-        main_point=main_point,
-        key_points=key_points,
-        topic=topic,
-    )
-
-    what_you_get = build_what_you_get(
-        main_point=main_point,
-        job_relevance=job_relevance,
-    )
+    default = role_analysis[DEFAULT_ROLE]
 
     return {
         "main_point": main_point,
         "key_points": key_points,
         "category": topic["category"],
         "why_it_matters": why_it_matters,
-        "takeaway": what_you_get,
-        "job_relevance": job_relevance,
+        "role_analysis": role_analysis,
+
+        # 기본값은 양산기술. 화면에서 직무를 바꾸면 role_analysis를 사용함.
+        "takeaway": default["what_you_get"],
+        "job_relevance": {k: v for k, v in default.items() if k != "what_you_get"},
 
         # old frontend compatibility
         "one_liner": main_point,
-        "importance": job_relevance["score"],
+        "importance": default["score"],
     }

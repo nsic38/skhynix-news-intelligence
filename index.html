@@ -4,15 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SK hynix News Intelligence</title>
-  <link rel="stylesheet" href="style.css?v=4.3" />
+  <link rel="stylesheet" href="style.css?v=5.0" />
 </head>
 <body>
   <main class="wrap">
     <header class="hero">
       <div>
-        <p class="eyebrow">SK hynix NEWS INTELLIGENCE · v4.3</p>
-        <h1>뉴스를 열기 전에<br>핵심부터 파악하세요.</h1>
-        <p class="sub">SK hynix Newsroom의 새 글만 누적하고, 핵심과 활용 포인트를 한 화면에서 확인합니다.</p>
+        <p class="eyebrow">SK hynix NEWS INTELLIGENCE · v5.0</p>
+        <h1>뉴스를 직무 관점으로<br>읽어보세요.</h1>
+        <p class="sub">
+          SK hynix Newsroom의 새 글을 자동으로 누적하고,
+          선택한 직무 기준으로 관련성과 활용 포인트를 다시 보여줍니다.
+        </p>
       </div>
     </header>
 
@@ -31,13 +34,42 @@
       </div>
     </section>
 
+    <section class="role-strip">
+      <div>
+        <div class="role-strip-label">관심 직무</div>
+        <div id="role-current" class="role-current">양산기술</div>
+      </div>
+      <div id="role-description" class="role-description">
+        공정 안정성·수율·생산성·양산 전환 중심으로 관련성을 평가합니다.
+      </div>
+    </section>
+
     <section class="toolbar">
       <input id="search" type="search" placeholder="HBM, AI, 양산, 패키징 등 검색" />
-      <select id="importance-filter">
-        <option value="0">양산기술 관련성</option>
-        <option value="5">★★★★★</option>
-        <option value="4">★★★★ 이상</option>
+
+      <select id="role-filter" aria-label="관심 직무">
+        <option value="양산기술">양산기술 (양기)</option>
+        <option value="양산관리">양산관리 (양관)</option>
+        <option value="공정기술">공정기술</option>
+        <option value="설비기술">설비기술</option>
+        <option value="품질/신뢰성">품질/신뢰성</option>
+        <option value="제품/소자">제품/소자</option>
+        <option value="IT">IT</option>
+        <option value="Data/AI">Data/AI</option>
       </select>
+
+      <select id="importance-filter" aria-label="최소 직무 관련성">
+        <option value="0">관련성 전체</option>
+        <option value="5">★★★★★만</option>
+        <option value="4">★★★★ 이상</option>
+        <option value="3">★★★ 이상</option>
+      </select>
+
+      <select id="sort-filter" aria-label="정렬">
+        <option value="latest">최신순</option>
+        <option value="relevance">관련성 높은 순</option>
+      </select>
+
       <button id="reload">새로고침</button>
     </section>
 
@@ -45,6 +77,6 @@
     <section id="articles" class="grid"></section>
   </main>
 
-  <script src="app.js?v=4.3"></script>
+  <script src="app.js?v=5.0"></script>
 </body>
 </html>
