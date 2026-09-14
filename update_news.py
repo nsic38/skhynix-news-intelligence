@@ -451,21 +451,21 @@ def main() -> int:
     if migrated:
         print(f"기존 기사 직무별 분석 {migrated}개 생성")
 
-   try:
-    entries = fetch_rss_entries()
-    print(f"RSS 정상: 기사 {len(entries)}개 확인")
+       try:
+        entries = fetch_rss_entries()
+        print(f"RSS 정상: 기사 {len(entries)}개 확인")
 
-except Exception as exc:
-    print(f"RSS 확인 실패: {exc}")
-    print("-> /all/ 페이지로 다시 확인합니다.")
+    except Exception as exc:
+        print(f"RSS 확인 실패: {exc}")
+        print("-> /all/ 페이지로 다시 확인합니다.")
 
-    try:
-        entries = fetch_all_entries()
-        print(f"/all/ 정상: 기사 {len(entries)}개 확인")
+        try:
+            entries = fetch_all_entries()
+            print(f"/all/ 정상: 기사 {len(entries)}개 확인")
 
-    except Exception as exc2:
-        print(f"/all/ 확인도 실패: {exc2}")
-        return 1
+        except Exception as exc2:
+            print(f"/all/ 확인도 실패: {exc2}")
+            return 1
 
     existing_urls = {normalize_url(a.get("url", "")) for a in articles}
     existing_titles = {normalize_title(a.get("title", "")) for a in articles}
