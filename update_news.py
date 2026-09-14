@@ -451,7 +451,7 @@ def main() -> int:
     if migrated:
         print(f"기존 기사 직무별 분석 {migrated}개 생성")
 
-       try:
+   try:
         entries = fetch_rss_entries()
         print(f"RSS 정상: 기사 {len(entries)}개 확인")
 
