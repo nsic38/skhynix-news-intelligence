@@ -194,7 +194,8 @@ def fetch_rss_entries() -> list:
         unique.append(entry)
 
     return unique
-  def fetch_all_entries() -> list:
+
+def fetch_all_entries() -> list:
     from bs4 import BeautifulSoup
 
     response = session.get(
@@ -265,7 +266,6 @@ def fetch_rss_entries() -> list:
         raise RuntimeError("/all/ 페이지에서도 기사를 찾지 못했습니다.")
 
     return entries[:RSS_SCAN_LIMIT]
-
 
 def fetch_article_text(url: str) -> tuple[str, str, list[str]]:
     from bs4 import BeautifulSoup
