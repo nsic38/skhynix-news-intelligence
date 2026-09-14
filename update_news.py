@@ -196,48 +196,34 @@ def fetch_rss_entries() -> list:
     return unique
 
 def fetch_all_entries() -> list:
-    from bs4 import BeautifulSoup
-
-    response = session.get(
-        ALL_URL,
+    response = requests.get(
+        "https://r.jina.ai/https://news.skhynix.co.kr/all/",
         timeout=TIMEOUT,
         headers={
-            **HEADERS,
-            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "User-Agent": "Mozilla/5.0"
         },
     )
     response.raise_for_status()
 
-    soup = BeautifulSoup(response.text, "html.parser")
+    text = response.text
 
     entries = []
     seen_urls = set()
     seen_titles = set()
 
-    for a in soup.find_all("a", href=True):
-        title = clean_text(a.get_text(" ", strip=True))
-        url = normalize_url(urljoin(BASE_URL, a["href"]))
+    pattern = re.compile(
+        r"\[(.+?)\]\((https://news\.skhynix\.co\.kr/[^)]+)\).*?"
+        r"(20\d{2}[-./]\d{2}[-./]\d{2})",
+        re.DOTALL,
+    )
 
-        if not title or len(title) < 8:
+    for match in pattern.finditer(text):
+        title = clean_text(match.group(1))
+        url = normalize_url(match.group(2))
+        published = match.group(3).replace(".", "-").replace("/", "-")
+
+        if not title or is_blocked_item(title, url):
             continue
-
-        if not url.startswith(BASE_URL):
-            continue
-
-        if is_blocked_item(title, url):
-            continue
-
-        parent = a.find_parent(["article", "li", "div"])
-        if not parent:
-            continue
-
-        parent_text = clean_text(parent.get_text(" ", strip=True))
-
-        date_match = re.search(r"20\d{2}[-./]\d{2}[-./]\d{2}", parent_text)
-        if not date_match:
-            continue
-
-        published = date_match.group(0).replace(".", "-").replace("/", "-")
 
         ntitle = normalize_title(title)
 
@@ -263,7 +249,7 @@ def fetch_all_entries() -> list:
         seen_titles.add(ntitle)
 
     if not entries:
-        raise RuntimeError("/all/ 페이지에서도 기사를 찾지 못했습니다.")
+        raise RuntimeError("Jina 경유 뉴스룸에서도 기사를 찾지 못했습니다.")
 
     return entries[:RSS_SCAN_LIMIT]
 
