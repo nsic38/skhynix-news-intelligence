@@ -194,7 +194,7 @@ def fetch_rss_entries() -> list:
         unique.append(entry)
 
     return unique
-    def fetch_all_entries() -> list:
+  def fetch_all_entries() -> list:
     from bs4 import BeautifulSoup
 
     response = session.get(
