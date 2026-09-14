@@ -6,7 +6,8 @@ import re
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
-from urllib.parse import urlsplit, urlunsplit
+from urllib.parse import urljoin, urlsplit, urlunsplit
+from types import SimpleNamespace
 
 import feedparser
 import requests
@@ -15,6 +16,7 @@ from analyzer import analyze_article, refresh_saved_role_analysis
 
 BASE_URL = "https://news.skhynix.co.kr/"
 RSS_URL = "https://news.skhynix.co.kr/feed/"
+ALL_URL = "https://news.skhynix.co.kr/all/"
 
 ROOT = Path(__file__).resolve().parent
 DATA_FILE = ROOT / "data" / "articles.json"
@@ -192,6 +194,77 @@ def fetch_rss_entries() -> list:
         unique.append(entry)
 
     return unique
+    def fetch_all_entries() -> list:
+    from bs4 import BeautifulSoup
+
+    response = session.get(
+        ALL_URL,
+        timeout=TIMEOUT,
+        headers={
+            **HEADERS,
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        },
+    )
+    response.raise_for_status()
+
+    soup = BeautifulSoup(response.text, "html.parser")
+
+    entries = []
+    seen_urls = set()
+    seen_titles = set()
+
+    for a in soup.find_all("a", href=True):
+        title = clean_text(a.get_text(" ", strip=True))
+        url = normalize_url(urljoin(BASE_URL, a["href"]))
+
+        if not title or len(title) < 8:
+            continue
+
+        if not url.startswith(BASE_URL):
+            continue
+
+        if is_blocked_item(title, url):
+            continue
+
+        parent = a.find_parent(["article", "li", "div"])
+        if not parent:
+            continue
+
+        parent_text = clean_text(parent.get_text(" ", strip=True))
+
+        date_match = re.search(r"20\d{2}[-./]\d{2}[-./]\d{2}", parent_text)
+        if not date_match:
+            continue
+
+        published = date_match.group(0).replace(".", "-").replace("/", "-")
+
+        ntitle = normalize_title(title)
+
+        if url in seen_urls or ntitle in seen_titles:
+            continue
+
+        year, month, day = map(int, published.split("-"))
+
+        entry = SimpleNamespace(
+            title=title,
+            link=url,
+            published=published,
+            published_parsed=(year, month, day, 0, 0, 0, 0, 0, -1),
+            updated="",
+            updated_parsed=None,
+            summary="",
+            description="",
+            tags=[],
+        )
+
+        entries.append(entry)
+        seen_urls.add(url)
+        seen_titles.add(ntitle)
+
+    if not entries:
+        raise RuntimeError("/all/ 페이지에서도 기사를 찾지 못했습니다.")
+
+    return entries[:RSS_SCAN_LIMIT]
 
 
 def fetch_article_text(url: str) -> tuple[str, str, list[str]]:
@@ -378,18 +451,21 @@ def main() -> int:
     if migrated:
         print(f"기존 기사 직무별 분석 {migrated}개 생성")
 
-    try:
-        entries = fetch_rss_entries()
-    except Exception as exc:
-        print(f"RSS 확인 실패: {exc}")
-        save_json(DATA_FILE, articles)
+   try:
+    entries = fetch_rss_entries()
+    print(f"RSS 정상: 기사 {len(entries)}개 확인")
 
-        checked_at = now_iso()
-        state["last_checked_at"] = checked_at
-        state["last_new_count"] = 0
-        state["total_articles"] = len(articles)
-        save_json(STATE_FILE, state)
-        return 0
+except Exception as exc:
+    print(f"RSS 확인 실패: {exc}")
+    print("-> /all/ 페이지로 다시 확인합니다.")
+
+    try:
+        entries = fetch_all_entries()
+        print(f"/all/ 정상: 기사 {len(entries)}개 확인")
+
+    except Exception as exc2:
+        print(f"/all/ 확인도 실패: {exc2}")
+        return 1
 
     existing_urls = {normalize_url(a.get("url", "")) for a in articles}
     existing_titles = {normalize_title(a.get("title", "")) for a in articles}
