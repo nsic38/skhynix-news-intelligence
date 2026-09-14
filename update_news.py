@@ -199,9 +199,7 @@ def fetch_all_entries() -> list:
     response = requests.get(
         "https://r.jina.ai/https://news.skhynix.co.kr/all/",
         timeout=TIMEOUT,
-        headers={
-            "User-Agent": "Mozilla/5.0"
-        },
+        headers={"User-Agent": "Mozilla/5.0"},
     )
     response.raise_for_status()
 
@@ -211,19 +209,41 @@ def fetch_all_entries() -> list:
     seen_urls = set()
     seen_titles = set()
 
-    pattern = re.compile(
-        r"\[(.+?)\]\((https://news\.skhynix\.co\.kr/[^)]+)\).*?"
-        r"(20\d{2}[-./]\d{2}[-./]\d{2})",
-        re.DOTALL,
+    # Markdown 링크 전부 추출
+    links = re.findall(
+        r"\[([^\]]+)\]\((https://news\.skhynix\.co\.kr/[^)]+)\)",
+        text
     )
 
-    for match in pattern.finditer(text):
-        title = clean_text(match.group(1))
-        url = normalize_url(match.group(2))
-        published = match.group(3).replace(".", "-").replace("/", "-")
+    for title, url in links:
+        title = clean_text(title)
+        url = normalize_url(url)
 
-        if not title or is_blocked_item(title, url):
+        if not title or len(title) < 8:
             continue
+
+        if is_blocked_item(title, url):
+            continue
+
+        # 링크 주변 텍스트에서 날짜 찾기
+        pos = text.find(f"]({url}")
+        if pos == -1:
+            continue
+
+        nearby = text[pos:pos + 500]
+
+        date_match = re.search(
+            r"20\d{2}[-./]\d{1,2}[-./]\d{1,2}",
+            nearby
+        )
+
+        if not date_match:
+            continue
+
+        published = date_match.group(0).replace(".", "-").replace("/", "-")
+
+        parts = published.split("-")
+        published = f"{int(parts[0]):04d}-{int(parts[1]):02d}-{int(parts[2]):02d}"
 
         ntitle = normalize_title(title)
 
@@ -250,6 +270,11 @@ def fetch_all_entries() -> list:
 
     if not entries:
         raise RuntimeError("Jina 경유 뉴스룸에서도 기사를 찾지 못했습니다.")
+
+    entries.sort(
+        key=lambda e: e.published,
+        reverse=True,
+    )
 
     return entries[:RSS_SCAN_LIMIT]
 
