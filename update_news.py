@@ -204,6 +204,9 @@ def fetch_all_entries() -> list:
     response.raise_for_status()
 
     text = response.text
+    print("===== JINA RESPONSE START =====")
+    print(text[:5000])
+    print("===== JINA RESPONSE END =====")
 
     entries = []
     seen_urls = set()
