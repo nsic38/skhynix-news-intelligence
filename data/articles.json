@@ -1867,5 +1867,3210 @@
         "what_you_get": "Data/AI 실무와 중간 정도의 관련성이 있습니다. AI·ML를 중심으로 '경영진에게 직접 듣는 SK하이닉스의 미래 전략… “인재에 아낌없이 투자해 기술 경쟁력 유지” ▲ SK하이닉스 비전을 공유하는 SK하이닉스 김종...'이 데이터 분석·ML·예측·최적화·AI 서비스에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
       }
     }
+  },
+  {
+    "id": "0aabbd658371",
+    "title": "AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE55OV9RbC1VdS1jdHIyaDB0OHFlZHQ0R1I2c2F1T09mR0xRR1JYUHAtV19sbjdLaU9uZFpOTlNCUTFVVWRJSTg1Y3hjOUR4OTNiSHdsVjNrWEJzMUJ5NUJXQ3NCTQ",
+    "published": "2026-08-20",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:40+09:00",
+    "content_source": "rss/meta",
+    "main_point": "AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "AI / Infrastructure",
+    "why_it_matters": "AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - SK하이닉스 뉴스룸. 이 변화는 AI 워크로드 변화가 메모리의 역할과 요구 사양을 직접 바꾸고 있다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 2,
+        "reason": "데이터 기반 개선",
+        "dimensions": [
+          "데이터 기반 개선"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 2,
+        "reason": "데이터·자동화",
+        "dimensions": [
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 3,
+        "reason": "AI 메모리",
+        "dimensions": [
+          "AI 메모리"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 실무와 중간 정도의 관련성이 있습니다. AI 메모리를 중심으로 'AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - S...'이 메모리 구조·성능·전력·제품 로드맵에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 3,
+        "reason": "시스템·플랫폼",
+        "dimensions": [
+          "시스템·플랫폼"
+        ],
+        "matched_keywords": [
+          "시스템"
+        ],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 실무와 중간 정도의 관련성이 있습니다. 시스템·플랫폼를 중심으로 'AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - S...'이 MES·시스템 연계·인프라·보안·업무 자동화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 3,
+        "reason": "AI·ML",
+        "dimensions": [
+          "AI·ML"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 실무와 중간 정도의 관련성이 있습니다. AI·ML를 중심으로 'AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - S...'이 데이터 분석·ML·예측·최적화·AI 서비스에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 2,
+      "reason": "데이터 기반 개선",
+      "dimensions": [
+        "데이터 기반 개선"
+      ],
+      "matched_keywords": [
+        "ai"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "AI 전장은 ‘칩’에서 ‘시스템’으로… SK하이닉스, 네이처 일렉트로닉스 논문으로 ‘랙 · 포드 · 시스템’ CPO 상용화 청사진 증명 - SK하이닉스 뉴스룸",
+    "importance": 2
+  },
+  {
+    "id": "12a6f275589d",
+    "title": "SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBHNDJsTjhUQS1FaTdKOXlaMVMtRjlDTmxjUUF3RWRTNTZTMUZVZFhFWkpRR2xHcTdHNGdpOFBsWDZZTy1OdEZjNGZVOXJaREpzdExXd2VWM1BOUVlrTnJ6NEdEUWhyVlU",
+    "published": "2026-08-19",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:41+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Company / General",
+    "why_it_matters": "SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸. 이 변화는 회사가 중요하게 보는 이슈가 향후 기술·사업 우선순위를 판단하는 단서가 된다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스, 40조 원 자사주 취득∙소각 조기 집행… 주주환원 규모 ‘FCF 50% 이상’ 추진 - SK하이닉스 뉴스룸",
+    "importance": 1
+  },
+  {
+    "id": "a32f9c02e012",
+    "title": "SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ZcnVrMGlEaGl3MDRpUFUwV0ltalJyd1JpNWZjaWkwX044QnZYWVdmM0VuaUNPY0dFUUMya3ZCLUNQTndlX2VoUFNMMUc5WFdTRGdfU1p4bl9fMEhYeXA3aWd3WGg0amFfeGtzOQ",
+    "published": "2026-02-26",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:38+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "NAND / Storage",
+    "why_it_matters": "SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸. 이 변화는 스토리지 수요 변화가 제품 구조·용량·성능 요구와 생산 전략까지 바꾼다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 5,
+        "reason": "제품 로드맵 · DRAM·HBM · AI 메모리",
+        "dimensions": [
+          "제품 로드맵",
+          "DRAM·HBM",
+          "AI 메모리"
+        ],
+        "matched_keywords": [
+          "차세대",
+          "세대",
+          "메모리",
+          "hbf"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 제품 로드맵·DRAM·HBM·AI 메모리가 핵심 연결점입니다. 'SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스, 샌디스크와 차세대 메모리 ‘HBF’ 글로벌 표준화 본격 시동 - SK하이닉스 뉴스룸",
+    "importance": 1
+  },
+  {
+    "id": "97bd5e3be13b",
+    "title": "SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5oSGR2MGhSSi0xNXdNbXhuUDZOczhvMC0zZkxza0dPd3dfc0k5Z1FTZllrSmlUcTJOT0NFclBBb2RZYUhDVUxxMUJ1dWdvb3hXWTlNQW5NNndMVERIakE",
+    "published": "2026-01-28",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:39+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Business / IR",
+    "why_it_matters": "SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸. 이 변화는 실적과 투자 방향이 실제 시장 수요와 회사의 기술 우선순위를 동시에 보여준다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스, 2025년 경영실적 발표… ”역대 최대 실적 달성∙최대 주주환원 단행” - SK하이닉스 뉴스룸",
+    "importance": 1
+  },
+  {
+    "id": "0be6ecb407d6",
+    "title": "[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9NejBvSWRkanR4T29EVE0yc3U5a28wcGk2QlRMSGY1ai1uMEFVRVVnZ2M1bExidDYwZXVHaTY5aE5wU1o1VTdpUVBub0diNmd3czFjbkNEb0FLTWM",
+    "published": "2025-12-26",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:40+09:00",
+    "content_source": "rss/meta",
+    "main_point": "[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "AI / Infrastructure",
+    "why_it_matters": "[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸. 이 변화는 AI 워크로드 변화가 메모리의 역할과 요구 사양을 직접 바꾸고 있다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 4,
+        "reason": "HBM·패키징 · 데이터 기반 개선",
+        "dimensions": [
+          "HBM·패키징",
+          "데이터 기반 개선"
+        ],
+        "matched_keywords": [
+          "본딩",
+          "ai"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 관점에서는 HBM·패키징·데이터 기반 개선가 핵심 연결점입니다. '[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 2,
+        "reason": "데이터·자동화",
+        "dimensions": [
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 3,
+        "reason": "패키징 공정",
+        "dimensions": [
+          "패키징 공정"
+        ],
+        "matched_keywords": [
+          "본딩"
+        ],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 실무와 중간 정도의 관련성이 있습니다. 패키징 공정를 중심으로 '[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸'이 공정 조건·Process Window·결함·미세화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 3,
+        "reason": "AI 메모리",
+        "dimensions": [
+          "AI 메모리"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 실무와 중간 정도의 관련성이 있습니다. AI 메모리를 중심으로 '[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸'이 메모리 구조·성능·전력·제품 로드맵에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 4,
+        "reason": "AI·ML · 자동화",
+        "dimensions": [
+          "AI·ML",
+          "자동화"
+        ],
+        "matched_keywords": [
+          "ai",
+          "에이전트"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 관점에서는 AI·ML·자동화가 핵심 연결점입니다. '[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      }
+    },
+    "takeaway": "양산기술 관점에서는 HBM·패키징·데이터 기반 개선가 핵심 연결점입니다. '[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 4,
+      "reason": "HBM·패키징 · 데이터 기반 개선",
+      "dimensions": [
+        "HBM·패키징",
+        "데이터 기반 개선"
+      ],
+      "matched_keywords": [
+        "본딩",
+        "ai"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "[뉴스룸] SK하이닉스, AI 휴머노이드 캐릭터 ‘하빔이’ 탄생…코드네임 ‘에이전트 660 하임스 본딩’으로 임무 본격화 - SK하이닉스 뉴스룸",
+    "importance": 4
+  },
+  {
+    "id": "a088a1f42c12",
+    "title": "[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBwdlkyX1loOGV6cHdWWWdGYTctRDZJdGxRT2hualRtaUpvZ0FWTzdCaFdLSGpfb0txWjZ3cE04Tjg4RkVCU3FkMl84WTVfR2JWMXQ4UVA2YTBwNDI2S2c",
+    "published": "2025-10-31",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:40+09:00",
+    "content_source": "rss/meta",
+    "main_point": "[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "AI / Infrastructure",
+    "why_it_matters": "[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸. 이 변화는 AI 워크로드 변화가 메모리의 역할과 요구 사양을 직접 바꾸고 있다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 2,
+        "reason": "데이터 기반 개선",
+        "dimensions": [
+          "데이터 기반 개선"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 '[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 2,
+        "reason": "데이터·자동화",
+        "dimensions": [
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 3,
+        "reason": "AI 메모리",
+        "dimensions": [
+          "AI 메모리"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 실무와 중간 정도의 관련성이 있습니다. AI 메모리를 중심으로 '[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸'이 메모리 구조·성능·전력·제품 로드맵에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 4,
+        "reason": "AI·ML · 자동화",
+        "dimensions": [
+          "AI·ML",
+          "자동화"
+        ],
+        "matched_keywords": [
+          "ai",
+          "agent"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 관점에서는 AI·ML·자동화가 핵심 연결점입니다. '[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 '[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 2,
+      "reason": "데이터 기반 개선",
+      "dimensions": [
+        "데이터 기반 개선"
+      ],
+      "matched_keywords": [
+        "ai"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "[Introduce: GaiA 1편] AI로 일하는 시대, SK하이닉스 ‘Biz 특화 AI Agent’가 만든 변화 - SK하이닉스 뉴스룸",
+    "importance": 2
+  },
+  {
+    "id": "7a669b229861",
+    "title": "SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAxRW5kMkdfOVZublZkNXM0cG5uYkg3NUxyNFVKLVJGVmNxLTBjU1JDREh0MWlib2RxVENYSWRZOTNZRHE3UVV1c0NGRmhPOG1vWFcxd3JudkJlWTBLcGpSc240SDVsWDUxQkxlUmlXUQ",
+    "published": "2025-10-27",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:36+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Strategy",
+    "why_it_matters": "SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸. 이 변화는 회사가 어떤 기술을 우선순위에 두는지가 향후 투자·개발·양산 로드맵과 연결된다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 5,
+        "reason": "제품 로드맵 · NAND·Storage",
+        "dimensions": [
+          "제품 로드맵",
+          "NAND·Storage"
+        ],
+        "matched_keywords": [
+          "차세대",
+          "제품",
+          "세대",
+          "스토리지"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 제품 로드맵·NAND·Storage가 핵심 연결점입니다. 'SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스, 美 OCP서 차세대 낸드 스토리지 제품 전략 공개 - SK하이닉스 뉴스룸",
+    "importance": 1
+  },
+  {
+    "id": "9b7b6bf6b003",
+    "title": "SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE04aEFCc2ZlY19JMDUxbHo2ZDY5QzRLSVZOTDZLZ05GMG9KR2NPaUNNTHZJUWVZSzRFSlF0bEFKaWFpdlVKYzVWSV9PZ2M4NE5ILW9nSnZDTWd4bE9maVE",
+    "published": "2025-09-12",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:37+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Manufacturing",
+    "why_it_matters": "SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸. 이 변화는 기술 우위를 실제 제품 경쟁력으로 만들기 위해서는 공정 안정성·수율·생산성 확보가 필수라는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 3,
+        "reason": "양산 전환",
+        "dimensions": [
+          "양산 전환"
+        ],
+        "matched_keywords": [
+          "양산"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. 양산 전환를 중심으로 'SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. 양산 전환를 중심으로 'SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 3,
+      "reason": "양산 전환",
+      "dimensions": [
+        "양산 전환"
+      ],
+      "matched_keywords": [
+        "양산"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스, 세계 최초 ‘HBM4’ 개발 완료하고 양산 체제 구축 - SK하이닉스 뉴스룸",
+    "importance": 3
+  },
+  {
+    "id": "fd9be6e13c7f",
+    "title": "[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5RVjJWY0xOVEk1R3dJa1ZRNmpDUE8yQ0dYYi0zaUt3a1Q2LWVYSHVpS19MMzc3cTJ5TmdyWENsTmVXaHEtV2ZJbUdIZUpNSE5fMXJZS0JBZXN4bjV6UDZ3",
+    "published": "2025-04-30",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:41+09:00",
+    "content_source": "rss/meta",
+    "main_point": "[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Manufacturing",
+    "why_it_matters": "[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸. 이 변화는 기술 우위를 실제 제품 경쟁력으로 만들기 위해서는 공정 안정성·수율·생산성 확보가 필수라는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 4,
+        "reason": "양산 전환 · 공정 최적화",
+        "dimensions": [
+          "양산 전환",
+          "공정 최적화"
+        ],
+        "matched_keywords": [
+          "양산",
+          "공정"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 관점에서는 양산 전환·공정 최적화가 핵심 연결점입니다. '[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 3,
+        "reason": "공정 조건",
+        "dimensions": [
+          "공정 조건"
+        ],
+        "matched_keywords": [
+          "공정"
+        ],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 실무와 중간 정도의 관련성이 있습니다. 공정 조건를 중심으로 '[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸'이 공정 조건·Process Window·결함·미세화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 3,
+        "reason": "장비·설비",
+        "dimensions": [
+          "장비·설비"
+        ],
+        "matched_keywords": [
+          "장비"
+        ],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 실무와 중간 정도의 관련성이 있습니다. 장비·설비를 중심으로 '[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸'이 장비 가동률·PM·고장 진단·설비 안정화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 '[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 '[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 관점에서는 양산 전환·공정 최적화가 핵심 연결점입니다. '[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 4,
+      "reason": "양산 전환 · 공정 최적화",
+      "dimensions": [
+        "양산 전환",
+        "공정 최적화"
+      ],
+      "matched_keywords": [
+        "양산",
+        "공정"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "[SK하이닉스 앰버서더 JOB로그 1편] 공정부터 장비까지, 반도체 양산의 컨트롤타워 ‘양산기술’ - SK하이닉스 뉴스룸",
+    "importance": 4
+  },
+  {
+    "id": "9ea6a6d42618",
+    "title": "HBM4 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1Nekp1Y3YwNWdNbmdHTWk0amZuU3ZwbFRCWXpBV3Q0bnhQeF9ZaFhoWl9aVEhaZjdoZVhwY0RUR1JyUWcyT0NQSkdUaU4",
+    "published": "2025-04-25",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:37+09:00",
+    "content_source": "rss/meta",
+    "main_point": "HBM4 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "HBM / AI Memory",
+    "why_it_matters": "HBM4 - SK하이닉스 뉴스룸. 이 변화는 AI 시스템의 성능 기준이 연산 성능뿐 아니라 메모리 용량·대역폭·전력 효율까지 확장되고 있다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'HBM4 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'HBM4 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'HBM4 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'HBM4 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'HBM4 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 'HBM4 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'HBM4 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'HBM4 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'HBM4 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "HBM4 - SK하이닉스 뉴스룸",
+    "importance": 1
+  },
+  {
+    "id": "c475cc2804c7",
+    "title": "글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE00bWhrQlFsVWtXUVBIVGJMeFJtS3lYVHRaRGszai1mM29VT1JiazZDTTZaelZtNlhlNEthS1hNTzZ2RzlUNHpRNHJ6QnVTM1pMRC05SWRQNVFyLUR3ajJTaEhzVGY4aTQ",
+    "published": "2025-03-31",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:40+09:00",
+    "content_source": "rss/meta",
+    "main_point": "글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "HBM / AI Memory",
+    "why_it_matters": "글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸. 이 변화는 AI 시스템의 성능 기준이 연산 성능뿐 아니라 메모리 용량·대역폭·전력 효율까지 확장되고 있다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 3,
+        "reason": "HBM·패키징",
+        "dimensions": [
+          "HBM·패키징"
+        ],
+        "matched_keywords": [
+          "hbm"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. HBM·패키징를 중심으로 '글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 3,
+        "reason": "DRAM·HBM",
+        "dimensions": [
+          "DRAM·HBM"
+        ],
+        "matched_keywords": [
+          "hbm"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 실무와 중간 정도의 관련성이 있습니다. DRAM·HBM를 중심으로 '글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸'이 메모리 구조·성능·전력·제품 로드맵에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 3,
+        "reason": "AI Infra",
+        "dimensions": [
+          "AI Infra"
+        ],
+        "matched_keywords": [
+          "hbm"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 실무와 중간 정도의 관련성이 있습니다. AI Infra를 중심으로 '글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸'이 데이터 분석·ML·예측·최적화·AI 서비스에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      }
+    },
+    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. HBM·패키징를 중심으로 '글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 3,
+      "reason": "HBM·패키징",
+      "dimensions": [
+        "HBM·패키징"
+      ],
+      "matched_keywords": [
+        "hbm"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "글로벌 시장 부동의 1위, SK하이닉스의 HBM - SK하이닉스 뉴스룸",
+    "importance": 3
+  },
+  {
+    "id": "f2ecffbd1d36",
+    "title": "HBM - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE40eUZFdENGSjNWRXZqdDI4OUJNX2MyQ0NNUlhRc0pRQ3ZHUzJnYkRCcmVSVWVXT2NOY29XSHExNGhpQjRNck85YzAzVQ",
+    "published": "2025-03-27",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:37+09:00",
+    "content_source": "rss/meta",
+    "main_point": "HBM - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "HBM / AI Memory",
+    "why_it_matters": "HBM - SK하이닉스 뉴스룸. 이 변화는 AI 시스템의 성능 기준이 연산 성능뿐 아니라 메모리 용량·대역폭·전력 효율까지 확장되고 있다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 3,
+        "reason": "HBM·패키징",
+        "dimensions": [
+          "HBM·패키징"
+        ],
+        "matched_keywords": [
+          "hbm"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. HBM·패키징를 중심으로 'HBM - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'HBM - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'HBM - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'HBM - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'HBM - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 3,
+        "reason": "DRAM·HBM",
+        "dimensions": [
+          "DRAM·HBM"
+        ],
+        "matched_keywords": [
+          "hbm"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 실무와 중간 정도의 관련성이 있습니다. DRAM·HBM를 중심으로 'HBM - SK하이닉스 뉴스룸'이 메모리 구조·성능·전력·제품 로드맵에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'HBM - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 3,
+        "reason": "AI Infra",
+        "dimensions": [
+          "AI Infra"
+        ],
+        "matched_keywords": [
+          "hbm"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 실무와 중간 정도의 관련성이 있습니다. AI Infra를 중심으로 'HBM - SK하이닉스 뉴스룸'이 데이터 분석·ML·예측·최적화·AI 서비스에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      }
+    },
+    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. HBM·패키징를 중심으로 'HBM - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 3,
+      "reason": "HBM·패키징",
+      "dimensions": [
+        "HBM·패키징"
+      ],
+      "matched_keywords": [
+        "hbm"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "HBM - SK하이닉스 뉴스룸",
+    "importance": 3
+  },
+  {
+    "id": "cef77ecc5fbd",
+    "title": "SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4zaVhfYUpwQUhzQjJoV0xvZFRLYTZUYTZIOTBpaVRtR1NYTDcyc1JLaFUyVnpKYVMwNXNUTkxXM0VTNDQ3U1dXMmpOWDhJb0FhZHJHNTdJSWRIYnd0RkE",
+    "published": "2025-01-23",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:39+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Business / IR",
+    "why_it_matters": "SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸. 이 변화는 실적과 투자 방향이 실제 시장 수요와 회사의 기술 우선순위를 동시에 보여준다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스, 2024년 경영실적 발표… “역대 최고 실적 경신” - SK하이닉스 뉴스룸",
+    "importance": 1
+  },
+  {
+    "id": "3812726a854b",
+    "title": "SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9zQTllOU92QmNUMjY5cHdIQmVZTVFENWpHd29sNWtWVXpBQ3hudTRKcTRtZHVudHUwbVhoVUhDa2pCQndxRzAxSzVOcmU",
+    "published": "2025-01-03",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:40+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "HBM / AI Memory",
+    "why_it_matters": "SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸. 이 변화는 AI 시스템의 성능 기준이 연산 성능뿐 아니라 메모리 용량·대역폭·전력 효율까지 확장되고 있다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 2,
+        "reason": "데이터 기반 개선",
+        "dimensions": [
+          "데이터 기반 개선"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 2,
+        "reason": "데이터·자동화",
+        "dimensions": [
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 4,
+        "reason": "DRAM·HBM · AI 메모리",
+        "dimensions": [
+          "DRAM·HBM",
+          "AI 메모리"
+        ],
+        "matched_keywords": [
+          "메모리",
+          "ai"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 DRAM·HBM·AI 메모리가 핵심 연결점입니다. 'SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 3,
+        "reason": "AI·ML",
+        "dimensions": [
+          "AI·ML"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 실무와 중간 정도의 관련성이 있습니다. AI·ML를 중심으로 'SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸'이 데이터 분석·ML·예측·최적화·AI 서비스에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 2,
+      "reason": "데이터 기반 개선",
+      "dimensions": [
+        "데이터 기반 개선"
+      ],
+      "matched_keywords": [
+        "ai"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스, CES 2025에서 ‘풀 스택 AI 메모리 프로바이더’ 청사진 제시 - SK하이닉스 뉴스룸",
+    "importance": 2
+  },
+  {
+    "id": "57c2b61ae141",
+    "title": "[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoRTFaRDdFS0FVTG41VkJxZTVsTWtlaDBCQkFYRE54QU9ISWFpOEtMN21HX3JobjlwOHFnVnh5a3dDMDFXNUpnZTZBbFVhZTc1ZHJ6MnhB",
+    "published": "2024-09-25",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:37+09:00",
+    "content_source": "rss/meta",
+    "main_point": "[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "AI / Infrastructure",
+    "why_it_matters": "[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸. 이 변화는 AI 워크로드 변화가 메모리의 역할과 요구 사양을 직접 바꾸고 있다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 2,
+        "reason": "데이터 기반 개선",
+        "dimensions": [
+          "데이터 기반 개선"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 '[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 2,
+        "reason": "데이터·자동화",
+        "dimensions": [
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 4,
+        "reason": "소자 구조 · AI 메모리",
+        "dimensions": [
+          "소자 구조",
+          "AI 메모리"
+        ],
+        "matched_keywords": [
+          "device",
+          "ai"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 소자 구조·AI 메모리가 핵심 연결점입니다. '[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 3,
+        "reason": "AI·ML",
+        "dimensions": [
+          "AI·ML"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 실무와 중간 정도의 관련성이 있습니다. AI·ML를 중심으로 '[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸'이 데이터 분석·ML·예측·최적화·AI 서비스에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 '[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 2,
+      "reason": "데이터 기반 개선",
+      "dimensions": [
+        "데이터 기반 개선"
+      ],
+      "matched_keywords": [
+        "ai"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "[All Around AI 5편] 스마트폰과 온디바이스(on-device) AI의 미래 - SK하이닉스 뉴스룸",
+    "importance": 2
+  },
+  {
+    "id": "722bde039b69",
+    "title": "SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5IMU9ZSTd3c0E1RURid1o2Z0RpZi1jS2laYVM4WFBmSERsLThZTUhleUluVjRXRk5pRk1pRFZYNDVGWHpJSWk1c2tjZzdIaDB0U0Ew",
+    "published": "2024-07-30",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:39+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Company / General",
+    "why_it_matters": "SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸. 이 변화는 회사가 중요하게 보는 이슈가 향후 기술·사업 우선순위를 판단하는 단서가 된다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 5,
+        "reason": "DRAM·HBM · 성능·전력",
+        "dimensions": [
+          "DRAM·HBM",
+          "성능·전력"
+        ],
+        "matched_keywords": [
+          "gddr",
+          "메모리",
+          "성능"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 DRAM·HBM·성능·전력가 핵심 연결점입니다. 'SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스, 세계 최고 사양 ‘GDDR7’ D램 공개, 고성능 그래픽 메모리 기술 리더십 강화 - SK하이닉스 뉴스룸",
+    "importance": 1
+  },
+  {
+    "id": "e7c728e29d0f",
+    "title": "SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5sNDBIdktrbmpHaXQ5WXJqVDh4SDdwanh1cWxTbmdIeThpQWJaZ0dVV0tWR3RhU24xRGdUV09BbWxIa3hpUEp0Q2V4a1NRdjdyVGp5ZDBYQUY",
+    "published": "2024-06-28",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:40+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "NAND / Storage",
+    "why_it_matters": "SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸. 이 변화는 스토리지 수요 변화가 제품 구조·용량·성능 요구와 생산 전략까지 바꾼다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 2,
+        "reason": "데이터 기반 개선",
+        "dimensions": [
+          "데이터 기반 개선"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 2,
+        "reason": "데이터·자동화",
+        "dimensions": [
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 5,
+        "reason": "NAND·Storage · 성능·전력 · AI 메모리",
+        "dimensions": [
+          "NAND·Storage",
+          "성능·전력",
+          "AI 메모리"
+        ],
+        "matched_keywords": [
+          "ssd",
+          "성능",
+          "ai"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 NAND·Storage·성능·전력·AI 메모리가 핵심 연결점입니다. 'SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 3,
+        "reason": "AI·ML",
+        "dimensions": [
+          "AI·ML"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 실무와 중간 정도의 관련성이 있습니다. AI·ML를 중심으로 'SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸'이 데이터 분석·ML·예측·최적화·AI 서비스에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 2,
+      "reason": "데이터 기반 개선",
+      "dimensions": [
+        "데이터 기반 개선"
+      ],
+      "matched_keywords": [
+        "ai"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스, AI PC용 고성능 SSD ‘PCB01’ 개발 - SK하이닉스 뉴스룸",
+    "importance": 2
+  },
+  {
+    "id": "dc8fe047adad",
+    "title": "SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5wbTIyOFJEUS1jaXdrSzd5czdld3RmZ1RsbldLako0eVFRcVRRTGFlZjNib1NtRFZoZXVWeW1jeHN1OHNMY1dETmRxR29oQ2pjenczRDFTN09sSzJzVUE",
+    "published": "2024-04-19",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:36+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "HBM / AI Memory",
+    "why_it_matters": "SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸. 이 변화는 AI 시스템의 성능 기준이 연산 성능뿐 아니라 메모리 용량·대역폭·전력 효율까지 확장되고 있다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 3,
+        "reason": "HBM·패키징",
+        "dimensions": [
+          "HBM·패키징"
+        ],
+        "matched_keywords": [
+          "hbm"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. HBM·패키징를 중심으로 'SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 3,
+        "reason": "DRAM·HBM",
+        "dimensions": [
+          "DRAM·HBM"
+        ],
+        "matched_keywords": [
+          "hbm"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 실무와 중간 정도의 관련성이 있습니다. DRAM·HBM를 중심으로 'SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸'이 메모리 구조·성능·전력·제품 로드맵에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 3,
+        "reason": "AI Infra",
+        "dimensions": [
+          "AI Infra"
+        ],
+        "matched_keywords": [
+          "hbm"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 실무와 중간 정도의 관련성이 있습니다. AI Infra를 중심으로 'SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸'이 데이터 분석·ML·예측·최적화·AI 서비스에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      }
+    },
+    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. HBM·패키징를 중심으로 'SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 3,
+      "reason": "HBM·패키징",
+      "dimensions": [
+        "HBM·패키징"
+      ],
+      "matched_keywords": [
+        "hbm"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스, TSMC와 손잡고 HBM 기술 리더십 강화 - SK하이닉스 뉴스룸",
+    "importance": 3
+  },
+  {
+    "id": "a3d165e39a2a",
+    "title": "[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5CUGJ6V09kRklTV2JzRWw2YkhXa1Y0M3pWY2VCTlNNVDhrQUhmWDV3YU84MWlwMHo4MTRXR2pPR2xWdmlFSG9FRUxGUldlTk55aVhQTm1PeklEdw",
+    "published": "2023-09-07",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:39+09:00",
+    "content_source": "rss/meta",
+    "main_point": "[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Company / General",
+    "why_it_matters": "[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸. 이 변화는 회사가 중요하게 보는 이슈가 향후 기술·사업 우선순위를 판단하는 단서가 된다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 3,
+        "reason": "공정 최적화",
+        "dimensions": [
+          "공정 최적화"
+        ],
+        "matched_keywords": [
+          "조건"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. 공정 최적화를 중심으로 '[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 3,
+        "reason": "공정 조건",
+        "dimensions": [
+          "공정 조건"
+        ],
+        "matched_keywords": [
+          "조건"
+        ],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 실무와 중간 정도의 관련성이 있습니다. 공정 조건를 중심으로 '[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸'이 공정 조건·Process Window·결함·미세화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 4,
+        "reason": "DRAM·HBM · 소자 구조",
+        "dimensions": [
+          "DRAM·HBM",
+          "소자 구조"
+        ],
+        "matched_keywords": [
+          "메모리",
+          "소자"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 DRAM·HBM·소자 구조가 핵심 연결점입니다. '[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 '[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. 공정 최적화를 중심으로 '[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 3,
+      "reason": "공정 최적화",
+      "dimensions": [
+        "공정 최적화"
+      ],
+      "matched_keywords": [
+        "조건"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "[반도체의 이해 5편] 새로운 메모리 탄생을 위한 메모리 소자의 조건들(5/7) - SK하이닉스 뉴스룸",
+    "importance": 3
+  },
+  {
+    "id": "5caef810c253",
+    "title": "어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1mSmxfX1ZOb01EaW5SNUtLUmZhSGVzTElBOVUwZm02M25mTTFtcmY2bFhyQVFrRWh1amFpSVowUVFxNl9NZEV1UkhrZ1NWSG1aSnk0aDRiVzltOFY2ZEh4UU1Ua01VdWZnMkdnZDJXaDRXdk40",
+    "published": "2023-08-18",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:37+09:00",
+    "content_source": "rss/meta",
+    "main_point": "어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Advanced Packaging",
+    "why_it_matters": "어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸. 이 변화는 적층 수와 인터페이스 복잡도가 커질수록 패키징 공정의 수율·열·공정 안정성이 제품 경쟁력을 좌우한다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 3,
+        "reason": "HBM·패키징",
+        "dimensions": [
+          "HBM·패키징"
+        ],
+        "matched_keywords": [
+          "패키징"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. HBM·패키징를 중심으로 '어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 3,
+        "reason": "패키징 공정",
+        "dimensions": [
+          "패키징 공정"
+        ],
+        "matched_keywords": [
+          "패키징"
+        ],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 실무와 중간 정도의 관련성이 있습니다. 패키징 공정를 중심으로 '어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸'이 공정 조건·Process Window·결함·미세화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 '어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 '어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. HBM·패키징를 중심으로 '어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 3,
+      "reason": "HBM·패키징",
+      "dimensions": [
+        "HBM·패키징"
+      ],
+      "matched_keywords": [
+        "패키징"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "어드밴스드 패키징을 견인하는 인터커넥션 기술의 가치와 SK하이닉스 패키징 기술 혁신 - SK하이닉스 뉴스룸",
+    "importance": 3
+  },
+  {
+    "id": "c84a07fc653c",
+    "title": "SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1OeWxkeW85dlN0Z1pQdXdzNW9GeWk5WHVqalRFYnBucmdVMFAzSW1IZFVvMDktVHNra2lqVk04ZGxCV1cyN3MyODhzeHM0eUlCNUxEbHhwaUxMaEliYnFZOEhNY2E",
+    "published": "2023-08-11",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:39+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Manufacturing",
+    "why_it_matters": "SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸. 이 변화는 기술 우위를 실제 제품 경쟁력으로 만들기 위해서는 공정 안정성·수율·생산성 확보가 필수라는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 3,
+        "reason": "양산 전환",
+        "dimensions": [
+          "양산 전환"
+        ],
+        "matched_keywords": [
+          "양산"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. 양산 전환를 중심으로 'SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 3,
+        "reason": "DRAM·HBM",
+        "dimensions": [
+          "DRAM·HBM"
+        ],
+        "matched_keywords": [
+          "lpddr"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 실무와 중간 정도의 관련성이 있습니다. DRAM·HBM를 중심으로 'SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸'이 메모리 구조·성능·전력·제품 로드맵에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. 양산 전환를 중심으로 'SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 3,
+      "reason": "양산 전환",
+      "dimensions": [
+        "양산 전환"
+      ],
+      "matched_keywords": [
+        "양산"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스, 세계 최고 용량 LPDDR5X D램 양산 - SK하이닉스 뉴스룸",
+    "importance": 3
+  },
+  {
+    "id": "49a8cbdb6f97",
+    "title": "[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAwWUFKMWR3bHVsSmJMS3dZZFhVeWtKaXg1MmoxRHVfOWNzRy1sSDFfTTZVaEMtSjY3MmhZT2Uwbkd4NHptbzRlMnlUZnJjbndwdDhyTURDM0RaMndNR2RrRWVpeGFCWXdDN3FIb3lCbjdkQQ",
+    "published": "2023-01-03",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:38+09:00",
+    "content_source": "rss/meta",
+    "main_point": "[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Manufacturing",
+    "why_it_matters": "[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸. 이 변화는 기술 우위를 실제 제품 경쟁력으로 만들기 위해서는 공정 안정성·수율·생산성 확보가 필수라는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 3,
+        "reason": "공정 최적화",
+        "dimensions": [
+          "공정 최적화"
+        ],
+        "matched_keywords": [
+          "공정"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. 공정 최적화를 중심으로 '[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 3,
+        "reason": "공정 조건",
+        "dimensions": [
+          "공정 조건"
+        ],
+        "matched_keywords": [
+          "공정"
+        ],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 실무와 중간 정도의 관련성이 있습니다. 공정 조건를 중심으로 '[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸'이 공정 조건·Process Window·결함·미세화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 '[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 '[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. 공정 최적화를 중심으로 '[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 3,
+      "reason": "공정 최적화",
+      "dimensions": [
+        "공정 최적화"
+      ],
+      "matched_keywords": [
+        "공정"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "[반도체 후공정 4편] 반도체 패키지의 종류 (4/11) - SK하이닉스 뉴스룸",
+    "importance": 3
+  },
+  {
+    "id": "d17f364e6bad",
+    "title": "SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBsU3dlek51M2VZM3JNYjRmdzdZZDY5dldKR0t0aFoxWHlOSlM5VUNOYjBtV28xLURld1J3VDVDOWJVOVc4MzA3REVzOVdDZUJkNThpdUtzQmM1VllkMW9rQXNsMA",
+    "published": "2022-12-08",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:38+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Company / General",
+    "why_it_matters": "SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸. 이 변화는 회사가 중요하게 보는 이슈가 향후 기술·사업 우선순위를 판단하는 단서가 된다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 3,
+        "reason": "Cloud·Infra",
+        "dimensions": [
+          "Cloud·Infra"
+        ],
+        "matched_keywords": [
+          "서버"
+        ],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 실무와 중간 정도의 관련성이 있습니다. Cloud·Infra를 중심으로 'SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸'이 MES·시스템 연계·인프라·보안·업무 자동화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스, 세계 최고속 서버용 D램 ‘MCR DIMM’ 개발 - SK하이닉스 뉴스룸",
+    "importance": 1
+  },
+  {
+    "id": "13797c2644f7",
+    "title": "[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1NZGRrc2VhenJqZ0JhVTJqRExWNngxcHRkbnhfSTcwR3pzR1E2ZlVFczAzSUltQkpoQ3RsSHBfeGdGbzhlcjFHcjZqemNrallPcFkxU0haOUJjeWJWWW5VNnJB",
+    "published": "2021-04-16",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:38+09:00",
+    "content_source": "rss/meta",
+    "main_point": "[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Company / General",
+    "why_it_matters": "[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸. 이 변화는 회사가 중요하게 보는 이슈가 향후 기술·사업 우선순위를 판단하는 단서가 된다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "[반도체 특강] 반도체의 정의 - SK하이닉스 뉴스룸",
+    "importance": 1
+  },
+  {
+    "id": "a9eb6d388547",
+    "title": "SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFAzaDM3YWotOUIzcktEekFRT1dKWU9pWno3VDFpWjFhazhZVlB3UGI1WTh3Z1J3RjFKLXV0QzRLM1ZhQUZ6eldtNzlLVV9Qb0xCX1Rvb3lwNi1HLXM",
+    "published": "2020-06-11",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:38+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Company / General",
+    "why_it_matters": "SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸. 이 변화는 회사가 중요하게 보는 이슈가 향후 기술·사업 우선순위를 판단하는 단서가 된다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스가 ‘반도체 산업의 쌀’ 물을 관리하는 방법 - SK하이닉스 뉴스룸",
+    "importance": 1
+  },
+  {
+    "id": "467e38b5c6a2",
+    "title": "SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE44VUJDTXc5MkNaMVVGNlZqOUJlNVRZd21WTVNtaHg0ZkxxZG5ENjhVVGo3dHZYUFFfb2xoMkZfc1M",
+    "published": "2019-10-07",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:41+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Company / General",
+    "why_it_matters": "SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸. 이 변화는 회사가 중요하게 보는 이슈가 향후 기술·사업 우선순위를 판단하는 단서가 된다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스 뉴스룸 - SK하이닉스 뉴스룸",
+    "importance": 1
+  },
+  {
+    "id": "b3a5cd205acd",
+    "title": "[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9LTkRqNi1tX0ZRLVVGVmhIUFNCZ0ZxNUswd2swTEd5SFNMeVFmeGpQYi1MRWRxbnh1bGJnY2VtMEtaZ1p1U2N0YVp4QUlZdEtQV2d0dHg5NjUtZXRI",
+    "published": "2019-04-10",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:40+09:00",
+    "content_source": "rss/meta",
+    "main_point": "[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Company / General",
+    "why_it_matters": "[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸. 이 변화는 회사가 중요하게 보는 이슈가 향후 기술·사업 우선순위를 판단하는 단서가 된다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 3,
+        "reason": "Etch·Depo·Litho",
+        "dimensions": [
+          "Etch·Depo·Litho"
+        ],
+        "matched_keywords": [
+          "deposition"
+        ],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 실무와 중간 정도의 관련성이 있습니다. Etch·Depo·Litho를 중심으로 '[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸'이 공정 조건·Process Window·결함·미세화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 '[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "[반도체 특강] 화학적으로 막을 성장시키는 방법, CVD(Chemical Vapor Deposition) - SK하이닉스 뉴스룸",
+    "importance": 1
+  },
+  {
+    "id": "09d42bfa2473",
+    "title": "SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9SbFpNdWRwSk5oVFJ3WjMydFEzOGVVNnBIUGp4Ni1EUGhrMEp4ajhyQjBlRE0zMGNfdVFjU29nNWFNbHQwM05iX3lURENzRmVWakoxSEV1eC0",
+    "published": "2018-09-21",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:38+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "HBM / AI Memory",
+    "why_it_matters": "SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸. 이 변화는 AI 시스템의 성능 기준이 연산 성능뿐 아니라 메모리 용량·대역폭·전력 효율까지 확장되고 있다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 4,
+        "reason": "HBM·패키징 · 데이터 기반 개선",
+        "dimensions": [
+          "HBM·패키징",
+          "데이터 기반 개선"
+        ],
+        "matched_keywords": [
+          "hbm",
+          "ai"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 관점에서는 HBM·패키징·데이터 기반 개선가 핵심 연결점입니다. 'SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 2,
+        "reason": "데이터·자동화",
+        "dimensions": [
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 4,
+        "reason": "DRAM·HBM · AI 메모리",
+        "dimensions": [
+          "DRAM·HBM",
+          "AI 메모리"
+        ],
+        "matched_keywords": [
+          "hbm",
+          "ai"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 DRAM·HBM·AI 메모리가 핵심 연결점입니다. 'SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 4,
+        "reason": "AI·ML · AI Infra",
+        "dimensions": [
+          "AI·ML",
+          "AI Infra"
+        ],
+        "matched_keywords": [
+          "ai",
+          "hbm"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 관점에서는 AI·ML·AI Infra가 핵심 연결점입니다. 'SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      }
+    },
+    "takeaway": "양산기술 관점에서는 HBM·패키징·데이터 기반 개선가 핵심 연결점입니다. 'SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 4,
+      "reason": "HBM·패키징 · 데이터 기반 개선",
+      "dimensions": [
+        "HBM·패키징",
+        "데이터 기반 개선"
+      ],
+      "matched_keywords": [
+        "hbm",
+        "ai"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SKHynix AI HBM – SK hynix Newsroom - SK하이닉스 뉴스룸",
+    "importance": 4
+  },
+  {
+    "id": "679e84e4ba2a",
+    "title": "SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE52QXNraWhhMmVGb1BZSGYtaXgxNFdSWkxwQ181MFRBdXVONnBUQ2JKV0JyOUxzSmlxOVpZZl9aZE51bFZhZmJ2Nm1paWVPQmx1YUNRamprQ1J6dw",
+    "published": "2018-08-22",
+    "source": "SK hynix Newsroom",
+    "tags": [],
+    "created_at": "2026-09-15T21:46:39+09:00",
+    "content_source": "rss/meta",
+    "main_point": "SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸",
+    "key_points": [],
+    "category": "Company / General",
+    "why_it_matters": "SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸. 이 변화는 회사가 중요하게 보는 이슈가 향후 기술·사업 우선순위를 판단하는 단서가 된다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "SK하이닉스 구성원의 새로운 이름, 하이지니어 - SK하이닉스 뉴스룸",
+    "importance": 1
   }
 ]
