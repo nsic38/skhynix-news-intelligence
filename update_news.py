@@ -169,7 +169,7 @@ def fetch_rss_entries() -> list:
     seen_urls = set()
     seen_titles = set()
 
-    for entry in feed.entries[:RSS_SCAN_LIMIT]:
+for entry in feed.entries[:RSS_SCAN_LIMIT]:
         parsed = getattr(entry, "published_parsed", None)
 
         if not parsed:
