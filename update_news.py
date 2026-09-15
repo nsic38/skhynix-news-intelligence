@@ -196,90 +196,60 @@ def fetch_rss_entries() -> list:
     return unique
 
 def fetch_all_entries() -> list:
+    google_rss = (
+        "https://news.google.com/rss/search"
+        "?q=site%3Anews.skhynix.co.kr"
+        "&hl=ko"
+        "&gl=KR"
+        "&ceid=KR%3Ako"
+    )
+
     response = requests.get(
-        "https://r.jina.ai/https://news.skhynix.co.kr/all/",
+        google_rss,
         timeout=TIMEOUT,
         headers={"User-Agent": "Mozilla/5.0"},
     )
     response.raise_for_status()
 
-    text = response.text
-    print("===== JINA RESPONSE START =====")
-    print(text[:5000])
-    print("===== JINA RESPONSE END =====")
+    feed = feedparser.parse(response.content)
+
+    if not getattr(feed, "entries", []):
+        raise RuntimeError("Google News RSS에서도 기사를 찾지 못했습니다.")
 
     entries = []
-    seen_urls = set()
-    seen_titles = set()
 
-    # Markdown 링크 전부 추출
-    links = re.findall(
-        r"\[([^\]]+)\]\((https://news\.skhynix\.co\.kr/[^)]+)\)",
-        text
-    )
+    for entry in feed.entries[:RSS_SCAN_LIMIT]:
+        title = clean_text(getattr(entry, "title", ""))
 
-    for title, url in links:
-        title = clean_text(title)
-        url = normalize_url(url)
+        # Google News 제목 뒤의 출처명 제거
+        title = re.sub(r"\s*-\s*SK hynix Newsroom\s*$", "", title).strip()
 
-        if not title or len(title) < 8:
+        published = getattr(entry, "published", "")
+        parsed = getattr(entry, "published_parsed", None)
+
+        if not title or not parsed:
             continue
 
-        if is_blocked_item(title, url):
-            continue
+        dt = datetime(*parsed[:6], tzinfo=timezone.utc).astimezone(KST)
 
-        # 링크 주변 텍스트에서 날짜 찾기
-        pos = text.find(f"]({url}")
-        if pos == -1:
-            continue
-
-        nearby = text[pos:pos + 500]
-
-        date_match = re.search(
-            r"20\d{2}[-./]\d{1,2}[-./]\d{1,2}",
-            nearby
-        )
-
-        if not date_match:
-            continue
-
-        published = date_match.group(0).replace(".", "-").replace("/", "-")
-
-        parts = published.split("-")
-        published = f"{int(parts[0]):04d}-{int(parts[1]):02d}-{int(parts[2]):02d}"
-
-        ntitle = normalize_title(title)
-
-        if url in seen_urls or ntitle in seen_titles:
-            continue
-
-        year, month, day = map(int, published.split("-"))
-
-        entry = SimpleNamespace(
+        proxy_entry = SimpleNamespace(
             title=title,
-            link=url,
+            link=getattr(entry, "link", ""),
             published=published,
-            published_parsed=(year, month, day, 0, 0, 0, 0, 0, -1),
+            published_parsed=parsed,
             updated="",
             updated_parsed=None,
-            summary="",
-            description="",
+            summary=getattr(entry, "summary", ""),
+            description=getattr(entry, "summary", ""),
             tags=[],
         )
 
-        entries.append(entry)
-        seen_urls.add(url)
-        seen_titles.add(ntitle)
+        entries.append(proxy_entry)
 
     if not entries:
-        raise RuntimeError("Jina 경유 뉴스룸에서도 기사를 찾지 못했습니다.")
+        raise RuntimeError("Google News RSS에서도 유효한 기사를 찾지 못했습니다.")
 
-    entries.sort(
-        key=lambda e: e.published,
-        reverse=True,
-    )
-
-    return entries[:RSS_SCAN_LIMIT]
+    return entries
 
 def fetch_article_text(url: str) -> tuple[str, str, list[str]]:
     from bs4 import BeautifulSoup
