@@ -169,7 +169,7 @@ def fetch_rss_entries() -> list:
     seen_urls = set()
     seen_titles = set()
 
-for entry in feed.entries[:RSS_SCAN_LIMIT]:
+    for entry in feed.entries[:RSS_SCAN_LIMIT]:
         parsed = getattr(entry, "published_parsed", None)
 
         if not parsed:
@@ -181,6 +181,7 @@ for entry in feed.entries[:RSS_SCAN_LIMIT]:
 
         if dt < cutoff:
             continue
+
         title = clean_text(getattr(entry, "title", ""))
         url = normalize_url(getattr(entry, "link", ""))
         tags = [
@@ -191,12 +192,15 @@ for entry in feed.entries[:RSS_SCAN_LIMIT]:
 
         if not title or not url or is_blocked_item(title, url):
             continue
+
         if "shorts" in " ".join(tags).lower():
             continue
+
         if not parse_date(entry):
             continue
 
         ntitle = normalize_title(title)
+
         if url in seen_urls or ntitle in seen_titles:
             continue
 
