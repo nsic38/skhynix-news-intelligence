@@ -170,6 +170,17 @@ def fetch_rss_entries() -> list:
     seen_titles = set()
 
     for entry in feed.entries[:RSS_SCAN_LIMIT]:
+                parsed = getattr(entry, "published_parsed", None)
+
+        if not parsed:
+            continue
+
+        dt = datetime(*parsed[:6], tzinfo=timezone.utc).astimezone(KST)
+
+        cutoff = datetime.now(KST) - timedelta(days=7)
+
+        if dt < cutoff:
+            continue
         title = clean_text(getattr(entry, "title", ""))
         url = normalize_url(getattr(entry, "link", ""))
         tags = [
@@ -197,12 +208,12 @@ def fetch_rss_entries() -> list:
 
 def fetch_all_entries() -> list:
     google_rss = (
-        "https://news.google.com/rss/search"
-        "?q=site%3Anews.skhynix.co.kr"
-        "&hl=ko"
-        "&gl=KR"
-        "&ceid=KR%3Ako"
-    )
+    "https://news.google.com/rss/search"
+    "?q=site%3Anews.skhynix.co.kr%20when%3A7d"
+    "&hl=ko"
+    "&gl=KR"
+    "&ceid=KR%3Ako"
+)
 
     response = requests.get(
         google_rss,
