@@ -230,7 +230,12 @@ def fetch_all_entries() -> list:
     entries = []
 
     for entry in feed.entries[:RSS_SCAN_LIMIT]:
-        title = clean_text(getattr(entry, "title", ""))
+    print("TITLE:", getattr(entry, "title", ""))
+    print("LINK:", getattr(entry, "link", ""))
+    print("SUMMARY:", getattr(entry, "summary", ""))
+    print("SOURCE:", getattr(entry, "source", ""))
+
+    title = clean_text(getattr(entry, "title", ""))
 
         # Google News 제목 뒤의 출처명 제거
         title = re.sub(r"\s*-\s*SK hynix Newsroom\s*$", "", title).strip()
