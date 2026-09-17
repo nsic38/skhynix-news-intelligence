@@ -233,7 +233,7 @@ def fetch_all_entries() -> list:
 
     entries = []
 
-       for entry in feed.entries[:RSS_SCAN_LIMIT]:
+    for entry in feed.entries[:RSS_SCAN_LIMIT]:
         print("TITLE:", getattr(entry, "title", ""))
         print("LINK:", getattr(entry, "link", ""))
         print("SUMMARY:", getattr(entry, "summary", ""))
