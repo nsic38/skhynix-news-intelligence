@@ -22,7 +22,7 @@ STATE_FILE = ROOT / "data" / "state.json"
 RSS_SCAN_LIMIT = 30
 BOOTSTRAP_COUNT = 10
 TIMEOUT = 20
-REPAIR_VERSION = 2
+REPAIR_VERSION = 3
 KST = timezone(timedelta(hours=9))
 
 HEADERS = {
@@ -45,6 +45,8 @@ BLOCKED_TITLE_WORDS = (
 JUNK_BODY_WORDS = (
     "copyright", "무단전재", "재배포", "개인정보처리방침", "뉴스룸 이용안내",
     "뉴스룸 운영정책", "관련기사", "구독하기", "쿠키", "cookie", "이용약관",
+    "sk하이닉스 뉴스룸은", "다양한 소식과 반도체 시장의 변화하는 트렌드를 전달",
+    "sk hynix newsroom",
 )
 
 session = requests.Session()
@@ -57,6 +59,21 @@ def now_iso() -> str:
 
 def clean_text(value: str) -> str:
     return re.sub(r"\s+", " ", value or "").strip()
+
+
+def is_generic_newsroom_text(text: str) -> bool:
+    low = clean_text(text).lower()
+    if not low:
+        return False
+    return any(
+        marker in low
+        for marker in (
+            "sk하이닉스 뉴스룸은",
+            "다양한 소식과 반도체 시장의 변화하는 트렌드를 전달",
+            "sk hynix newsroom",
+            "반도체 시장의 변화하는 트렌드를 전달",
+        )
+    )
 
 
 def normalize_url(url: str) -> str:
@@ -145,7 +162,11 @@ def fetch_rss_entries() -> list:
 
         title = clean_text(getattr(entry, "title", ""))
         url = normalize_url(getattr(entry, "link", ""))
-        tags = [getattr(x, "term", "") for x in (getattr(entry, "tags", []) or []) if getattr(x, "term", "")]
+        tags = [
+            getattr(x, "term", "")
+            for x in (getattr(entry, "tags", []) or [])
+            if getattr(x, "term", "")
+        ]
         if not title or not url or is_blocked_item(title, url) or "shorts" in " ".join(tags).lower():
             continue
 
@@ -179,11 +200,15 @@ def fetch_article_data(url: str) -> tuple[str, str, list[str], str]:
     soup = BeautifulSoup(response.text, "html.parser")
 
     description = ""
-    for attrs in ({"property": "og:description"}, {"name": "description"}, {"name": "twitter:description"}):
+    for attrs in (
+        {"property": "og:description"},
+        {"name": "description"},
+        {"name": "twitter:description"},
+    ):
         node = soup.find("meta", attrs=attrs)
         if node and node.get("content"):
             value = clean_text(node["content"])
-            if len(value) >= 30:
+            if len(value) >= 30 and not is_generic_newsroom_text(value):
                 description = value
                 break
 
@@ -208,10 +233,12 @@ def fetch_article_data(url: str) -> tuple[str, str, list[str], str]:
             article_body = obj.get("articleBody")
             if isinstance(article_body, str):
                 candidate = clean_text(article_body)
-                if len(candidate) > len(body):
+                if not is_generic_newsroom_text(candidate) and len(candidate) > len(body):
                     body = candidate
             if not description and isinstance(obj.get("description"), str):
-                description = clean_text(obj["description"])
+                candidate_desc = clean_text(obj["description"])
+                if not is_generic_newsroom_text(candidate_desc):
+                    description = candidate_desc
 
     if not page_date:
         for attrs in (
@@ -232,7 +259,10 @@ def fetch_article_data(url: str) -> tuple[str, str, list[str], str]:
                 break
 
     if not page_date:
-        for selector in (".date", ".post-date", ".article-date", ".view-date", ".view_date", ".publish-date", ".published"):
+        for selector in (
+            ".date", ".post-date", ".article-date", ".view-date",
+            ".view_date", ".publish-date", ".published",
+        ):
             for node in soup.select(selector):
                 page_date = normalize_page_date(node.get_text(" ", strip=True))
                 if page_date:
@@ -241,19 +271,31 @@ def fetch_article_data(url: str) -> tuple[str, str, list[str], str]:
                 break
 
     if len(body) < 200:
-        for bad in soup(["script", "style", "noscript", "nav", "footer", "header", "aside", "form", "button", "svg"]):
+        for bad in soup([
+            "script", "style", "noscript", "nav", "footer", "header",
+            "aside", "form", "button", "svg",
+        ]):
             bad.decompose()
+
         selectors = (
-            "article p", ".article-content p", ".article_content p", ".article-body p", ".article_body p",
-            ".entry-content p", ".post-content p", ".post_content p", ".view_cont p", ".view-content p",
-            ".view_content p", ".news-content p", ".news_content p", ".newsroom-content p", ".contents p",
-            ".content p", ".content-area p", "main p", "[class*='article'] p", "[class*='content'] p",
+            "article p", ".article-content p", ".article_content p",
+            ".article-body p", ".article_body p", ".entry-content p",
+            ".post-content p", ".post_content p", ".view_cont p",
+            ".view-content p", ".view_content p", ".news-content p",
+            ".news_content p", ".newsroom-content p", ".contents p",
+            ".content p", ".content-area p", "main p",
+            "[class*='article'] p", "[class*='content'] p",
         )
         for selector in selectors:
             paragraphs, seen = [], set()
             for p in soup.select(selector):
                 text = clean_text(p.get_text(" ", strip=True))
-                if len(text) < 20 or text in seen or any(j in text.lower() for j in JUNK_BODY_WORDS):
+                if (
+                    len(text) < 20
+                    or text in seen
+                    or is_generic_newsroom_text(text)
+                    or any(j in text.lower() for j in JUNK_BODY_WORDS)
+                ):
                     continue
                 seen.add(text)
                 paragraphs.append(text)
@@ -265,7 +307,12 @@ def fetch_article_data(url: str) -> tuple[str, str, list[str], str]:
         paragraphs, seen = [], set()
         for p in soup.find_all("p"):
             text = clean_text(p.get_text(" ", strip=True))
-            if len(text) < 20 or text in seen or any(j in text.lower() for j in JUNK_BODY_WORDS):
+            if (
+                len(text) < 20
+                or text in seen
+                or is_generic_newsroom_text(text)
+                or any(j in text.lower() for j in JUNK_BODY_WORDS)
+            ):
                 continue
             seen.add(text)
             paragraphs.append(text)
@@ -276,40 +323,102 @@ def fetch_article_data(url: str) -> tuple[str, str, list[str], str]:
     return description, body, tags, page_date
 
 
-def fallback_key_points(title: str, description: str, body: str) -> list[str]:
-    source = clean_text(body if len(clean_text(body)) >= 80 else description)
-    if not source:
-        return []
-    chunks = re.split(r"(?<=[.!?])\s+", source)
+def title_fallback_points(title: str) -> list[str]:
+    text = clean_text(title)
+    text = re.sub(r"^SK하이닉스\s*[,，]\s*", "", text, flags=re.IGNORECASE)
+    pieces = re.split(r"(?:…+|\.{3,}|[“”\"']+)", text)
+
     points = []
-    for chunk in chunks:
-        chunk = clean_text(chunk)
-        if 25 <= len(chunk) <= 220 and chunk not in points:
-            points.append(chunk[:150].rstrip(" ,.;:") + ("..." if len(chunk) > 150 else ""))
+    for piece in pieces:
+        piece = clean_text(piece.strip(" -–—,，:;"))
+        if len(piece) < 12:
+            continue
+        if piece not in points:
+            points.append(piece[:150])
         if len(points) == 3:
             break
-    if not points and len(source) >= 25:
-        points = [source[:150].rstrip(" ,.;:") + ("..." if len(source) > 150 else "")]
+
+    if not points and len(text) >= 12:
+        points = [text[:150]]
     return points
 
 
-def run_analysis(title: str, description: str, body: str, tags: list[str]) -> dict:
-    analysis = analyze_article(title, description, body, tags)
-    if not analysis.get("key_points"):
-        points = fallback_key_points(title, description, body)
+def fallback_key_points(title: str, description: str, body: str) -> list[str]:
+    source = clean_text(body if len(clean_text(body)) >= 80 else description)
+
+    if source and not is_generic_newsroom_text(source):
+        chunks = re.split(r"(?<=[.!?])\s+", source)
+        points = []
+
+        for chunk in chunks:
+            chunk = clean_text(chunk)
+            if (
+                25 <= len(chunk) <= 220
+                and chunk not in points
+                and not is_generic_newsroom_text(chunk)
+                and not any(j in chunk.lower() for j in JUNK_BODY_WORDS)
+            ):
+                points.append(
+                    chunk[:150].rstrip(" ,.;:")
+                    + ("..." if len(chunk) > 150 else "")
+                )
+            if len(points) == 3:
+                break
+
         if points:
-            analysis["key_points"] = points
-            if not analysis.get("main_point") or analysis.get("main_point") == title:
-                analysis["main_point"] = points[0][:125]
-                analysis["one_liner"] = analysis["main_point"]
+            return points
+
+    return title_fallback_points(title)
+
+
+def run_analysis(title: str, description: str, body: str, tags: list[str]) -> dict:
+    if is_generic_newsroom_text(description):
+        description = ""
+
+    analysis = analyze_article(title, description, body, tags)
+
+    cleaned_points = [
+        clean_text(point)
+        for point in (analysis.get("key_points") or [])
+        if clean_text(point)
+        and not is_generic_newsroom_text(point)
+        and not any(j in clean_text(point).lower() for j in JUNK_BODY_WORDS)
+    ]
+    analysis["key_points"] = cleaned_points[:3]
+
+    if is_generic_newsroom_text(analysis.get("main_point", "")):
+        analysis["main_point"] = title
+        analysis["one_liner"] = title
+
+    if not analysis["key_points"]:
+        points = fallback_key_points(title, description, body)
+        analysis["key_points"] = points[:3]
+        if points and (
+            not analysis.get("main_point")
+            or analysis.get("main_point") == title
+            or is_generic_newsroom_text(analysis.get("main_point", ""))
+        ):
+            analysis["main_point"] = points[0][:125]
+            analysis["one_liner"] = analysis["main_point"]
+
     return analysis
 
 
 def build_record(entry) -> dict:
     title = clean_text(getattr(entry, "title", ""))
     url = normalize_url(getattr(entry, "link", ""))
-    rss_description = clean_text(getattr(entry, "summary", "") or getattr(entry, "description", ""))
-    rss_tags = [getattr(x, "term", "") for x in (getattr(entry, "tags", []) or []) if getattr(x, "term", "")]
+
+    rss_description = clean_text(
+        getattr(entry, "summary", "") or getattr(entry, "description", "")
+    )
+    if is_generic_newsroom_text(rss_description):
+        rss_description = ""
+
+    rss_tags = [
+        getattr(x, "term", "")
+        for x in (getattr(entry, "tags", []) or [])
+        if getattr(x, "term", "")
+    ]
 
     description, body, page_tags, page_date = "", "", [], ""
     try:
@@ -319,6 +428,7 @@ def build_record(entry) -> dict:
 
     tags = list(dict.fromkeys([x for x in rss_tags + page_tags if x]))
     analysis = run_analysis(title, description or rss_description, body, tags)
+
     return {
         "id": hashlib.sha1(url.encode("utf-8")).hexdigest()[:12],
         "title": title,
@@ -336,11 +446,13 @@ def build_record(entry) -> dict:
 
 def clean_existing_articles(articles: list[dict]) -> tuple[list[dict], int]:
     cleaned, seen_urls, seen_titles, removed = [], set(), set(), 0
+
     for article in articles:
         title = clean_text(article.get("title", ""))
         url = normalize_url(article.get("url", ""))
         published = clean_text(article.get("published", ""))
         ntitle = normalize_title(title)
+
         if (
             not title or not url or is_blocked_item(title, url)
             or not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", published)
@@ -348,22 +460,46 @@ def clean_existing_articles(articles: list[dict]) -> tuple[list[dict], int]:
         ):
             removed += 1
             continue
+
         seen_urls.add(url)
         seen_titles.add(ntitle)
         cleaned.append(article)
+
     return cleaned, removed
+
+
+def article_needs_repair(article: dict) -> bool:
+    if int(article.get("repair_version", 0) or 0) >= REPAIR_VERSION:
+        return False
+
+    key_points = article.get("key_points") or []
+    has_bad_point = any(is_generic_newsroom_text(point) for point in key_points)
+    has_no_points = not key_points
+    bad_main = is_generic_newsroom_text(article.get("main_point", ""))
+    unreliable_date = article.get("date_source") != "page"
+
+    return has_bad_point or has_no_points or bad_main or unreliable_date
 
 
 def repair_existing_articles(articles: list[dict]) -> tuple[int, int]:
     repaired, failed = 0, 0
+
     for i, article in enumerate(articles, 1):
-        if int(article.get("repair_version", 0) or 0) >= REPAIR_VERSION:
+        current_version = int(article.get("repair_version", 0) or 0)
+        if current_version >= REPAIR_VERSION:
             continue
+
+        if not article_needs_repair(article):
+            article["repair_version"] = REPAIR_VERSION
+            continue
+
         url = normalize_url(article.get("url", ""))
         title = clean_text(article.get("title", ""))
+
         if "news.skhynix.co.kr" not in urlsplit(url).netloc:
             article["repair_version"] = REPAIR_VERSION
             continue
+
         try:
             description, body, page_tags, page_date = fetch_article_data(url)
         except Exception as exc:
@@ -371,17 +507,23 @@ def repair_existing_articles(articles: list[dict]) -> tuple[int, int]:
             print(f"  -> 기존 기사 재검증 실패 [{i}/{len(articles)}]: {title} / {exc}")
             continue
 
-        tags = list(dict.fromkeys([x for x in list(article.get("tags", [])) + page_tags if x]))
+        tags = list(dict.fromkeys([
+            x for x in list(article.get("tags", [])) + page_tags if x
+        ]))
+
         article.update(run_analysis(title, description, body, tags))
         article["tags"] = tags
+
         if page_date:
             article["published"] = page_date
             article["date_source"] = "page"
         else:
             article.setdefault("date_source", "rss")
+
         article["content_source"] = "article" if len(body) >= 120 else "rss/meta"
         article["repair_version"] = REPAIR_VERSION
         repaired += 1
+
     return repaired, failed
 
 
@@ -396,6 +538,7 @@ def main() -> int:
 
     articles, removed = clean_existing_articles(articles)
     repaired, repair_failed = repair_existing_articles(articles)
+
     if repaired or repair_failed:
         print(f"기존 기사 재검증: 성공 {repaired}개 / 실패 {repair_failed}개")
 
@@ -408,42 +551,58 @@ def main() -> int:
 
     existing_urls = {normalize_url(a.get("url", "")) for a in articles}
     existing_titles = {normalize_title(a.get("title", "")) for a in articles}
+
     if not articles:
         targets = entries[:BOOTSTRAP_COUNT]
     else:
-        targets = [e for e in entries if (
-            normalize_url(getattr(e, "link", "")) not in existing_urls
+        targets = [
+            e for e in entries
+            if normalize_url(getattr(e, "link", "")) not in existing_urls
             and normalize_title(getattr(e, "title", "")) not in existing_titles
-        )]
+        ]
+
     print(f"기존 기사 {len(articles)}개 / 새 기사 {len(targets)}개")
 
     added = []
     for i, entry in enumerate(reversed(targets), 1):
         title = clean_text(getattr(entry, "title", ""))
         print(f"[{i}/{len(targets)}] 새 기사 처리: {title}")
+
         try:
             record = build_record(entry)
         except Exception as exc:
             print(f"  -> 처리 실패: {exc}")
             continue
+
         url_key = normalize_url(record["url"])
         title_key = normalize_title(record["title"])
-        if is_blocked_item(record["title"], record["url"]) or url_key in existing_urls or title_key in existing_titles:
+
+        if (
+            is_blocked_item(record["title"], record["url"])
+            or url_key in existing_urls
+            or title_key in existing_titles
+        ):
             continue
+
         articles.append(record)
         added.append(record)
         existing_urls.add(url_key)
         existing_titles.add(title_key)
 
-    articles.sort(key=lambda x: (x.get("published", ""), x.get("created_at", "")), reverse=True)
+    articles.sort(
+        key=lambda x: (x.get("published", ""), x.get("created_at", "")),
+        reverse=True,
+    )
     save_json(DATA_FILE, articles)
 
     checked_at = now_iso()
     state["last_checked_at"] = checked_at
     state["last_new_count"] = len(added)
     state["total_articles"] = len(articles)
+
     if added or repaired:
         state["last_updated_at"] = checked_at
+
     save_json(STATE_FILE, state)
 
     print()
