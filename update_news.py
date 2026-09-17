@@ -22,7 +22,7 @@ STATE_FILE = ROOT / "data" / "state.json"
 RSS_SCAN_LIMIT = 30
 BOOTSTRAP_COUNT = 10
 TIMEOUT = 20
-REPAIR_VERSION = 5
+REPAIR_VERSION = 6
 KST = timezone(timedelta(hours=9))
 
 HEADERS = {
@@ -102,10 +102,15 @@ def save_json(path: Path, value) -> None:
 
 
 def is_blocked_item(title: str, url: str) -> bool:
-    path = urlsplit(url).path.lower()
+    parsed = urlsplit(url)
+    host = parsed.netloc.lower()
+    path = parsed.path.lower()
 
-    # 카테고리/목록 페이지가 기사처럼 저장된 경우만 제거한다.
-    # 예: "MEDIA – 페이지 190 - SK하이닉스 뉴스룸"
+    # 실제 SK hynix Newsroom 기사만 유지한다.
+    # 과거 Google News fallback이 만든 프록시/검색/태그/목록 결과는 제외한다.
+    if host != "news.skhynix.co.kr":
+        return True
+
     if re.search(r"페이지\s*\d+", title, flags=re.IGNORECASE) and "SK하이닉스 뉴스룸" in title:
         return True
 
@@ -616,7 +621,7 @@ def main() -> int:
     print(
         f"완료: 새 기사 {len(added)}개 / 누적 {len(articles)}개 / "
         f"기존 기사 재검증 {repaired}개 / 실패 {repair_failed}개 / "
-        f"잘못된 항목 제거 {removed}개"
+        f"비기사/프록시 항목 제거 {removed}개"
     )
     return 0
 
