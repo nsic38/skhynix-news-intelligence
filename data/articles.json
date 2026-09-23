@@ -1,5 +1,288 @@
 [
   {
+    "id": "619a915a6647",
+    "title": "[미래인재 CLASS] AI 시대의 전력난(難), 해법은 메모리로부터…",
+    "url": "https://news.skhynix.co.kr/future-talents-class-ep4-07",
+    "published": "2026-09-23",
+    "date_source": "page",
+    "source": "SK hynix Newsroom",
+    "tags": [
+      "MEDIA",
+      "HBM",
+      "LPDDR",
+      "저전력 메모리"
+    ],
+    "created_at": "2026-09-23T10:16:10+09:00",
+    "content_source": "rss/meta",
+    "repair_version": 6,
+    "main_point": "▲ 메모리에서의 전하 소모 (데이터 이동 중 소모)",
+    "key_points": [
+      "▲ 메모리에서의 전하 소모 (데이터 이동 중 소모)"
+    ],
+    "category": "AI / Infrastructure",
+    "why_it_matters": "▲ 메모리에서의 전하 소모 (데이터 이동 중 소모). 이 변화는 AI 워크로드 변화가 메모리의 역할과 요구 사양을 직접 바꾸고 있다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 3,
+        "reason": "데이터 기반 개선 · HBM·패키징",
+        "dimensions": [
+          "데이터 기반 개선",
+          "HBM·패키징"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai",
+          "hbm"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. 데이터 기반 개선·HBM·패키징를 중심으로 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모)'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 3,
+        "reason": "데이터·자동화",
+        "dimensions": [
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 실무와 중간 정도의 관련성이 있습니다. 데이터·자동화를 중심으로 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모)'이 TAT·WIP·병목·생산계획·납기에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모)'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 2,
+        "reason": "자동화",
+        "dimensions": [
+          "자동화"
+        ],
+        "matched_keywords": [
+          "데이터"
+        ],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모)'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모)'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 5,
+        "reason": "DRAM·HBM · 성능·전력 · AI 메모리",
+        "dimensions": [
+          "DRAM·HBM",
+          "성능·전력",
+          "AI 메모리"
+        ],
+        "matched_keywords": [
+          "hbm",
+          "lpddr",
+          "메모리",
+          "전력",
+          "ai"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 DRAM·HBM·성능·전력·AI 메모리가 핵심 연결점입니다. '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모)'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 2,
+        "reason": "데이터 연계",
+        "dimensions": [
+          "데이터 연계"
+        ],
+        "matched_keywords": [
+          "데이터"
+        ],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모)'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 4,
+        "reason": "AI·ML · 데이터 분석 · AI Infra",
+        "dimensions": [
+          "AI·ML",
+          "데이터 분석",
+          "AI Infra"
+        ],
+        "matched_keywords": [
+          "ai",
+          "데이터",
+          "hbm"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 관점에서는 AI·ML·데이터 분석·AI Infra가 핵심 연결점입니다. '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모)'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      }
+    },
+    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. 데이터 기반 개선·HBM·패키징를 중심으로 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모)'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 3,
+      "reason": "데이터 기반 개선 · HBM·패키징",
+      "dimensions": [
+        "데이터 기반 개선",
+        "HBM·패키징"
+      ],
+      "matched_keywords": [
+        "데이터",
+        "ai",
+        "hbm"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "▲ 메모리에서의 전하 소모 (데이터 이동 중 소모)",
+    "importance": 3
+  },
+  {
+    "id": "91b889f60ddc",
+    "title": "SK하이닉스, ‘2026 글로벌 포럼’ 개최… AI 시대 기술 비전과 미래 전략 공유",
+    "url": "https://news.skhynix.co.kr/2026-global-forum-15",
+    "published": "2026-09-21",
+    "date_source": "page",
+    "source": "SK hynix Newsroom",
+    "tags": [
+      "MEDIA",
+      "AI 메모리",
+      "글로벌포럼",
+      "인재양성"
+    ],
+    "created_at": "2026-09-23T10:16:08+09:00",
+    "content_source": "rss/meta",
+    "repair_version": 6,
+    "main_point": "<p><a href=\"https://news.skhynix.co.kr/2026-global-forum-15/\">출처</a></p>",
+    "key_points": [
+      "<p><a href=\"https://news.skhynix.co.kr/2026-global-forum-15/\">출처</a></p>"
+    ],
+    "category": "AI / Infrastructure",
+    "why_it_matters": "SK하이닉스, ‘2026 글로벌 포럼’ 개최… AI 시대 기술 비전과 미래 전략 공유. 이 변화는 AI 워크로드 변화가 메모리의 역할과 요구 사양을 직접 바꾸고 있다는 점에서 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 2,
+        "reason": "데이터 기반 개선",
+        "dimensions": [
+          "데이터 기반 개선"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, ‘2026 글로벌 포럼’ 개최… AI 시대 기술 비전과 미래 전략 공유'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 2,
+        "reason": "데이터·자동화",
+        "dimensions": [
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, ‘2026 글로벌 포럼’ 개최… AI 시대 기술 비전과 미래 전략 공유'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, ‘2026 글로벌 포럼’ 개최… AI 시대 기술 비전과 미래 전략 공유'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, ‘2026 글로벌 포럼’ 개최… AI 시대 기술 비전과 미래 전략 공유'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, ‘2026 글로벌 포럼’ 개최… AI 시대 기술 비전과 미래 전략 공유'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 3,
+        "reason": "AI 메모리 · DRAM·HBM",
+        "dimensions": [
+          "AI 메모리",
+          "DRAM·HBM"
+        ],
+        "matched_keywords": [
+          "ai",
+          "메모리"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 실무와 중간 정도의 관련성이 있습니다. AI 메모리·DRAM·HBM를 중심으로 'SK하이닉스, ‘2026 글로벌 포럼’ 개최… AI 시대 기술 비전과 미래 전략 공유'이 메모리 구조·성능·전력·제품 로드맵에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, ‘2026 글로벌 포럼’ 개최… AI 시대 기술 비전과 미래 전략 공유'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 3,
+        "reason": "AI·ML",
+        "dimensions": [
+          "AI·ML"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 실무와 중간 정도의 관련성이 있습니다. AI·ML를 중심으로 'SK하이닉스, ‘2026 글로벌 포럼’ 개최… AI 시대 기술 비전과 미래 전략 공유'이 데이터 분석·ML·예측·최적화·AI 서비스에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      }
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스, ‘2026 글로벌 포럼’ 개최… AI 시대 기술 비전과 미래 전략 공유'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 2,
+      "reason": "데이터 기반 개선",
+      "dimensions": [
+        "데이터 기반 개선"
+      ],
+      "matched_keywords": [
+        "ai"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "<p><a href=\"https://news.skhynix.co.kr/2026-global-forum-15/\">출처</a></p>",
+    "importance": 2
+  },
+  {
     "id": "982b8a5090f6",
     "title": "SK하이닉스, ‘AI Infra Summit 2026’ 참가… AI 인프라의 ‘New Spectrum’ 제시",
     "url": "https://news.skhynix.co.kr/ai-infra-summit-2026",
