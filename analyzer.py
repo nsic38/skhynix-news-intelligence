@@ -88,7 +88,17 @@ TOPICS = [
 def clean(text: str) -> str:
     text = html.unescape(text or "")
     text = re.sub(r"<[^>]+>", " ", text)
-    return re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"\s+", " ", text).strip()
+
+    # 뉴스룸 섹션 레이블은 내용이 아니므로 제거
+    text = re.sub(
+        r"^(?:PRESS|STORY|FACT|MEDIA)\s*[:|\-]?\s*",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    return text.strip()
 
 
 def trim(text: str, limit: int) -> str:
@@ -158,18 +168,29 @@ def is_junk(text: str) -> bool:
 
 def sentences(text: str) -> list[str]:
     text = clean(text)
+
     if not text:
         return []
 
-    parts = re.split(r"(?<=[.!?])\s+|(?<=다\.)\s+", text)
+    parts = re.split(
+        r"(?<=[.!?。！？])\s+",
+        text
+    )
+
     result = []
 
     for part in parts:
-        part = clean(part.strip(" •-\t"))
-        if len(part) < 28 or len(part) > 380:
+        part = clean(
+            part.strip(" •-\t")
+        )
+
+        # 지나치게 짧거나 긴 문장은 핵심 요약 후보에서 제외
+        if len(part) < 30 or len(part) > 320:
             continue
+
         if is_junk(part):
             continue
+
         if part not in result:
             result.append(part)
 
@@ -216,71 +237,269 @@ def jaccard(a: str, b: str) -> float:
 
 def rewrite_point(sentence: str) -> str:
     text = clean(sentence)
+
+    # 문장 앞의 불필요한 접속 표현 제거
     text = re.sub(
-        r"^(한편|또한|아울러|특히|이날|이어|그러면서|그는|회사는)\s*[,，]?\s*",
+        r"^(한편|또한|아울러|특히|이날|이어|그러면서|그는|회사는)"
+        r"\s*[,，]?\s*",
         "",
         text,
     )
+
+    # 기사 문체의 발언 표기 제거
     text = re.sub(
-        r"\s*(?:라고|고)\s*(?:밝혔다|말했다|설명했다|강조했다|전했다|덧붙였다)\.?\s*$",
+        r"\s*[”\"'’]?\s*"
+        r"(?:이라고|라고|고)\s*"
+        r"(?:밝혔다|말했다|설명했다|강조했다|전했다|덧붙였다)"
+        r"\.?\s*$",
         "",
         text,
     )
-    text = text.strip(" \"'“”‘’")
-    text = trim(text, 150)
-    if text.endswith("."):
-        text = text[:-1]
-    return text
+
+    text = text.strip(
+        " \"'“”‘’"
+    )
+
+    # 핵심 원칙:
+    # 긴 문장을 중간에서 자르지 않는다.
+    # 너무 길다면 해당 문장은 핵심 후보에서 제외한다.
+    if len(text) < 30 or len(text) > 220:
+        return ""
+
+    # 표시 시 마침표만 제거
+    return text.rstrip(".")
 
 
-def ranked_points(title: str, body: str, description: str) -> list[tuple[float, str]]:
-    source = body if len(clean(body)) >= 120 else description
+def ranked_points(
+    title: str,
+    body: str,
+    description: str
+) -> list[tuple[float, str]]:
+
+    source = (
+        body
+        if len(clean(body)) >= 120
+        else description
+    )
+
     pool = sentences(source)
+
     if not pool:
         return []
 
-    freq = Counter(tokens(" ".join(pool)))
-    title_words = set(tokens(title))
+    freq = Counter(
+        tokens(" ".join(pool))
+    )
+
+    title_words = set(
+        tokens(title)
+    )
+
     ranked = []
 
     for index, sentence in enumerate(pool):
         ws = tokens(sentence)
+
         if not ws:
             continue
 
-        content_score = sum(math.log1p(freq[w]) for w in ws) / len(ws)
-        title_score = len(title_words.intersection(ws)) * 0.48
-        position_score = max(0.0, 0.30 - index * 0.007)
-        score = semantic_score(sentence) + content_score + title_score + position_score
+        content_score = (
+            sum(
+                math.log1p(freq[w])
+                for w in ws
+            )
+            / len(ws)
+        )
+
+        # 제목과 연결되는 내용은 중요도를 높임
+        title_score = (
+            len(
+                title_words.intersection(ws)
+            )
+            * 0.60
+        )
+
+        # 기사 앞부분을 약간 우선
+        position_score = max(
+            0.0,
+            0.30 - index * 0.007
+        )
+
+        score = (
+            semantic_score(sentence)
+            + content_score
+            + title_score
+            + position_score
+        )
 
         point = rewrite_point(sentence)
-        if len(point) < 25 or is_junk(point):
+
+        if (
+            len(point) < 30
+            or is_junk(point)
+        ):
             continue
 
-        ranked.append((score, point))
+        # 읽기 좋은 길이의 완전한 문장 우선
+        if 45 <= len(point) <= 155:
+            score += 0.70
+        elif len(point) <= 190:
+            score += 0.30
+        else:
+            score -= 0.60
 
-    ranked.sort(reverse=True)
+        # 행사성·의례성 표현은 핵심도 하향
+        low = point.lower()
+
+        if any(
+            word in low
+            for word in (
+                "감사드린",
+                "기념촬영",
+                "행사 현장",
+                "축사를",
+                "환영사를",
+            )
+        ):
+            score -= 1.20
+
+        ranked.append(
+            (score, point)
+        )
+
+    ranked.sort(
+        reverse=True
+    )
 
     deduped = []
+
     for score, point in ranked:
-        if any(jaccard(point, existing) > 0.62 for _, existing in deduped):
+
+        if any(
+            jaccard(
+                point,
+                existing
+            ) > 0.52
+            for _, existing in deduped
+        ):
             continue
-        deduped.append((score, point))
+
+        deduped.append(
+            (score, point)
+        )
 
     return deduped
 
 
-def extract_key_points(title: str, body: str, description: str, limit: int = 3) -> list[str]:
-    return [point for _, point in ranked_points(title, body, description)[:limit]]
+def extract_key_points(
+    title: str,
+    body: str,
+    description: str,
+    limit: int = 3
+) -> list[str]:
+
+    ranked = ranked_points(
+        title,
+        body,
+        description
+    )
+
+    selected = []
+
+    # 제목과 거의 같은 문장은 MAIN POINT와 중복되므로 제외
+    for _, point in ranked:
+
+        if jaccard(
+            point,
+            title
+        ) > 0.72:
+            continue
+
+        if any(
+            jaccard(
+                point,
+                existing
+            ) > 0.52
+            for existing in selected
+        ):
+            continue
+
+        selected.append(point)
+
+        if len(selected) >= limit:
+            break
+
+    # 제목과 비슷한 문장을 제외해서 너무 적어진 경우에는
+    # 다음으로 좋은 완전한 문장을 보충
+    if len(selected) < min(2, limit):
+
+        for _, point in ranked:
+
+            if point in selected:
+                continue
+
+            if any(
+                jaccard(
+                    point,
+                    existing
+                ) > 0.52
+                for existing in selected
+            ):
+                continue
+
+            selected.append(point)
+
+            if len(selected) >= limit:
+                break
+
+    return selected[:limit]
 
 
-def build_main_point(title: str, body: str, description: str, key_points: list[str]) -> str:
-    ranked = ranked_points(title, body, description)
+def build_main_point(
+    title: str,
+    body: str,
+    description: str,
+    key_points: list[str]
+) -> str:
+
+    text = clean(title)
+
+    # [미래인재 CLASS] 등 시리즈 표시는 요약 문장에서 제거
+    text = re.sub(
+        r"^\[[^\]]+\]\s*",
+        "",
+        text,
+    )
+
+    # 제목 뒤 뉴스룸 표기 제거
+    text = re.sub(
+        r"\s*[-–—]\s*SK하이닉스 뉴스룸\s*$",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    text = text.strip(
+        " -–—,，:;.…"
+    )
+
+    # 제목 자체가 가장 안정적인 '무슨 기사인가' 설명
+    if 15 <= len(text) <= 190:
+        return text
+
+    ranked = ranked_points(
+        title,
+        body,
+        description
+    )
+
     if ranked:
-        return trim(ranked[0][1], 125)
+        return ranked[0][1]
+
     if key_points:
-        return trim(key_points[0], 125)
-    return trim(title, 125)
+        return key_points[0]
+
+    return text
 
 
 def detect_topic(title: str, tags: list[str], body: str, key_points: list[str]) -> dict:
@@ -320,17 +539,31 @@ def detect_topic(title: str, tags: list[str], body: str, key_points: list[str]) 
     }
 
 
-def build_why_it_matters(*, main_point: str, key_points: list[str], topic: dict) -> str:
-    second = next((point for point in key_points if point != main_point), "")
+def build_why_it_matters(
+    *,
+    main_point: str,
+    key_points: list[str],
+    topic: dict
+) -> str:
 
-    if second:
+    # MAIN POINT / KEY POINTS를 반복하지 않고 의미만 전달
+    impact = clean(
+        topic.get(
+            "impact",
+            ""
+        )
+    )
+
+    if impact:
         return (
-            f"{main_point}. "
-            f"또한 {trim(second, 115)}. "
-            f"이 두 변화는 {topic['impact']}에서 중요합니다."
+            f"핵심 의미는 {impact}입니다."
         )
 
-    return f"{main_point}. 이 변화는 {topic['impact']}에서 중요합니다."
+    return (
+        "기사에서 나타난 변화가 "
+        "SK하이닉스의 기술·사업 방향과 "
+        "어떻게 연결되는지 확인할 필요가 있습니다."
+    )
 
 
 def build_role_takeaway(*, main_point: str, role_relevance: dict) -> str:
@@ -450,3 +683,773 @@ def analyze_article(title: str, description: str, body: str, tags: list[str]) ->
         "one_liner": main_point,
         "importance": default["score"],
     }
+
+# === V11 SUMMARY OVERRIDE ===
+
+def _v11_clean_text(text: str) -> str:
+    text = html.unescape(text or "")
+    text = re.sub(r"<[^>]+>", " ", text)
+    text = re.sub(r"\s+", " ", text).strip()
+
+    text = re.sub(
+        r"^(?:(?:PRESS|STORY|FACT|MEDIA)\s*)+",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    return text.strip()
+
+
+def _v11_split_sentences(text: str) -> list[str]:
+    text = _v11_clean_text(text)
+
+    if not text:
+        return []
+
+    text = re.sub(
+        r'([.!?])[”"]\s+',
+        r"\1\n",
+        text
+    )
+
+    text = re.sub(
+        r"([.!?])\s+",
+        r"\1\n",
+        text
+    )
+
+    out = []
+
+    for part in text.splitlines():
+        part = _v11_clean_text(part).strip(" -•")
+
+        if 35 <= len(part) <= 220 and part not in out:
+            out.append(part)
+
+    return out
+
+
+def _v11_key_points(
+    title: str,
+    body: str,
+    description: str,
+    limit: int = 3
+) -> list[str]:
+
+    source = (
+        body
+        if len(_v11_clean_text(body)) >= 120
+        else description
+    )
+
+    source = _v11_clean_text(source)
+    clean_title = _v11_clean_text(title)
+
+    for _ in range(2):
+
+        source = re.sub(
+            r"^(?:(?:PRESS|STORY|FACT|MEDIA)\s*)+",
+            "",
+            source,
+            flags=re.IGNORECASE,
+        ).strip()
+
+        if (
+            clean_title
+            and source.startswith(clean_title)
+        ):
+            source = source[
+                len(clean_title):
+            ].strip()
+
+    candidates = []
+
+    title_words = set(
+        tokens(clean_title)
+    )
+
+    action_words = (
+        "추진", "투자", "확대", "개발",
+        "양산", "생산", "구축", "지원",
+        "공급", "수요", "건설", "확보",
+        "계획", "목표", "출시", "성장",
+        "증가", "절감", "개선", "전환"
+    )
+
+    for idx, sentence in enumerate(
+        _v11_split_sentences(source)
+    ):
+
+        low = sentence.lower()
+
+        if any(
+            x in low
+            for x in (
+                "copyright",
+                "무단전재",
+                "재배포",
+                "관련기사",
+                "구독하기"
+            )
+        ):
+            continue
+
+        if "http://" in low or "https://" in low:
+            continue
+
+        if re.search(
+            r"[▲△■●◆◇▶▷]",
+            sentence
+        ):
+            continue
+
+        if any(
+            x in sentence
+            for x in (
+                "행사 현장",
+                "기념촬영",
+                "환영사",
+                "축사"
+            )
+        ):
+            continue
+
+        words = set(
+            tokens(sentence)
+        )
+
+        overlap = (
+            len(title_words & words)
+            * 0.45
+        )
+
+        action = sum(
+            0.35
+            for word in action_words
+            if word in sentence
+        )
+
+        position = max(
+            0.0,
+            0.5 - idx * 0.02
+        )
+
+        length_bonus = (
+            0.6
+            if 45 <= len(sentence) <= 145
+            else 0.2
+        )
+
+        quote_penalty = (
+            1.8
+            if any(
+                x in sentence
+                for x in (
+                    "“", "”",
+                    "라며", "이라며",
+                    "말했다", "밝혔다"
+                )
+            )
+            else 0.0
+        )
+
+        ceremony_penalty = (
+            2.0
+            if any(
+                x in sentence
+                for x in (
+                    "감사드린다",
+                    "특별시민을 대표"
+                )
+            )
+            else 0.0
+        )
+
+        score = (
+            semantic_score(sentence)
+            + overlap
+            + action
+            + position
+            + length_bonus
+            - quote_penalty
+            - ceremony_penalty
+        )
+
+        candidates.append(
+            (
+                score,
+                sentence.rstrip(".")
+            )
+        )
+
+    candidates.sort(
+        reverse=True
+    )
+
+    selected = []
+
+    for quoted_allowed in (
+        False,
+        True
+    ):
+
+        for _, point in candidates:
+
+            if point in selected:
+                continue
+
+            if jaccard(
+                point,
+                clean_title
+            ) > 0.62:
+                continue
+
+            if (
+                not quoted_allowed
+                and any(
+                    x in point
+                    for x in (
+                        "“", "”",
+                        "라며", "이라며",
+                        "말했다", "밝혔다"
+                    )
+                )
+            ):
+                continue
+
+            if any(
+                jaccard(
+                    point,
+                    old
+                ) > 0.50
+                for old in selected
+            ):
+                continue
+
+            selected.append(point)
+
+            if len(selected) >= limit:
+                return selected
+
+    return selected[:limit]
+
+
+def analyze_article(
+    title: str,
+    description: str,
+    body: str,
+    tags: list[str]
+) -> dict:
+
+    main_point = _v11_clean_text(
+        title
+    )
+
+    main_point = re.sub(
+        r"^\[[^\]]+\]\s*",
+        "",
+        main_point
+    )
+
+    main_point = re.sub(
+        r"\s*[-–—]\s*SK하이닉스 뉴스룸\s*$",
+        "",
+        main_point,
+        flags=re.IGNORECASE,
+    ).strip()
+
+    key_points = _v11_key_points(
+        title,
+        body,
+        description,
+        3
+    )
+
+    topic = detect_topic(
+        title,
+        tags,
+        body,
+        key_points
+    )
+
+    impact = _v11_clean_text(
+        topic.get(
+            "impact",
+            ""
+        )
+    )
+
+    why_it_matters = (
+        f"이 기사의 핵심 의미는 {impact}입니다."
+        if impact
+        else
+        "이 기사는 SK하이닉스의 기술·사업 방향을 이해하는 데 의미가 있습니다."
+    )
+
+    role_analysis = build_all_role_analysis(
+        title=title,
+        main_point=main_point,
+        key_points=key_points,
+        body=body,
+        tags=tags,
+    )
+
+    default = role_analysis[
+        DEFAULT_ROLE
+    ]
+
+    return {
+        "main_point": main_point,
+        "key_points": key_points,
+        "category": topic["category"],
+        "why_it_matters": why_it_matters,
+        "role_analysis": role_analysis,
+        "takeaway": default["what_you_get"],
+        "job_relevance": {
+            k: v
+            for k, v in default.items()
+            if k != "what_you_get"
+        },
+        "one_liner": main_point,
+        "importance": default["score"],
+    }
+
+# === V12 SUMMARY OVERRIDE ===
+
+_V12_BUCKETS = {
+    "market": (
+        "AI", "ai", "수요", "시장", "성장", "경쟁",
+        "고객", "주문", "판매"
+    ),
+    "investment": (
+        "투자", "클러스터", "공장", "생산", "양산",
+        "구축", "추진", "건설", "증설", "생산거점"
+    ),
+    "infra": (
+        "부지", "전력", "용수", "기반시설",
+        "인프라", "지자체", "지원"
+    ),
+    "technology": (
+        "HBM", "DRAM", "NAND", "패키징",
+        "공정", "수율", "기술", "제품",
+        "MR-MUF", "TSV", "본딩"
+    ),
+    "performance": (
+        "매출", "영업이익", "실적", "점유율",
+        "절감", "효율", "생산성"
+    ),
+}
+
+
+def _v12_clean(text: str) -> str:
+    text = clean(text)
+
+    text = re.sub(
+        r"^(이에 따라|한편|또한|아울러|특히|이날|이어)\s*[,，]?\s*",
+        "",
+        text
+    )
+
+    return text.strip()
+
+
+def _v12_split(text: str) -> list[str]:
+    text = _v12_clean(text)
+
+    if not text:
+        return []
+
+    text = re.sub(
+        r'([.!?][”]?)\s+',
+        r"\1\n",
+        text
+    )
+
+    out = []
+
+    for part in text.splitlines():
+        part = _v12_clean(part)
+
+        if 30 <= len(part) <= 240:
+            if part not in out and not is_junk(part):
+                out.append(part)
+
+    return out
+
+
+def _v12_quote_fact(text: str) -> str:
+    text = _v12_clean(text)
+
+    quotes = re.findall(
+        r"“([^”]{20,220})”",
+        text
+    )
+
+    if not quotes:
+        return text.rstrip(".")
+
+    signals = (
+        "AI", "수요", "시장", "성장", "투자",
+        "생산", "양산", "공장", "클러스터",
+        "부지", "전력", "용수", "기반시설",
+        "공정", "수율", "HBM", "패키징"
+    )
+
+    def qscore(q):
+        score = sum(
+            1
+            for word in signals
+            if word.lower() in q.lower()
+        )
+
+        if "감사드린" in q:
+            score -= 4
+
+        return score
+
+    best = max(
+        quotes,
+        key=qscore
+    )
+
+    if qscore(best) >= 1:
+        return _v12_clean(best).rstrip(".")
+
+    return text.rstrip(".")
+
+
+def _v12_bucket(text: str) -> str:
+    low = text.lower()
+
+    best_name = "general"
+    best_score = 0
+
+    for name, words in _V12_BUCKETS.items():
+        score = sum(
+            1
+            for word in words
+            if word.lower() in low
+        )
+
+        if score > best_score:
+            best_score = score
+            best_name = name
+
+    return best_name
+
+
+def _v12_key_points(
+    title: str,
+    body: str,
+    description: str,
+    limit: int = 3
+) -> list[str]:
+
+    source = (
+        body
+        if len(_v12_clean(body)) >= 120
+        else description
+    )
+
+    source = _v12_clean(source)
+    clean_title = _v12_clean(title)
+
+    for _ in range(2):
+        if (
+            clean_title
+            and source.startswith(clean_title)
+        ):
+            source = source[
+                len(clean_title):
+            ].strip()
+
+    title_words = set(
+        tokens(clean_title)
+    )
+
+    candidates = []
+
+    for index, raw in enumerate(
+        _v12_split(source)
+    ):
+        point = _v12_quote_fact(raw)
+        point = _v12_clean(point)
+
+        if not (
+            30 <= len(point) <= 200
+        ):
+            continue
+
+        if any(
+            word in point
+            for word in (
+                "기념촬영",
+                "행사 현장",
+                "환영사",
+                "축사"
+            )
+        ):
+            continue
+
+        words = set(
+            tokens(point)
+        )
+
+        score = semantic_score(point)
+
+        score += (
+            len(title_words & words)
+            * 0.35
+        )
+
+        score += max(
+            0.0,
+            0.35 - index * 0.01
+        )
+
+        bucket = _v12_bucket(point)
+
+        if bucket != "general":
+            score += 1.2
+
+        if 45 <= len(point) <= 145:
+            score += 0.7
+
+        # 단순 현장 방문·동선 설명은 중요도 하향
+        if any(
+            word in point
+            for word in (
+                "직접 찾아",
+                "현장을 찾아",
+                "살폈다",
+                "방문했다",
+                "일대를 직접"
+            )
+        ):
+            score -= 2.5
+
+        # 실질적인 사업·기술 정보 우대
+        if any(
+            word in point
+            for word in (
+                "투자", "수요", "생산", "양산",
+                "공장", "전력", "용수", "수율",
+                "공급", "구축", "확대"
+            )
+        ):
+            score += 1.0
+
+        candidates.append(
+            (
+                score,
+                bucket,
+                point
+            )
+        )
+
+    candidates.sort(
+        key=lambda x: x[0],
+        reverse=True
+    )
+
+    selected = []
+    used_buckets = set()
+
+    # 먼저 서로 다른 종류의 핵심정보를 하나씩 선택
+    for score, bucket, point in candidates:
+
+        if bucket == "general":
+            continue
+
+        if bucket in used_buckets:
+            continue
+
+        if any(
+            jaccard(point, old) > 0.48
+            for old in selected
+        ):
+            continue
+
+        selected.append(point)
+        used_buckets.add(bucket)
+
+        if len(selected) >= limit:
+            return selected
+
+    # 부족하면 남은 높은 점수 문장으로 보충
+    for score, bucket, point in candidates:
+
+        if point in selected:
+            continue
+
+        if any(
+            jaccard(point, old) > 0.48
+            for old in selected
+        ):
+            continue
+
+        selected.append(point)
+
+        if len(selected) >= limit:
+            break
+
+    return selected[:limit]
+
+
+def _v12_why(
+    title: str,
+    points: list[str]
+) -> str:
+
+    text = (
+        title
+        + " "
+        + " ".join(points)
+    )
+
+    low = text.lower()
+
+    ai_signal = (
+        "ai" in low
+        or "메모리 수요" in text
+    )
+
+    investment_signal = any(
+        word in text
+        for word in (
+            "투자", "클러스터", "공장",
+            "생산", "양산", "증설"
+        )
+    )
+
+    infra_signal = any(
+        word in text
+        for word in (
+            "전력", "용수", "부지",
+            "기반시설", "인프라"
+        )
+    )
+
+    if ai_signal and investment_signal:
+        return (
+            "AI 메모리 수요 확대가 실제 생산거점 투자와 "
+            "공급 역량 확대 전략으로 이어지고 있다는 점이 핵심입니다."
+        )
+
+    if investment_signal and infra_signal:
+        return (
+            "반도체 생산거점 확대가 부지·전력·용수 등 "
+            "필수 인프라 확보와 함께 실제 실행 단계로 "
+            "넘어가고 있다는 점이 핵심입니다."
+        )
+
+    if investment_signal:
+        return (
+            "회사의 중장기 전략이 실제 투자·생산 확대 계획으로 "
+            "구체화되고 있다는 점이 핵심입니다."
+        )
+
+    return (
+        "이 기사가 보여주는 변화가 SK하이닉스의 "
+        "기술·사업 방향에 어떤 영향을 주는지가 핵심입니다."
+    )
+
+
+def analyze_article(
+    title: str,
+    description: str,
+    body: str,
+    tags: list[str]
+) -> dict:
+
+    key_points = _v12_key_points(
+        title,
+        body,
+        description,
+        3
+    )
+
+    clean_title = _v12_clean(title)
+
+    # 제목 복사 대신 가장 핵심적인 사실을 MAIN으로 사용
+    main_point = (
+        key_points[0]
+        if key_points
+        else clean_title
+    )
+
+    topic = detect_topic(
+        title,
+        tags,
+        body,
+        key_points
+    )
+
+    joined = (
+        title
+        + " "
+        + " ".join(key_points)
+    )
+
+    if (
+        any(
+            word in joined
+            for word in (
+                "투자",
+                "클러스터",
+                "생산거점",
+                "공장"
+            )
+        )
+        and any(
+            word in joined
+            for word in (
+                "생산",
+                "공장",
+                "클러스터",
+                "부지",
+                "전력",
+                "용수"
+            )
+        )
+    ):
+        category = (
+            "Investment / Manufacturing Strategy"
+        )
+    else:
+        category = topic["category"]
+
+    why_it_matters = _v12_why(
+        title,
+        key_points
+    )
+
+    role_analysis = build_all_role_analysis(
+        title=title,
+        main_point=main_point,
+        key_points=key_points,
+        body=body,
+        tags=tags,
+    )
+
+    default = role_analysis[
+        DEFAULT_ROLE
+    ]
+
+    return {
+        "main_point": main_point,
+        "key_points": key_points,
+        "category": category,
+        "why_it_matters": why_it_matters,
+        "role_analysis": role_analysis,
+        "takeaway": default["what_you_get"],
+        "job_relevance": {
+            k: v
+            for k, v in default.items()
+            if k != "what_you_get"
+        },
+        "one_liner": main_point,
+        "importance": default["score"],
+    }
+

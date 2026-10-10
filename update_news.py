@@ -22,7 +22,7 @@ STATE_FILE = ROOT / "data" / "state.json"
 RSS_SCAN_LIMIT = 30
 BOOTSTRAP_COUNT = 10
 TIMEOUT = 20
-REPAIR_VERSION = 8
+REPAIR_VERSION = 12
 KST = timezone(timedelta(hours=9))
 
 HEADERS = {
@@ -67,12 +67,25 @@ def html_to_text(value: str) -> str:
 
     from bs4 import BeautifulSoup
 
-    return clean_text(
+    text = clean_text(
         BeautifulSoup(
             str(value),
             "html.parser"
-        ).get_text(" ", strip=True)
+        ).get_text(
+            " ",
+            strip=True
+        )
     )
+
+    # PRESS / STORY 등은 뉴스룸 분류 레이블
+    text = re.sub(
+        r"^(?:PRESS|STORY|FACT|MEDIA)\s*[:|\-]?\s*",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
+
+    return text.strip()
 
 
 def is_junk_summary_text(text: str) -> bool:
@@ -482,10 +495,12 @@ def fetch_article_data(url: str) -> tuple[str, str, list[str], str]:
     return description, body, tags, page_date
 
 
-def title_fallback_points(title: str) -> list[str]:
+def title_fallback_points(
+    title: str
+) -> list[str]:
+
     text = html_to_text(title)
 
-    # 제목 끝의 뉴스룸 표기 제거
     text = re.sub(
         r"\s*[-–—]\s*SK하이닉스 뉴스룸\s*$",
         "",
@@ -493,7 +508,6 @@ def title_fallback_points(title: str) -> list[str]:
         flags=re.IGNORECASE,
     )
 
-    # [미래인재 CLASS] 같은 시리즈명은 핵심문장에서는 제거
     text = re.sub(
         r"^\[[^\]]+\]\s*",
         "",
@@ -501,11 +515,13 @@ def title_fallback_points(title: str) -> list[str]:
     )
 
     text = clean_text(
-        text.strip(" -–—,，:;.…")
+        text.strip(
+            " -–—,，:;.…"
+        )
     )
 
     if len(text) >= 12:
-        return [text[:150]]
+        return [text]
 
     return []
 
@@ -518,7 +534,9 @@ def fallback_key_points(
 
     source = html_to_text(
         body
-        if len(html_to_text(body)) >= 80
+        if len(
+            html_to_text(body)
+        ) >= 80
         else description
     )
 
@@ -529,13 +547,17 @@ def fallback_key_points(
         points = []
 
         for chunk in re.split(
-            r"(?<=[.!?])\s+",
+            r"(?<=[.!?。！？])\s+",
             source
         ):
-            chunk = html_to_text(chunk)
 
+            chunk = html_to_text(
+                chunk
+            )
+
+            # 완전한 문장만 사용하고 절대 중간 자르지 않음
             if (
-                25 <= len(chunk) <= 220
+                30 <= len(chunk) <= 220
                 and chunk not in points
                 and not is_junk_summary_text(chunk)
                 and not any(
@@ -544,13 +566,7 @@ def fallback_key_points(
                 )
             ):
                 points.append(
-                    chunk[:150]
-                    .rstrip(" ,.;:")
-                    + (
-                        "..."
-                        if len(chunk) > 150
-                        else ""
-                    )
+                    chunk.rstrip(".")
                 )
 
             if len(points) == 3:
@@ -559,7 +575,9 @@ def fallback_key_points(
         if points:
             return points
 
-    return title_fallback_points(title)
+    return title_fallback_points(
+        title
+    )
 
 
 def run_analysis(
@@ -626,7 +644,7 @@ def run_analysis(
         else:
             main = title
 
-    analysis["main_point"] = main[:125]
+    analysis["main_point"] = main
     analysis["one_liner"] = (
         analysis["main_point"]
     )
@@ -662,7 +680,6 @@ def run_analysis(
     if (
         not why
         or is_junk_summary_text(why)
-        or analysis["main_point"] not in why
     ):
         why = (
             f"{analysis['main_point']}. "
@@ -1109,6 +1126,105 @@ def main() -> int:
         f"비기사/프록시 항목 제거 {removed}개"
     )
     return 0
+
+
+# === V11 UPDATE OVERRIDE ===
+
+def fallback_key_points(
+    title: str,
+    description: str,
+    body: str
+) -> list[str]:
+
+    source = html_to_text(
+        body
+        if len(html_to_text(body)) >= 80
+        else description
+    )
+
+    source = re.sub(
+        r"^(?:(?:PRESS|STORY|FACT|MEDIA)\s*)+",
+        "",
+        source,
+        flags=re.IGNORECASE,
+    ).strip()
+
+    clean_title = html_to_text(
+        title
+    )
+
+    if (
+        clean_title
+        and source.startswith(clean_title)
+    ):
+        source = source[
+            len(clean_title):
+        ].strip()
+
+    source = re.sub(
+        r'([.!?])[”"]\s+',
+        r"\1\n",
+        source
+    )
+
+    source = re.sub(
+        r"([.!?])\s+",
+        r"\1\n",
+        source
+    )
+
+    points = []
+
+    for chunk in source.splitlines():
+
+        chunk = html_to_text(
+            chunk
+        ).strip()
+
+        if not (
+            35 <= len(chunk) <= 220
+        ):
+            continue
+
+        if is_junk_summary_text(
+            chunk
+        ):
+            continue
+
+        if any(
+            j in chunk.lower()
+            for j in JUNK_BODY_WORDS
+        ):
+            continue
+
+        points.append(
+            chunk.rstrip(".")
+        )
+
+        if len(points) >= 3:
+            break
+
+    return (
+        points
+        or title_fallback_points(title)
+    )
+
+
+def article_needs_repair(
+    article: dict
+) -> bool:
+
+    current_version = int(
+        article.get(
+            "repair_version",
+            0
+        ) or 0
+    )
+
+    return (
+        current_version
+        < REPAIR_VERSION
+    )
 
 
 if __name__ == "__main__":
