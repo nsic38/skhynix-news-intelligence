@@ -22,7 +22,7 @@ STATE_FILE = ROOT / "data" / "state.json"
 RSS_SCAN_LIMIT = 30
 BOOTSTRAP_COUNT = 10
 TIMEOUT = 20
-REPAIR_VERSION = 12
+REPAIR_VERSION = 13
 KST = timezone(timedelta(hours=9))
 
 HEADERS = {

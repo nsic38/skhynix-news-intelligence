@@ -1453,3 +1453,505 @@ def analyze_article(
         "importance": default["score"],
     }
 
+
+# === V13 SUMMARY OVERRIDE ===
+
+def _v13_key_points(
+    title: str,
+    body: str,
+    description: str,
+    limit: int = 3
+) -> list[str]:
+
+    source = (
+        body
+        if len(_v12_clean(body)) >= 120
+        else description
+    )
+
+    source = _v12_clean(source)
+    clean_title = _v12_clean(title)
+
+    # 본문 맨 앞의 제목 반복 제거
+    for _ in range(2):
+        if clean_title and source.startswith(clean_title):
+            source = source[len(clean_title):].strip()
+
+    title_words = set(tokens(clean_title))
+    candidates = []
+
+    important_words = (
+        "AI", "HBM", "DRAM", "NAND",
+        "수요", "시장", "투자", "양산",
+        "생산", "공장", "클러스터",
+        "공급", "수율", "공정", "패키징",
+        "전력", "용수", "부지",
+        "기반시설", "개발", "출시",
+        "매출", "영업이익", "절감",
+        "확대", "증설", "구축"
+    )
+
+    for index, raw in enumerate(
+        _v12_split(source)
+    ):
+        point = _v12_quote_fact(raw)
+        point = _v12_clean(point)
+
+        if not 30 <= len(point) <= 210:
+            continue
+
+        if is_junk(point):
+            continue
+
+        if re.search(
+            r"[▲△■●◆◇▶▷]",
+            point
+        ):
+            continue
+
+        # 기사 핵심과 관계없는 행사·동선 문장 억제
+        if any(
+            word in point
+            for word in (
+                "기념촬영",
+                "행사 현장",
+                "환영사",
+                "축사",
+                "감사드린다"
+            )
+        ):
+            continue
+
+        words = set(tokens(point))
+
+        score = semantic_score(point)
+
+        # 제목과 연관성이 높은 사실 우대
+        score += (
+            len(title_words & words)
+            * 0.60
+        )
+
+        # 기사 앞부분은 핵심 사실일 가능성이 높음
+        score += max(
+            0.0,
+            0.45 - index * 0.012
+        )
+
+        # 사업·기술상 실질 정보 우대
+        score += sum(
+            0.32
+            for word in important_words
+            if word.lower() in point.lower()
+        )
+
+        # 읽기 좋은 완전한 문장 우대
+        if 45 <= len(point) <= 145:
+            score += 0.65
+        elif len(point) <= 175:
+            score += 0.25
+
+        # 단순 방문·현장 동선은 중요도 하향
+        if any(
+            word in point
+            for word in (
+                "직접 찾아",
+                "현장을 찾아",
+                "살폈다",
+                "방문했다",
+                "일대를 직접"
+            )
+        ):
+            score -= 2.2
+
+        candidates.append(
+            (score, point)
+        )
+
+    candidates.sort(
+        key=lambda x: x[0],
+        reverse=True
+    )
+
+    selected = []
+
+    for score, point in candidates:
+
+        # 제목을 그대로 반복하는 문장은 제외
+        if jaccard(
+            point,
+            clean_title
+        ) > 0.72:
+            continue
+
+        # 이미 선택한 핵심과 비슷하면 제외
+        if any(
+            jaccard(
+                point,
+                old
+            ) > 0.48
+            for old in selected
+        ):
+            continue
+
+        selected.append(point)
+
+        if len(selected) >= limit:
+            break
+
+    return selected[:limit]
+
+
+def _v13_why(
+    title: str,
+    points: list[str],
+    category: str
+) -> str:
+
+    text = (
+        title
+        + " "
+        + " ".join(points)
+    )
+
+    low = text.lower()
+
+    has_ai = any(
+        word in low
+        for word in (
+            "ai",
+            "인공지능",
+            "hbm"
+        )
+    )
+
+    has_investment = any(
+        word in text
+        for word in (
+            "투자",
+            "클러스터",
+            "공장",
+            "생산거점",
+            "증설",
+            "양산"
+        )
+    )
+
+    has_infra = any(
+        word in text
+        for word in (
+            "부지",
+            "전력",
+            "용수",
+            "기반시설",
+            "인프라"
+        )
+    )
+
+    has_packaging = any(
+        word.lower() in low
+        for word in (
+            "패키징",
+            "mr-muf",
+            "hybrid bonding",
+            "tsv",
+            "본딩"
+        )
+    )
+
+    has_yield = any(
+        word in text
+        for word in (
+            "수율",
+            "불량",
+            "공정",
+            "생산성",
+            "품질"
+        )
+    )
+
+    has_water = any(
+        word in text
+        for word in (
+            "용수",
+            "물 사용",
+            "물 절감"
+        )
+    )
+
+    has_environment = any(
+        word in text
+        for word in (
+            "탄소",
+            "환경",
+            "재생에너지",
+            "온실가스",
+            "ESG"
+        )
+    )
+
+    has_performance = any(
+        word in text
+        for word in (
+            "매출",
+            "영업이익",
+            "실적",
+            "점유율"
+        )
+    )
+
+    has_talent = any(
+        word in text
+        for word in (
+            "인재",
+            "교육",
+            "연구",
+            "대학",
+            "미래인재"
+        )
+    )
+
+    has_social = any(
+        word in text
+        for word in (
+            "사회적가치",
+            "사회문제",
+            "협력기업",
+            "상생"
+        )
+    )
+
+    # 투자 + 인프라 + AI
+    if has_ai and has_investment and has_infra:
+        return (
+            "AI 메모리 수요 확대에 대응한 반도체 투자가 "
+            "단순 계획을 넘어 부지·전력·용수 등 생산 인프라 "
+            "확보 단계까지 구체화되고 있다는 의미입니다. "
+            "이는 SK하이닉스가 향후 생산능력을 얼마나 빠르게 "
+            "확대하고 시장 수요에 대응할 수 있는지와 직접 연결됩니다."
+        )
+
+    # 투자 + 인프라
+    if has_investment and has_infra:
+        return (
+            "반도체 생산거점 확대가 투자 계획에 머무르지 않고 "
+            "부지·전력·용수 등 실제 공장 운영에 필요한 조건을 "
+            "확보하는 단계로 넘어가고 있다는 점이 중요합니다. "
+            "이러한 인프라는 향후 생산능력 확대 속도와 "
+            "공급 안정성을 좌우할 수 있습니다."
+        )
+
+    # AI + 투자
+    if has_ai and has_investment:
+        return (
+            "AI 메모리 수요 증가가 SK하이닉스의 실제 투자와 "
+            "생산능력 확대를 이끄는 요인으로 작용하고 있다는 점이 "
+            "중요합니다. 향후 HBM을 포함한 AI 메모리 공급 대응력과 "
+            "시장 경쟁력에 직접 연결될 수 있습니다."
+        )
+
+    # 첨단 패키징
+    if has_packaging and has_yield:
+        return (
+            "첨단 패키징 기술은 제품 성능만의 문제가 아니라 "
+            "적층 공정의 수율·품질·생산성을 동시에 좌우합니다. "
+            "따라서 해당 기술의 안정적인 양산 여부가 HBM의 "
+            "공급 확대와 원가 경쟁력에 직접 영향을 줄 수 있습니다."
+        )
+
+    if has_packaging:
+        return (
+            "HBM 고도화가 진행될수록 패키징 기술의 중요성이 "
+            "커지고 있다는 의미입니다. 적층 수 증가에 따른 "
+            "열·접합·공정 안정성을 확보하는 것이 향후 HBM "
+            "성능과 양산 경쟁력의 핵심 요소가 될 수 있습니다."
+        )
+
+    # 용수
+    if has_water:
+        return (
+            "반도체 생산에는 대규모 용수가 지속적으로 필요하기 때문에 "
+            "용수 절감은 단순한 환경 성과에 그치지 않습니다. "
+            "생산 확대 과정에서 지역 인프라 부담과 운영 리스크를 "
+            "낮출 수 있어 장기적인 생산 안정성과도 연결됩니다."
+        )
+
+    # 환경
+    if has_environment:
+        return (
+            "반도체 생산 확대와 함께 전력·탄소·환경 부담도 커질 수 "
+            "있기 때문에 해당 활동은 단순 ESG 홍보 이상의 의미가 있습니다. "
+            "환경 비용과 규제 리스크를 낮추는 것이 장기적인 생산 확대와 "
+            "사업 지속성에 영향을 줄 수 있습니다."
+        )
+
+    # 실적
+    if has_performance:
+        return (
+            "실적 변화는 현재 메모리 시장의 수요가 실제 매출과 "
+            "수익성으로 얼마나 연결되고 있는지를 보여줍니다. "
+            "이는 향후 설비투자와 제품 전략의 규모와 우선순위를 "
+            "판단할 수 있는 중요한 신호입니다."
+        )
+
+    # 투자
+    if has_investment:
+        return (
+            "회사가 밝힌 전략이 실제 투자와 생산 확대 계획으로 "
+            "구체화되고 있다는 점이 중요합니다. "
+            "투자 속도와 규모는 향후 공급능력과 시장 대응력에 "
+            "직접적인 영향을 줄 수 있습니다."
+        )
+
+    # 인재
+    if has_talent:
+        return (
+            "반도체 산업의 경쟁력이 장비와 설비뿐 아니라 "
+            "전문 인력과 연구 역량 확보에도 좌우된다는 점에서 중요합니다. "
+            "장기적으로 차세대 메모리 기술 개발과 인력 확보 기반을 "
+            "강화하는 활동으로 볼 수 있습니다."
+        )
+
+    # 사회적 가치 / 상생
+    if has_social:
+        return (
+            "반도체 산업은 대규모 공급망과 협력기업을 기반으로 운영되기 "
+            "때문에 이러한 활동은 단순 사회공헌에 그치지 않습니다. "
+            "협력사와의 지속가능한 생태계 구축과 기업 운영 안정성에도 "
+            "연결될 수 있습니다."
+        )
+
+    # 분야별 최종 fallback
+    category_why = {
+        "HBM / AI Memory":
+            "AI 시대에는 연산 성능뿐 아니라 메모리 대역폭과 공급능력이 "
+            "전체 시스템 성능을 좌우합니다. 따라서 해당 변화는 "
+            "SK하이닉스의 HBM 경쟁력과 향후 AI 메모리 시장 대응력에 "
+            "직접 연결될 수 있습니다.",
+
+        "DRAM":
+            "DRAM 기술 변화는 성능·집적도뿐 아니라 공정 난이도와 "
+            "양산 수율에도 영향을 줍니다. 따라서 차세대 제품 경쟁력을 "
+            "확보하기 위해 실제 양산 안정성까지 함께 봐야 합니다.",
+
+        "NAND / Storage":
+            "스토리지 수요와 제품 구조 변화는 NAND의 용량·성능 요구뿐 "
+            "아니라 생산 전략에도 영향을 줍니다. 따라서 시장 변화가 "
+            "어떤 제품과 공정에 투자를 집중하게 만드는지가 중요합니다.",
+
+        "Manufacturing":
+            "기술을 실제 매출과 공급능력으로 연결하려면 안정적인 양산과 "
+            "수율 확보가 필요합니다. 따라서 이 변화가 생산성·공정 안정성·"
+            "공급능력에 어떤 영향을 주는지가 중요합니다.",
+
+        "AI / Infrastructure":
+            "AI 인프라 확대로 메모리에 요구되는 용량·대역폭·전력 효율이 "
+            "빠르게 높아지고 있습니다. 이는 SK하이닉스가 개발해야 할 "
+            "제품과 투자해야 할 생산능력의 방향을 결정하는 요인입니다.",
+    }
+
+    return category_why.get(
+        category,
+        (
+            "이 내용은 단순한 개별 뉴스가 아니라 SK하이닉스가 "
+            "어떤 분야에 기술·투자·생산 역량을 집중하고 있는지를 "
+            "보여주는 신호입니다. 이후 실제 투자와 양산 계획으로 "
+            "어떻게 연결되는지를 함께 볼 필요가 있습니다."
+        )
+    )
+
+
+def analyze_article(
+    title: str,
+    description: str,
+    body: str,
+    tags: list[str]
+) -> dict:
+
+    key_points = _v13_key_points(
+        title,
+        body,
+        description,
+        3
+    )
+
+    clean_title = _v12_clean(title)
+
+    main_point = (
+        key_points[0]
+        if key_points
+        else clean_title
+    )
+
+    topic = detect_topic(
+        title,
+        tags,
+        body,
+        key_points
+    )
+
+    joined = (
+        title
+        + " "
+        + " ".join(key_points)
+    )
+
+    if (
+        any(
+            word in joined
+            for word in (
+                "투자",
+                "클러스터",
+                "생산거점",
+                "공장"
+            )
+        )
+        and any(
+            word in joined
+            for word in (
+                "생산",
+                "공장",
+                "부지",
+                "전력",
+                "용수"
+            )
+        )
+    ):
+        category = "Investment / Manufacturing Strategy"
+    else:
+        category = topic["category"]
+
+    why_it_matters = _v13_why(
+        title,
+        key_points,
+        category
+    )
+
+    role_analysis = build_all_role_analysis(
+        title=title,
+        main_point=main_point,
+        key_points=key_points,
+        body=body,
+        tags=tags,
+    )
+
+    default = role_analysis[
+        DEFAULT_ROLE
+    ]
+
+    return {
+        "main_point": main_point,
+        "key_points": key_points,
+        "category": category,
+        "why_it_matters": why_it_matters,
+        "role_analysis": role_analysis,
+        "takeaway": default["what_you_get"],
+        "job_relevance": {
+            k: v
+            for k, v in default.items()
+            if k != "what_you_get"
+        },
+        "one_liner": main_point,
+        "importance": default["score"],
+    }
+
