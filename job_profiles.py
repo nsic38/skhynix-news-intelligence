@@ -19,6 +19,51 @@ ROLE_PROFILES = {
         "direct": ["양산", "수율", "공정", "생산", "제조", "불량", "mr-muf", "hybrid bonding", "tsv"],
     },
 
+    "양산기술 P&T": {
+        "label": "양산기술 P&T",
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "dimensions": {
+            "HBM·첨단 패키징": (
+                3.4,
+                ["hbm", "패키징", "packaging", "advanced packaging", "적층"]
+            ),
+            "P&T 핵심 공정": (
+                3.3,
+                ["mr-muf", "hybrid bonding", "tsv", "본딩",
+                 "bonding", "molding", "몰딩"]
+            ),
+            "Test·검사": (
+                3.0,
+                ["test", "테스트", "검사", "inspection",
+                 "probe", "burn-in", "번인"]
+            ),
+            "수율·품질": (
+                3.0,
+                ["수율", "yield", "불량", "defect",
+                 "품질", "reliability", "신뢰성"]
+            ),
+            "양산·생산성": (
+                2.8,
+                ["양산", "생산", "manufacturing",
+                 "throughput", "capa", "capacity", "생산성"]
+            ),
+            "열·구조 안정성": (
+                2.6,
+                ["열", "thermal", "warpage", "휨",
+                 "stress", "응력", "방열"]
+            ),
+            "공정 최적화": (
+                2.5,
+                ["공정", "process", "recipe",
+                 "조건", "최적화", "공정 안정"]
+            ),
+        },
+        "direct": [
+            "hbm", "패키징", "mr-muf", "hybrid bonding",
+            "tsv", "test", "테스트", "수율", "양산", "본딩"
+        ],
+    },
+
     "양산관리": {
         "label": "양산관리",
         "lens": "TAT·WIP·병목·생산계획·납기",

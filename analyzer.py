@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import math
 import re
 from collections import Counter
@@ -85,7 +86,9 @@ TOPICS = [
 
 
 def clean(text: str) -> str:
-    return re.sub(r"\s+", " ", text or "").strip()
+    text = html.unescape(text or "")
+    text = re.sub(r"<[^>]+>", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def trim(text: str, limit: int) -> str:
@@ -96,15 +99,60 @@ def trim(text: str, limit: int) -> str:
 
 
 def is_junk(text: str) -> bool:
-    text = clean(text)
+    raw = text or ""
+    text = clean(raw)
     low = text.lower()
 
-    if not text or low in {"source", "출처", "media", "press", "story", "fact", "ir"}:
+    # v8: 뉴스룸 이미지 캡션/페이지 레이블 제외
+    if re.match(r"^(story|fact|press|media)\b", low):
         return True
-    if any(word.lower() in low for word in BOILERPLATE_WORDS):
+
+    if (
+        re.search(r"[▲△■●◆◇▶▷]", text)
+        and (
+            len(text) <= 220
+            or "행사 현장" in text
+        )
+    ):
         return True
+
+    if not text or low in {
+        "source", "출처", "media", "press",
+        "story", "fact", "ir"
+    }:
+        return True
+
+    if re.search(
+        r"</?[a-z][^>]*>",
+        raw,
+        flags=re.IGNORECASE,
+    ):
+        return True
+
+    if (
+        len(text) <= 180
+        and re.match(r"^[▲△■●◆◇▶▷]", text)
+    ):
+        return True
+
+    if (
+        len(text) <= 120
+        and any(
+            word in low
+            for word in ("출처", "사진", "이미지")
+        )
+    ):
+        return True
+
+    if any(
+        word.lower() in low
+        for word in BOILERPLATE_WORDS
+    ):
+        return True
+
     if "http://" in low or "https://" in low:
         return True
+
     return False
 
 

@@ -61,7 +61,7 @@ ${tags(a,r)}`;
       const a=allArticles.find(x=>x.url===link.href||x.url===link.getAttribute("href")); if(!a) return;
       const btn=document.createElement("button");
       btn.className="blog-draft-btn"; btn.type="button"; btn.textContent="블로그용 글";
-      btn.style.cssText="margin-right:10px;padding:9px 13px;border:1px solid #d5dce6;border-radius:9px;background:white;font-weight:800;cursor:pointer";
+      btn.style.cssText="margin-right:10px;padding:9px 13px;border:1px solid #d5dce6;border-radius:9px;background:white;color:#0b1730;font-weight:800;cursor:pointer";
       btn.onclick=()=>openDraft(makeDraft(a));
       const orig=card.querySelector(".original"); orig?.parentNode?.insertBefore(btn,orig);
     });
