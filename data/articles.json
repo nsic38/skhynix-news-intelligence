@@ -1,5 +1,344 @@
 [
   {
+    "id": "c2c039e38fa3",
+    "title": "[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’",
+    "url": "https://news.skhynix.co.kr/ambassador-job-report-ep5-1",
+    "published": "2026-10-14",
+    "date_source": "page",
+    "source": "SK hynix Newsroom",
+    "tags": [
+      "MEDIA",
+      "SK하이닉스 앰버서더",
+      "채용",
+      "취업",
+      "품질보증"
+    ],
+    "created_at": "2026-10-14T22:28:18+09:00",
+    "content_source": "article",
+    "repair_version": 13,
+    "main_point": "[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’",
+    "key_points": [
+      "개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’"
+    ],
+    "category": "Manufacturing",
+    "why_it_matters": "기술을 실제 매출과 공급능력으로 연결하려면 안정적인 양산과 수율 확보가 필요합니다. 따라서 이 변화가 생산성·공정 안정성·공급능력에 어떤 영향을 주는지가 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 4,
+        "reason": "수율·품질 · 양산 전환 · 데이터 기반 개선",
+        "dimensions": [
+          "수율·품질",
+          "양산 전환",
+          "데이터 기반 개선"
+        ],
+        "matched_keywords": [
+          "품질",
+          "양산",
+          "생산",
+          "fab",
+          "팹",
+          "ai"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 관점에서는 수율·품질·양산 전환·데이터 기반 개선가 핵심 연결점입니다. '[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산기술 P&T": {
+        "role": "양산기술 P&T",
+        "score": 4,
+        "reason": "수율·품질 · 양산·생산성",
+        "dimensions": [
+          "수율·품질",
+          "양산·생산성"
+        ],
+        "matched_keywords": [
+          "품질",
+          "양산",
+          "생산"
+        ],
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "what_you_get": "양산기술 P&T 관점에서는 수율·품질·양산·생산성가 핵심 연결점입니다. '[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’'이라는 내용을 HBM·패키징·테스트 양산·수율·공정 안정화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 2,
+        "reason": "TAT·Cycle Time · 생산성 · 데이터·자동화",
+        "dimensions": [
+          "TAT·Cycle Time",
+          "생산성",
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "tat",
+          "생산",
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 4,
+        "reason": "품질·불량 · 고객 품질",
+        "dimensions": [
+          "품질·불량",
+          "고객 품질"
+        ],
+        "matched_keywords": [
+          "품질",
+          "고객"
+        ],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 관점에서는 품질·불량·고객 품질가 핵심 연결점입니다. '[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’'이라는 내용을 불량 원인·검사·신뢰성·품질 개선 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 2,
+        "reason": "DRAM·HBM · AI 메모리",
+        "dimensions": [
+          "DRAM·HBM",
+          "AI 메모리"
+        ],
+        "matched_keywords": [
+          "메모리",
+          "ai"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 '[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "AI·ML",
+        "dimensions": [
+          "AI·ML"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 '[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "takeaway": "양산기술 관점에서는 수율·품질·양산 전환·데이터 기반 개선가 핵심 연결점입니다. '[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 4,
+      "reason": "수율·품질 · 양산 전환 · 데이터 기반 개선",
+      "dimensions": [
+        "수율·품질",
+        "양산 전환",
+        "데이터 기반 개선"
+      ],
+      "matched_keywords": [
+        "품질",
+        "양산",
+        "생산",
+        "fab",
+        "팹",
+        "ai"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "[SK하이닉스 JOB리포트] 개발부터 고객까지 End-to-End, 반도체 전 생애주기 품질을 책임지는 ‘품질보증’",
+    "importance": 4
+  },
+  {
+    "id": "d6f785fe6f31",
+    "title": "[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimization이 여는 AI 메모리의 새로운 차원",
+    "url": "https://news.skhynix.co.kr/research-inside-ep2-6",
+    "published": "2026-10-14",
+    "date_source": "page",
+    "source": "SK hynix Newsroom",
+    "tags": [
+      "MEDIA",
+      "3D FeNAND",
+      "3D NAND",
+      "A-CiM",
+      "AI",
+      "CiM",
+      "CTN",
+      "강유전체"
+    ],
+    "created_at": "2026-10-14T22:28:16+09:00",
+    "content_source": "article",
+    "repair_version": 13,
+    "main_point": "[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimization이 여는 AI 메모리의 새로운 차원",
+    "key_points": [
+      "AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimization이 여는 AI 메모리의 새로운 차원"
+    ],
+    "category": "NAND / Storage",
+    "why_it_matters": "스토리지 수요와 제품 구조 변화는 NAND의 용량·성능 요구뿐 아니라 생산 전략에도 영향을 줍니다. 따라서 시장 변화가 어떤 제품과 공정에 투자를 집중하게 만드는지가 중요합니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 3,
+        "reason": "데이터 기반 개선",
+        "dimensions": [
+          "데이터 기반 개선"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. 데이터 기반 개선를 중심으로 '[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimi...'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산기술 P&T": {
+        "role": "양산기술 P&T",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "what_you_get": "양산기술 P&T 직접 관련성은 낮은 편입니다. 다만 '[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimization...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 3,
+        "reason": "데이터·자동화",
+        "dimensions": [
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 실무와 중간 정도의 관련성이 있습니다. 데이터·자동화를 중심으로 '[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimi...'이 TAT·WIP·병목·생산계획·납기에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimization...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "자동화",
+        "dimensions": [
+          "자동화"
+        ],
+        "matched_keywords": [
+          "데이터"
+        ],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimization...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "고객 품질",
+        "dimensions": [
+          "고객 품질"
+        ],
+        "matched_keywords": [
+          "spec"
+        ],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimization...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 5,
+        "reason": "DRAM·HBM · NAND·Storage · 소자 구조",
+        "dimensions": [
+          "DRAM·HBM",
+          "NAND·Storage",
+          "소자 구조"
+        ],
+        "matched_keywords": [
+          "메모리",
+          "nand",
+          "3d"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 DRAM·HBM·NAND·Storage·소자 구조가 핵심 연결점입니다. '[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimization...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 2,
+        "reason": "Cloud·Infra · 데이터 연계",
+        "dimensions": [
+          "Cloud·Infra",
+          "데이터 연계"
+        ],
+        "matched_keywords": [
+          "infra",
+          "인프라",
+          "데이터"
+        ],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimization...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 5,
+        "reason": "AI·ML · 최적화 · AI Infra",
+        "dimensions": [
+          "AI·ML",
+          "최적화",
+          "AI Infra"
+        ],
+        "matched_keywords": [
+          "ai",
+          "optimization",
+          "ai 인프라",
+          "데이터센터"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 관점에서는 AI·ML·최적화·AI Infra가 핵심 연결점입니다. '[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimization...'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      }
+    },
+    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. 데이터 기반 개선를 중심으로 '[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimi...'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 3,
+      "reason": "데이터 기반 개선",
+      "dimensions": [
+        "데이터 기반 개선"
+      ],
+      "matched_keywords": [
+        "데이터",
+        "ai"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "one_liner": "[Research Inside] AI 시대, 저장하던 낸드가 연산을 시작했다∙∙∙ IEEE 논문으로 입증한 3D FeNAND Co-optimization이 여는 AI 메모리의 새로운 차원",
+    "importance": 3
+  },
+  {
     "id": "36adb391b4d6",
     "title": "광주 부지 찾은 SK그룹 최태원 회장, “호남권 반도체 클러스터 속도감 있게 추진할 것”",
     "url": "https://news.skhynix.co.kr/southwestern-region-investment",
