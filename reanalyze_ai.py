@@ -2,8 +2,13 @@
 
 import argparse
 
-from ai_analyzer_v4 import analyze_with_ollama_v4
-from media_source import find_youtube_transcript
+from ai_analyzer_v4 import (
+    analyze_with_ollama_v4,
+)
+
+from image_article import (
+    extract_article_image_text,
+)
 
 from update_news import (
     DATA_FILE,
@@ -27,20 +32,20 @@ def parse_args():
     parser.add_argument(
         "--match",
         default="",
-        help="제목에 포함된 문자열만 처리"
+        help="제목에 포함된 문자열만 처리",
     )
 
     parser.add_argument(
         "--limit",
         type=int,
         default=0,
-        help="최대 처리 기사 수"
+        help="최대 처리 기사 수",
     )
 
     parser.add_argument(
         "--all",
         action="store_true",
-        help="미처리 기사 전체 재분석"
+        help="미처리 기사 전체 재분석",
     )
 
     return parser.parse_args()
@@ -50,29 +55,18 @@ def main():
 
     args = parse_args()
 
-    # 안전장치:
-    # --match 또는 --all 없이는 절대 실행하지 않음
     if not args.match and not args.all:
 
         print(
-            "안전 중지: --match 또는 --all을 지정하세요."
-        )
-
-        print(
-            '예: py reanalyze_ai.py '
-            '--match "품질보증" --limit 1'
-        )
-
-        print(
-            "전체 실행: "
-            "py reanalyze_ai.py --all"
+            "안전 중지: "
+            "--match 또는 --all을 지정하세요."
         )
 
         return 0
 
     articles = load_json(
         DATA_FILE,
-        []
+        [],
     )
 
     targets = [
@@ -85,7 +79,10 @@ def main():
 
     if args.match:
 
-        keyword = args.match.lower()
+        keyword = (
+            args.match
+            .lower()
+        )
 
         targets = [
             article
@@ -93,7 +90,7 @@ def main():
             if keyword
             in article.get(
                 "title",
-                ""
+                "",
             ).lower()
         ]
 
@@ -104,11 +101,13 @@ def main():
         ]
 
     print(
-        f"전체 기사: {len(articles)}개"
+        f"전체 기사: "
+        f"{len(articles)}개"
     )
 
     print(
-        f"이번 처리 대상: {len(targets)}개"
+        f"이번 처리 대상: "
+        f"{len(targets)}개"
     )
 
     if not targets:
@@ -124,31 +123,29 @@ def main():
 
     for index, article in enumerate(
         targets,
-        1
+        1,
     ):
 
         title = article.get(
             "title",
-            ""
+            "",
         )
 
         url = article.get(
             "url",
-            ""
+            "",
         )
 
         tags = list(
             article.get(
                 "tags",
-                []
+                [],
             )
             or []
         )
 
         print()
-        print(
-            "=" * 70
-        )
+        print("=" * 70)
 
         print(
             f"[{index}/{len(targets)}] "
@@ -158,6 +155,7 @@ def main():
         description = ""
         body = ""
         page_tags = []
+        page_date = ""
 
         try:
 
@@ -173,7 +171,10 @@ def main():
             tags = list(
                 dict.fromkeys(
                     tags
-                    + (page_tags or [])
+                    + (
+                        page_tags
+                        or []
+                    )
                 )
             )
 
@@ -186,9 +187,10 @@ def main():
 
         source = ""
         content_source = ""
-        media = None
 
-        # 1. 정상 기사 본문
+        # --------------------------------------------------
+        # 1. 일반 텍스트 기사
+        # --------------------------------------------------
         if usable_article_body(
             body
         ):
@@ -206,52 +208,59 @@ def main():
                 f"{len(source):,}자"
             )
 
-        # 2. 본문이 없거나 미디어형 기사
+        # --------------------------------------------------
+        # 2. 이미지형 뉴스룸 기사
+        # --------------------------------------------------
         else:
 
             print(
-                "  -> 유효 기사 본문 부족 -> 분석 보류"
+                "  -> HTML 기사 본문 부족"
             )
+
+            image_info = None
 
             try:
 
-                media = (
-                    find_youtube_transcript(
+                image_info = (
+                    extract_article_image_text(
+                        url,
                         title,
-                        tags
                     )
                 )
 
             except Exception as exc:
 
                 print(
-                    "  -> YouTube 검색 실패: "
+                    "  -> 기사 이미지 처리 실패: "
                     f"{exc}"
                 )
 
-                media = None
+            if image_info:
 
-            if media:
-
-                source = media[
-                    "text"
-                ]
+                source = (
+                    image_info[
+                        "text"
+                    ]
+                )
 
                 content_source = (
-                    "youtube-caption"
+                    "article-image"
                 )
 
                 print(
-                    "  -> 영상: "
-                    f"{media['video_title']}"
-                )
-
-                print(
-                    "  -> 자막 길이: "
+                    "  -> 뉴스룸 이미지 원문 사용: "
                     f"{len(source):,}자"
                 )
 
-        # 잘못된 title-only 분석 방지
+            else:
+
+                print(
+                    "  -> 이미지 원문도 부족"
+                )
+
+        # --------------------------------------------------
+        # 원문 안전장치
+        # --------------------------------------------------
         if len(source) < 300:
 
             failed += 1
@@ -263,6 +272,9 @@ def main():
 
             continue
 
+        # --------------------------------------------------
+        # 기존 V4 요약기
+        # --------------------------------------------------
         try:
 
             analysis = (
@@ -296,7 +308,9 @@ def main():
 
             continue
 
-        # 성공한 경우에만 기존 기사 갱신
+        # --------------------------------------------------
+        # 성공한 경우에만 저장
+        # --------------------------------------------------
         article.update(
             analysis
         )
@@ -313,31 +327,19 @@ def main():
             "content_source"
         ] = content_source
 
-        if media:
+        if page_date:
 
             article[
-                "media_title"
-            ] = media[
-                "video_title"
-            ]
+                "published"
+            ] = page_date
 
             article[
-                "media_url"
-            ] = media[
-                "video_url"
-            ]
+                "date_source"
+            ] = "page"
 
-            article[
-                "caption_language"
-            ] = media[
-                "caption_language"
-            ]
-
-        # 한 기사 성공할 때마다 저장
-        # 중간에 종료돼도 완료분은 보존
         save_json(
             DATA_FILE,
-            articles
+            articles,
         )
 
         success += 1
@@ -347,12 +349,10 @@ def main():
         )
 
     print()
-    print(
-        "=" * 70
-    )
+    print("=" * 70)
 
     print(
-        f"재분석 완료: "
+        "재분석 완료: "
         f"성공 {success}개 / "
         f"보류·실패 {failed}개"
     )
@@ -366,7 +366,7 @@ def main():
     )
 
     print(
-        f"AI 미처리 잔여: "
+        "AI 미처리 잔여: "
         f"{remaining}개"
     )
 

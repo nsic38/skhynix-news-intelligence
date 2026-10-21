@@ -1,4 +1,8 @@
-﻿from __future__ import annotations
+from __future__ import annotations
+
+from image_article import (
+    extract_article_image_text,
+)
 
 import hashlib
 
@@ -214,55 +218,69 @@ def build_record_ai(
         )
 
         print(
-            "  -> 뉴스룸 본문 사용: "
-            f"{len(analysis_source):,}자"
+            "  -> ??? ?? ??: "
+            f"{len(analysis_source):,}?"
         )
 
     else:
+
         print(
-            "  -> 유효 기사 본문 부족 -> 분석 보류"
+            "  -> HTML ?? ?? ??"
         )
 
+        image_info = None
+
         try:
-            media_info = (
-                find_youtube_transcript(
+
+            image_info = (
+                extract_article_image_text(
+                    url,
                     title,
-                    tags
                 )
             )
+
         except Exception as exc:
-            media_info = None
 
             print(
-                "  -> YouTube 검색 실패: "
+                "  -> ??? ??? ?? ?? ??: "
                 f"{exc}"
             )
 
-        if media_info:
+        if image_info:
 
             analysis_source = (
-                media_info[
+                image_info[
                     "text"
                 ]
             )
 
             content_source = (
-                "youtube-caption"
+                "article-image"
             )
 
             print(
-                "  -> YouTube 자막 사용: "
-                f"{media_info['video_title']}"
+                "  -> ??? ??? ?? ??: "
+                f"{len(analysis_source):,}?"
             )
 
+        else:
+
             print(
-                "  -> 자막 길이: "
-                f"{len(analysis_source):,}자"
+                "  -> ??? ??? ??? ?? "
+                "-> ?? ??"
             )
 
     # ARTICLE-ONLY MODE:
-    # 기사 본문 외의 RSS/영상/외부 자료는 분석에 사용하지 않는다.
-    if analysis_source and content_source != "article":
+    # ?? ??? ??? HTML ?? ??
+    # ??? ?? ??? ?????.
+    if (
+        analysis_source
+        and content_source
+        not in (
+            "article",
+            "article-image",
+        )
+    ):
         analysis_source = ""
         media_info = None
 
