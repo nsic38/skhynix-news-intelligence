@@ -5,35 +5,72 @@
     return [...new Set(xs.map(x=>"#"+esc(x).replace(/[^\p{L}\p{N}]+/gu,"")).filter(x=>x!=="#"))].slice(0,10).join(" ");
   }
   function makeDraft(a){
-    const role=selectedRole(), r=getRoleAnalysis(a,role);
-    const title=esc(a.title).replace(/\s*[-–—]\s*SK하이닉스 뉴스룸\s*$/i,"").trim();
-    const main=a.main_point||a.one_liner||title;
-    let pts=(a.key_points||[]).filter(Boolean).slice(0,3);
-    if(!pts.length&&main) pts=[main];
-    return `[SK하이닉스 뉴스 정리] ${title}
+    const role = selectedRole();
+    const r = getRoleAnalysis(a, role);
 
-SK하이닉스 뉴스룸의 최신 기사 중 취업 준비와 직무 이해에 참고할 만한 내용을 정리했습니다.
+    const title = esc(a.title)
+      .replace(/\s*[-–—]\s*SK하이닉스 뉴스룸\s*$/i, "")
+      .trim();
+
+    const published = esc(a.published || "날짜 미확인");
+
+    const main =
+      a.main_point ||
+      a.one_liner ||
+      title;
+
+    let pts = (a.key_points || [])
+      .filter(Boolean)
+      .slice(0, 5);
+
+    if (!pts.length && main) {
+      pts = [main];
+    }
+
+    const why =
+      a.why_it_matters ||
+      main;
+
+    const career =
+      r.what_you_get ||
+      a.takeaway ||
+      "기사의 핵심 내용을 직무 관점에서 연결해보면 좋습니다.";
+
+    const keywordList = [
+      ...(a.tags || []),
+      ...(r.matched_keywords || [])
+    ]
+      .filter(Boolean)
+      .filter((x, i, arr) => arr.indexOf(x) === i)
+      .slice(0, 10);
+
+    return `SK하이닉스 뉴스 기사 정리 - ${title}
+
+[SK하이닉스 뉴스 정리] ${title}
+
+${published} | SK하이닉스
 
 📌 한줄 요약
 ${main}
 
 ✅ 핵심 내용
-${pts.map((x,i)=>`${i+1}. ${x}`).join("\n")}
+${pts.map((x, i) => `${i + 1}. ${x}`).join("\n")}
 
 💡 왜 중요한가
-${a.why_it_matters||main}
+${why}
 
 🎯 ${role} 취준 관점
-${r.what_you_get||a.takeaway||"기사의 핵심 내용을 직무 관점에서 연결해보면 좋습니다."}
+${career}
 
 🔎 체크 키워드
-${[...(a.tags||[]),...(r.matched_keywords||[])].filter(Boolean).slice(0,8).join(" · ")||"SK하이닉스 · 반도체"}
+${keywordList.join(" · ") || "SK하이닉스 · 반도체"}
 
 📎 원문
-${a.url}
+[${title} – SK hynix Newsroom](${a.url})
 
-${tags(a,r)}`;
+${tags(a, r)}`;
   }
+
   function openDraft(text){
     document.querySelector(".blog-pop")?.remove();
     const bg=document.createElement("div");

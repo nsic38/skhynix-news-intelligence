@@ -656,6 +656,130 @@ def fetch_article_data(url: str) -> tuple[str, str, list[str], str]:
                 body = candidate
 
 
+    # ARTICLE-ONLY: 기사 제목 앞의 페이지 메뉴/연관기사 제거
+    body = html_to_text(body)
+
+    heading = ""
+    h1 = soup.find("h1")
+
+    if h1:
+        heading = clean_text(
+            h1.get_text(" ", strip=True)
+        )
+
+    if heading and heading in body:
+        pos = body.find(heading)
+
+        if pos > 0:
+            prefix = body[:pos]
+
+            shell_markers = (
+                "연관 기사",
+                "Homepage",
+                "INSTAGRAM",
+                "YOUTUBE",
+                "Heritage",
+                "Media Library",
+            )
+
+            if any(
+                marker in prefix
+                for marker in shell_markers
+            ):
+                body = body[pos:]
+
+    body = clean_text(body)
+
+
+    # --------------------------------------------------------
+    # FINAL ARTICLE-ONLY CROP
+    # 페이지 전체가 잡힌 경우 현재 기사 제목부터 본문을 시작한다.
+    # --------------------------------------------------------
+    body = html_to_text(body)
+
+    title_candidates = []
+
+    for attrs in (
+        {"property": "og:title"},
+        {"name": "twitter:title"},
+    ):
+        node = soup.find("meta", attrs=attrs)
+
+        if node and node.get("content"):
+
+            value = clean_text(
+                node.get("content", "")
+            )
+
+            for suffix in (
+                " | SK hynix Newsroom",
+                " - SK hynix Newsroom",
+                " | SK하이닉스 뉴스룸",
+            ):
+                if value.endswith(suffix):
+                    value = value[:-len(suffix)].strip()
+
+            if value:
+                title_candidates.append(value)
+
+    h1 = soup.find("h1")
+
+    if h1:
+        value = clean_text(
+            h1.get_text(" ", strip=True)
+        )
+
+        if value:
+            title_candidates.append(value)
+
+    # 긴 제목부터 우선
+    title_candidates = sorted(
+        set(title_candidates),
+        key=len,
+        reverse=True,
+    )
+
+    shell_markers = (
+        "연관 기사",
+        "Homepage",
+        "INSTAGRAM",
+        "YOUTUBE",
+        "Heritage",
+        "Media Library",
+    )
+
+    for article_title in title_candidates:
+
+        pos = body.find(article_title)
+
+        if pos < 0:
+            continue
+
+        prefix = body[:pos]
+
+        if (
+            len(prefix) >= 100
+            or any(
+                marker in prefix
+                for marker in shell_markers
+            )
+        ):
+            body = body[pos:]
+
+        break
+
+    # 기사 뒤에 다시 붙는 연관 기사 영역 제거
+    related_pos = body.find(
+        "연관 기사",
+        500,
+    )
+
+    if related_pos >= 0:
+        body = body[:related_pos]
+
+    body = clean_text(body)
+
+
     return description, body, tags, page_date
 
 

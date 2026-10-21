@@ -43,9 +43,6 @@ def usable_article_body(
         body
     )
 
-    if len(text) >= 1600:
-        return True
-
     if len(text) < 500:
         return False
 
@@ -66,7 +63,11 @@ def usable_article_body(
         if marker in text
     )
 
-    return junk_count < 2
+    # 길어도 메뉴/연관기사 등이 섞였으면 정상 본문으로 인정하지 않음
+    if junk_count >= 2:
+        return False
+
+    return True
 
 
 def enrich_role_analysis(
