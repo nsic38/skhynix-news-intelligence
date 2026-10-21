@@ -321,11 +321,32 @@ def iter_json_objects(value):
 def fetch_article_data(url: str) -> tuple[str, str, list[str], str]:
     from bs4 import BeautifulSoup
 
-    response = session.get(url, timeout=TIMEOUT, headers={
-        **HEADERS,
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-    })
-    response.raise_for_status()
+    import time
+
+    response = None
+    last_error = None
+
+    for attempt in range(3):
+        try:
+            response = session.get(
+                url,
+                timeout=TIMEOUT,
+                headers={
+                    **HEADERS,
+                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                },
+            )
+            response.raise_for_status()
+            break
+
+        except Exception as exc:
+            last_error = exc
+
+            if attempt < 2:
+                time.sleep(1.5 * (attempt + 1))
+
+    if response is None:
+        raise last_error
     soup = BeautifulSoup(response.text, "html.parser")
 
     description = ""
@@ -491,6 +512,149 @@ def fetch_article_data(url: str) -> tuple[str, str, list[str], str]:
         joined = " ".join(paragraphs)
         if len(joined) > len(body):
             body = joined
+
+
+    # --------------------------------------------------------
+    # 페이지 내부 JSON/SPA 데이터에서 기사 본문 추가 탐색
+    # 외부 자료는 사용하지 않는다.
+    # --------------------------------------------------------
+    if len(body) < 500:
+
+        embedded_candidates = []
+
+        body_keys = {
+            "articlebody",
+            "article_body",
+            "body",
+            "content",
+            "contenthtml",
+            "content_html",
+            "rendered",
+            "postcontent",
+            "post_content",
+            "descriptionhtml",
+        }
+
+        def walk_embedded_json(
+            value,
+            parent_key="",
+        ):
+
+            if isinstance(value, dict):
+
+                for key, child in value.items():
+
+                    key_low = str(
+                        key
+                    ).lower()
+
+                    if (
+                        isinstance(
+                            child,
+                            str,
+                        )
+                        and key_low
+                        in body_keys
+                    ):
+
+                        candidate = (
+                            html_to_text(
+                                child
+                            )
+                        )
+
+                        if (
+                            len(candidate)
+                            >= 500
+                            and not
+                            is_generic_newsroom_text(
+                                candidate
+                            )
+                        ):
+                            embedded_candidates.append(
+                                candidate
+                            )
+
+                    else:
+                        walk_embedded_json(
+                            child,
+                            key_low,
+                        )
+
+            elif isinstance(
+                value,
+                list,
+            ):
+
+                for child in value:
+                    walk_embedded_json(
+                        child,
+                        parent_key,
+                    )
+
+
+        for script in soup.find_all(
+            "script"
+        ):
+
+            script_type = (
+                script.get(
+                    "type",
+                    ""
+                )
+                or ""
+            ).lower()
+
+            script_id = (
+                script.get(
+                    "id",
+                    ""
+                )
+                or ""
+            )
+
+            if (
+                "json"
+                not in script_type
+                and script_id
+                not in (
+                    "__NEXT_DATA__",
+                    "__NUXT_DATA__",
+                )
+            ):
+                continue
+
+            raw = (
+                script.string
+                or script.get_text()
+            )
+
+            if not raw:
+                continue
+
+            try:
+                data = json.loads(
+                    raw
+                )
+            except Exception:
+                continue
+
+            walk_embedded_json(
+                data
+            )
+
+
+        if embedded_candidates:
+
+            candidate = max(
+                embedded_candidates,
+                key=len,
+            )
+
+            if len(candidate) > len(body):
+
+                body = candidate
+
 
     return description, body, tags, page_date
 
