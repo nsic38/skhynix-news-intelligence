@@ -20,16 +20,11 @@
       title;
 
     let pts = (a.key_points || [])
-      .filter(Boolean)
+      .filter(x => String(x || "").trim())
       .slice(0, 5);
 
-    if (!pts.length && main) {
-      pts = [main];
-    }
-
     const why =
-      a.why_it_matters ||
-      main;
+      String(a.why_it_matters || "").trim();
 
     const career =
       r.what_you_get ||
@@ -97,9 +92,28 @@ ${tags(a, r)}`;
       const link=card.querySelector("h2 a"); if(!link) return;
       const a=allArticles.find(x=>x.url===link.href||x.url===link.getAttribute("href")); if(!a) return;
       const btn=document.createElement("button");
-      btn.className="blog-draft-btn"; btn.type="button"; btn.textContent="블로그용 글";
+      btn.className="blog-draft-btn";
+      btn.type="button";
+
+      const summaryReady =
+        Array.isArray(a.key_points) &&
+        a.key_points.filter(x => String(x || "").trim()).length > 0 &&
+        Boolean(String(a.why_it_matters || "").trim());
+
+      btn.textContent = summaryReady
+        ? "블로그용 글"
+        : "블로그용 글 · 분석 보류";
+
       btn.style.cssText="margin-right:10px;padding:9px 13px;border:1px solid #d5dce6;border-radius:9px;background:white;color:#0b1730;font-weight:800;cursor:pointer";
-      btn.onclick=()=>openDraft(makeDraft(a));
+
+      if (summaryReady) {
+        btn.onclick=()=>openDraft(makeDraft(a));
+      } else {
+        btn.disabled=true;
+        btn.title="기사 본문을 충분히 추출하지 못해 블로그 초안을 만들지 않습니다.";
+        btn.style.opacity="0.5";
+        btn.style.cursor="not-allowed";
+      }
       const orig=card.querySelector(".original"); orig?.parentNode?.insertBefore(btn,orig);
     });
   }

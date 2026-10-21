@@ -117,7 +117,16 @@ function render(items) {
       .map(tag => `<span class="tag">${escapeHtml(tag)}</span>`)
       .join("");
 
-    const points = (article.key_points || [])
+    const validPoints = (article.key_points || [])
+      .filter(point => String(point || "").trim());
+
+    const hasKeyPoints = validPoints.length > 0;
+    const hasWhy = Boolean(
+      String(article.why_it_matters || "").trim()
+    );
+    const analysisReady = hasKeyPoints && hasWhy;
+
+    const points = validPoints
       .slice(0, 5)
       .map(point => `<li>${escapeHtml(point)}</li>`)
       .join("");
@@ -134,7 +143,9 @@ function render(items) {
       <div class="topline">
         <div class="meta-group">
           <span class="date">${escapeHtml(article.published || "날짜 미확인")}</span>
-          <span class="category">${escapeHtml(article.category || "General")}</span>
+          <span class="category">${escapeHtml(
+            article.category || (analysisReady ? "General" : "분석 보류")
+          )}</span>
         </div>
 
         <div class="job-fit">
@@ -158,12 +169,19 @@ function render(items) {
       <div class="insights">
         <section class="panel key-panel">
           <div class="label">KEY POINTS</div>
-          <ul>${points || "<li>핵심 내용을 충분히 추출하지 못했습니다.</li>"}</ul>
+          <ul>${
+            points ||
+            "<li>기사 본문을 충분히 추출하지 못해 상세 요약이 보류되었습니다.</li>"
+          }</ul>
         </section>
 
         <section class="panel">
           <div class="label">WHY IT MATTERS</div>
-          <p>${escapeHtml(article.why_it_matters || "")}</p>
+          <p>${escapeHtml(
+            hasWhy
+              ? article.why_it_matters
+              : "기사 본문을 충분히 추출하지 못해 중요도 해석이 보류되었습니다."
+          )}</p>
         </section>
 
         <section class="panel gain-panel">
