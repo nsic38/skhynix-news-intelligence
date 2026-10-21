@@ -1,5 +1,10 @@
 from __future__ import annotations
 
+from source_guard import (
+    sanitize_article_source,
+    source_is_safe,
+)
+
 from image_article import (
     extract_article_image_text,
 )
@@ -36,42 +41,21 @@ from update_news import (
 )
 
 
-AI_ENGINE = "ollama-qwen3-4b-article-only"
+AI_ENGINE = "ollama-qwen3-4b-article-only-v2"
 
 
 def usable_article_body(
     body: str
 ) -> bool:
 
-    text = html_to_text(
+    text = sanitize_article_source(
         body
     )
 
-    if len(text) < 500:
-        return False
-
-    junk_markers = (
-        "연관 기사",
-        "Homepage",
-        "INSTAGRAM",
-        "YOUTUBE",
-        "Media Library",
-        "메뉴 토글",
-        "뉴스룸 운영정책",
-        "뉴스룸 이용안내",
+    return source_is_safe(
+        text,
+        min_chars=350,
     )
-
-    junk_count = sum(
-        1
-        for marker in junk_markers
-        if marker in text
-    )
-
-    # 길어도 메뉴/연관기사 등이 섞였으면 정상 본문으로 인정하지 않음
-    if junk_count >= 2:
-        return False
-
-    return True
 
 
 def enrich_role_analysis(
@@ -80,6 +64,12 @@ def enrich_role_analysis(
     source: str,
     tags: list[str],
 ) -> dict:
+
+    source = sanitize_article_source(
+        source,
+        title,
+    )
+
 
     temp = {
         "title": title,

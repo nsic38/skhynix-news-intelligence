@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import argparse
 
@@ -8,6 +8,11 @@ from ai_analyzer_v4 import (
 
 from image_article import (
     extract_article_image_text,
+)
+
+from source_guard import (
+    sanitize_article_source,
+    source_is_safe,
 )
 
 from update_news import (
@@ -25,6 +30,23 @@ from update_news_ai import (
 )
 
 
+BAD_ANALYSIS_FIELDS = (
+    "main_point",
+    "one_liner",
+    "key_points",
+    "why_it_matters",
+    "category",
+    "_evidence",
+    "role_analysis",
+    "career_relevance",
+    "analysis_engine",
+    "content_source",
+    "media_title",
+    "media_url",
+    "caption_language",
+)
+
+
 def parse_args():
 
     parser = argparse.ArgumentParser()
@@ -32,34 +54,54 @@ def parse_args():
     parser.add_argument(
         "--match",
         default="",
-        help="제목에 포함된 문자열만 처리",
     )
 
     parser.add_argument(
         "--limit",
         type=int,
         default=0,
-        help="최대 처리 기사 수",
     )
 
     parser.add_argument(
         "--all",
         action="store_true",
-        help="미처리 기사 전체 재분석",
     )
 
     return parser.parse_args()
+
+
+def mark_pending(
+    article: dict,
+    reason: str,
+):
+
+    for key in BAD_ANALYSIS_FIELDS:
+
+        article.pop(
+            key,
+            None,
+        )
+
+    article[
+        "analysis_status"
+    ] = "pending"
+
+    article[
+        "analysis_error"
+    ] = reason
 
 
 def main():
 
     args = parse_args()
 
-    if not args.match and not args.all:
+    if (
+        not args.match
+        and not args.all
+    ):
 
         print(
-            "안전 중지: "
-            "--match 또는 --all을 지정하세요."
+            "Use --match or --all"
         )
 
         return 0
@@ -80,8 +122,7 @@ def main():
     if args.match:
 
         keyword = (
-            args.match
-            .lower()
+            args.match.lower()
         )
 
         targets = [
@@ -101,22 +142,12 @@ def main():
         ]
 
     print(
-        f"전체 기사: "
-        f"{len(articles)}개"
+        f"articles: {len(articles)}"
     )
 
     print(
-        f"이번 처리 대상: "
-        f"{len(targets)}개"
+        f"targets: {len(targets)}"
     )
-
-    if not targets:
-
-        print(
-            "처리할 기사가 없습니다."
-        )
-
-        return 0
 
     success = 0
     failed = 0
@@ -181,16 +212,13 @@ def main():
         except Exception as exc:
 
             print(
-                "  -> 뉴스룸 요청 실패: "
+                "  -> page request failed: "
                 f"{exc}"
             )
 
         source = ""
         content_source = ""
 
-        # --------------------------------------------------
-        # 1. 일반 텍스트 기사
-        # --------------------------------------------------
         if usable_article_body(
             body
         ):
@@ -204,17 +232,14 @@ def main():
             )
 
             print(
-                "  -> 기사 본문 사용: "
-                f"{len(source):,}자"
+                "  -> HTML source"
             )
 
-        # --------------------------------------------------
-        # 2. 이미지형 뉴스룸 기사
-        # --------------------------------------------------
         else:
 
             print(
-                "  -> HTML 기사 본문 부족"
+                "  -> HTML rejected; "
+                "checking current-page image"
             )
 
             image_info = None
@@ -231,50 +256,50 @@ def main():
             except Exception as exc:
 
                 print(
-                    "  -> 기사 이미지 처리 실패: "
+                    "  -> image source failed: "
                     f"{exc}"
                 )
 
             if image_info:
 
-                source = (
-                    image_info[
-                        "text"
-                    ]
-                )
+                source = image_info[
+                    "text"
+                ]
 
                 content_source = (
                     "article-image"
                 )
 
-                print(
-                    "  -> 뉴스룸 이미지 원문 사용: "
-                    f"{len(source):,}자"
-                )
+        source = sanitize_article_source(
+            source,
+            title,
+        )
 
-            else:
-
-                print(
-                    "  -> 이미지 원문도 부족"
-                )
-
-        # --------------------------------------------------
-        # 원문 안전장치
-        # --------------------------------------------------
-        if len(source) < 300:
+        if not source_is_safe(
+            source,
+            title,
+            min_chars=300,
+        ):
 
             failed += 1
 
+            mark_pending(
+                article,
+                "source integrity guard rejected input",
+            )
+
+            save_json(
+                DATA_FILE,
+                articles,
+            )
+
             print(
-                "  -> 처리 보류: "
-                "분석 가능한 원문 부족"
+                "  -> PENDING: unsafe or "
+                "insufficient source"
             )
 
             continue
 
-        # --------------------------------------------------
-        # 기존 V4 요약기
-        # --------------------------------------------------
         try:
 
             analysis = (
@@ -301,16 +326,23 @@ def main():
 
             failed += 1
 
+            mark_pending(
+                article,
+                str(exc),
+            )
+
+            save_json(
+                DATA_FILE,
+                articles,
+            )
+
             print(
-                "  -> AI 분석 실패: "
+                "  -> PENDING: "
                 f"{exc}"
             )
 
             continue
 
-        # --------------------------------------------------
-        # 성공한 경우에만 저장
-        # --------------------------------------------------
         article.update(
             analysis
         )
@@ -326,6 +358,15 @@ def main():
         article[
             "content_source"
         ] = content_source
+
+        article[
+            "analysis_status"
+        ] = "complete"
+
+        article.pop(
+            "analysis_error",
+            None,
+        )
 
         if page_date:
 
@@ -345,16 +386,15 @@ def main():
         success += 1
 
         print(
-            "  -> 저장 완료"
+            "  -> saved"
         )
 
     print()
     print("=" * 70)
 
     print(
-        "재분석 완료: "
-        f"성공 {success}개 / "
-        f"보류·실패 {failed}개"
+        f"done: success={success}, "
+        f"pending={failed}"
     )
 
     remaining = sum(
@@ -366,8 +406,7 @@ def main():
     )
 
     print(
-        "AI 미처리 잔여: "
-        f"{remaining}개"
+        f"remaining={remaining}"
     )
 
     return 0

@@ -6,7 +6,6 @@ import json
 import os
 import re
 from io import BytesIO
-from typing import Any
 from urllib.parse import urljoin, urlsplit
 
 import requests
@@ -15,6 +14,7 @@ from PIL import Image
 
 
 OLLAMA_URL = "http://127.0.0.1:11434/api/chat"
+
 VISION_MODEL = os.getenv(
     "OLLAMA_VISION_MODEL",
     "qwen3-vl:4b-instruct",
@@ -29,21 +29,73 @@ HEADERS = {
     "Accept-Language": "ko-KR,ko;q=0.9,en;q=0.7",
 }
 
-MAX_IMAGES = 20
 MAX_IMAGE_BYTES = 30 * 1024 * 1024
+MAX_ASSETS = 4
 
 
 def clean_text(text: str) -> str:
-    text = str(text or "")
-    text = text.replace("\u200b", " ")
-    text = re.sub(r"```[a-zA-Z]*", "", text)
-    text = text.replace("```", "")
-    text = re.sub(r"[ \t]+", " ", text)
-    text = re.sub(r"\n{3,}", "\n\n", text)
+
+    text = str(
+        text or ""
+    )
+
+    text = text.replace(
+        "\u200b",
+        " ",
+    )
+
+    text = re.sub(
+        r"```[a-zA-Z]*",
+        "",
+        text,
+    )
+
+    text = text.replace(
+        "```",
+        "",
+    )
+
+    text = re.sub(
+        r"[ \t]+",
+        " ",
+        text,
+    )
+
+    text = re.sub(
+        r"\n{3,}",
+        "\n\n",
+        text,
+    )
+
     return text.strip()
 
 
-def is_image_url(url: str) -> bool:
+def normalize_url(
+    value: str,
+    article_url: str,
+) -> str:
+
+    value = html.unescape(
+        str(value or "")
+    )
+
+    value = value.replace(
+        "\\/",
+        "/",
+    ).strip()
+
+    if not value:
+        return ""
+
+    return urljoin(
+        article_url,
+        value,
+    )
+
+
+def is_direct_image_url(
+    url: str,
+) -> bool:
 
     path = (
         urlsplit(url)
@@ -61,61 +113,39 @@ def is_image_url(url: str) -> bool:
     )
 
 
-def normalize_image_url(
-    url: str,
-    article_url: str,
-) -> str:
-
-    url = html.unescape(
-        str(url or "")
-    )
-
-    url = (
-        url
-        .replace("\\/", "/")
-        .strip()
-    )
-
-    if not url:
-        return ""
-
-    return urljoin(
-        article_url,
-        url,
-    )
-
-
 def walk_content_urls(
-    value: Any,
+    value,
     output: list[str],
-) -> None:
+):
 
-    if isinstance(value, dict):
+    if isinstance(
+        value,
+        dict,
+    ):
 
         for key, child in value.items():
 
-            key_low = str(
-                key
-            ).lower()
-
             if (
-                isinstance(child, str)
-                and key_low
-                in (
-                    "contenturl",
-                    "url",
-                    "image",
-                    "thumbnailurl",
+                str(key).lower()
+                == "contenturl"
+                and isinstance(
+                    child,
+                    str,
                 )
             ):
-                output.append(child)
+                output.append(
+                    child
+                )
 
             walk_content_urls(
                 child,
                 output,
             )
 
-    elif isinstance(value, list):
+    elif isinstance(
+        value,
+        list,
+    ):
 
         for child in value:
 
@@ -125,7 +155,7 @@ def walk_content_urls(
             )
 
 
-def extract_urls_from_html(
+def extract_content_urls(
     source: str,
     article_url: str,
 ) -> list[str]:
@@ -135,14 +165,14 @@ def extract_urls_from_html(
         "html.parser",
     )
 
-    raw_urls: list[str] = []
+    raw_urls = []
 
-    # --------------------------------------------------
-    # 1. JSON-LD
-    # --------------------------------------------------
     for script in soup.find_all(
         "script",
-        attrs={"type": "application/ld+json"},
+        attrs={
+            "type":
+                "application/ld+json"
+        },
     ):
 
         raw = (
@@ -154,8 +184,13 @@ def extract_urls_from_html(
             continue
 
         try:
-            data = json.loads(raw)
+
+            data = json.loads(
+                raw
+            )
+
         except Exception:
+
             continue
 
         walk_content_urls(
@@ -163,128 +198,36 @@ def extract_urls_from_html(
             raw_urls,
         )
 
-    # --------------------------------------------------
-    # 2. 실제 img 태그
-    # --------------------------------------------------
-    for img in soup.find_all("img"):
-
-        for attr in (
-            "src",
-            "data-src",
-            "data-lazy-src",
-            "data-original",
-            "data-image",
-        ):
-
-            value = img.get(attr)
-
-            if value:
-                raw_urls.append(value)
-
-        for attr in (
-            "srcset",
-            "data-srcset",
-        ):
-
-            value = img.get(attr)
-
-            if not value:
-                continue
-
-            for item in str(value).split(","):
-
-                candidate = (
-                    item
-                    .strip()
-                    .split(" ")[0]
-                )
-
-                if candidate:
-                    raw_urls.append(
-                        candidate
-                    )
-
-    # --------------------------------------------------
-    # 3. source 태그 / picture
-    # --------------------------------------------------
-    for node in soup.find_all("source"):
-
-        value = (
-            node.get("srcset")
-            or node.get("src")
-        )
-
-        if not value:
-            continue
-
-        for item in str(value).split(","):
-
-            candidate = (
-                item
-                .strip()
-                .split(" ")[0]
-            )
-
-            if candidate:
-                raw_urls.append(
-                    candidate
-                )
-
-    # --------------------------------------------------
-    # 4. HTML 안에 직접 들어있는 uploads 이미지
-    # --------------------------------------------------
+    # Some pages expose contentUrl in serialized data.
     for match in re.findall(
-        r'https?:\\?/\\?/[^"\'<>\s]+?'
-        r'\.(?:jpg|jpeg|png|webp)'
-        r'(?:\?[^"\'<>\s]*)?',
+        r'"contentUrl"\s*:\s*"([^"]+)"',
         source,
         flags=re.IGNORECASE,
     ):
 
         raw_urls.append(
-            match.replace("\\/", "/")
+            match
         )
 
-    # --------------------------------------------------
-    # 정리
-    # --------------------------------------------------
-    result: list[str] = []
-
-    blocked_words = (
-        "logo",
-        "icon",
-        "favicon",
-        "sns",
-        "facebook",
-        "youtube",
-        "instagram",
-        "kakao",
-        "profile",
-        "avatar",
-        "banner",
-        "footer",
-        "header",
-    )
+    result = []
 
     for raw_url in raw_urls:
 
-        url = normalize_image_url(
+        url = normalize_url(
             raw_url,
             article_url,
         )
 
-        if not is_image_url(url):
+        if not url:
+            continue
+
+        if not is_direct_image_url(
+            url
+        ):
             continue
 
         low = url.lower()
 
-        if any(
-            word in low
-            for word in blocked_words
-        ):
-            continue
-
-        # 뉴스룸 실제 업로드 자료 우선
         if (
             "/wp-content/uploads/"
             not in low
@@ -293,17 +236,54 @@ def extract_urls_from_html(
         ):
             continue
 
-        # 워드프레스 자동 생성 thumbnail 제외
-        if re.search(
-            r"-\d{2,4}x\d{2,4}\.(jpg|jpeg|png|webp)",
-            low,
-        ):
-            continue
-
         if url not in result:
-            result.append(url)
+            result.append(
+                url
+            )
 
-    return result
+    return result[
+        :MAX_ASSETS
+    ]
+
+
+def extract_current_download(
+    source: str,
+    article_url: str,
+) -> str:
+
+    soup = BeautifulSoup(
+        source,
+        "html.parser",
+    )
+
+    for node in soup.find_all(
+        "a",
+        href=True,
+    ):
+
+        text = node.get_text(
+            " ",
+            strip=True,
+        )
+
+        href = node.get(
+            "href",
+            "",
+        )
+
+        if (
+            "\ub2e4\uc6b4\ub85c\ub4dc"
+            in text
+            or "download.php"
+            in href
+        ):
+
+            return normalize_url(
+                href,
+                article_url,
+            )
+
+    return ""
 
 
 def render_html_with_edge(
@@ -324,49 +304,27 @@ def render_html_with_edge(
 
         with sync_playwright() as p:
 
-            browser = p.chromium.launch(
-                channel="msedge",
-                headless=True,
+            browser = (
+                p.chromium.launch(
+                    channel="msedge",
+                    headless=True,
+                )
             )
 
-            page = browser.new_page(
-                viewport={
-                    "width": 1600,
-                    "height": 1200,
-                }
-            )
+            page = browser.new_page()
 
             try:
 
                 page.goto(
                     article_url,
-                    wait_until="domcontentloaded",
+                    wait_until=(
+                        "domcontentloaded"
+                    ),
                     timeout=30000,
                 )
 
                 page.wait_for_timeout(
-                    5000
-                )
-
-                # lazy-load 이미지까지 로딩
-                page.evaluate("""
-                async () => {
-                    for (
-                        let y = 0;
-                        y < document.body.scrollHeight;
-                        y += 1000
-                    ) {
-                        window.scrollTo(0, y);
-                        await new Promise(
-                            r => setTimeout(r, 150)
-                        );
-                    }
-                    window.scrollTo(0, 0);
-                }
-                """)
-
-                page.wait_for_timeout(
-                    2000
+                    3000
                 )
 
                 return page.content()
@@ -376,116 +334,9 @@ def render_html_with_edge(
                 page.close()
                 browser.close()
 
-    except Exception as exc:
-
-        print(
-            "  -> Edge 이미지 탐색 실패: "
-            f"{exc}"
-        )
+    except Exception:
 
         return ""
-
-
-def image_exists(
-    url: str,
-    article_url: str,
-) -> bool:
-
-    try:
-
-        response = requests.head(
-            url,
-            headers={
-                **HEADERS,
-                "Referer": article_url,
-            },
-            allow_redirects=True,
-            timeout=15,
-        )
-
-        content_type = (
-            response.headers
-            .get("Content-Type", "")
-            .lower()
-        )
-
-        if (
-            response.status_code == 200
-            and (
-                content_type.startswith("image/")
-                or is_image_url(url)
-            )
-        ):
-            return True
-
-    except Exception:
-        pass
-
-    return False
-
-
-def expand_numbered_article_images(
-    seed_url: str,
-    article_url: str,
-) -> list[str]:
-
-    # ?:
-    # ..._05_???_2026.jpg
-    # ..._2026_06.jpg
-    #
-    # URL?? "_?????_" ??
-    # "_?????.???" ??? ??
-    # 01~12?? ?? ???? ???? ????.
-
-    path = urlsplit(seed_url).path
-
-    matches = list(
-        re.finditer(
-            r"_(\d{2})(?=_|(?:\.(?:jpg|jpeg|png|webp))$)",
-            path,
-            flags=re.IGNORECASE,
-        )
-    )
-
-    if not matches:
-        return [seed_url]
-
-    # ??? ??? ??? ??? ???? ??
-    match = matches[-1]
-
-    number_start = match.start(1)
-    number_end = match.end(1)
-
-    prefix = seed_url[:number_start]
-    suffix = seed_url[number_end:]
-
-    found = []
-
-    for index in range(1, 13):
-
-        candidate = (
-            prefix
-            + f"{index:02d}"
-            + suffix
-        )
-
-        if image_exists(
-            candidate,
-            article_url,
-        ):
-            found.append(candidate)
-
-    if seed_url not in found:
-        found.append(seed_url)
-
-    # URL ?? ??
-    result = []
-
-    for url in found:
-        if url not in result:
-            result.append(url)
-
-    return result
 
 
 def find_article_image_urls(
@@ -506,123 +357,66 @@ def find_article_image_urls(
 
         source = response.text
 
-    except Exception as exc:
+    except Exception:
 
-        print(
-            "  -> HTML ??? ?? ??: "
-            f"{exc}"
-        )
+        source = ""
 
-    direct_urls = extract_urls_from_html(
+    # IMPORTANT:
+    # Use only contentUrl belonging to the current page.
+    # Never scan arbitrary <img> tags because those include
+    # related-article thumbnails and site assets.
+    urls = extract_content_urls(
         source,
         article_url,
     )
 
-    # ??? DOM? ??
+    if urls:
+
+        return urls
+
+    # If no contentUrl exists, the page's own Download
+    # button is the only accepted fallback.
+    download_url = (
+        extract_current_download(
+            source,
+            article_url,
+        )
+    )
+
+    if download_url:
+
+        return [
+            download_url
+        ]
+
+    # Rendered DOM is only a final same-page fallback.
     rendered = render_html_with_edge(
         article_url
     )
 
     if rendered:
 
-        rendered_urls = extract_urls_from_html(
+        urls = extract_content_urls(
             rendered,
             article_url,
         )
 
-        for url in rendered_urls:
-            if url not in direct_urls:
-                direct_urls.append(url)
+        if urls:
+            return urls
 
-    if not direct_urls:
-
-        return []
-
-    # --------------------------------------------------
-    # ?? ?? ??? seed ??
-    # --------------------------------------------------
-    # ???/???? ?? ??? ?? ?? ???
-    # ???? content ???? ??? ???? ??? ??.
-    seed = None
-
-    for url in direct_urls:
-
-        low = url.lower()
-
-        if not (
-            "/wp-content/uploads/"
-            in low
-            or "skhynix-prd-data"
-            in low
-        ):
-            continue
-
-        if any(
-            x in low
-            for x in (
-                "thumb",
-                "thmb",
-                "thumbnail",
-                "ico_",
-                "favicon",
-                "logo",
-                "banner",
+        download_url = (
+            extract_current_download(
+                rendered,
+                article_url,
             )
-        ):
-            continue
+        )
 
-        seed = url
-        break
+        if download_url:
+            return [
+                download_url
+            ]
 
-    if not seed:
-        return []
-
-    print(
-        "  -> ?? ??? ?? ??: "
-        + seed.split("/")[-1][:100]
-    )
-
-    # --------------------------------------------------
-    # 01, 02, 03... ?? ??? ?? ??
-    # --------------------------------------------------
-    expanded = expand_numbered_article_images(
-        seed,
-        article_url,
-    )
-
-    # ?? ?? seed? ?? ??? ??? ??
-    seed_parent = (
-        seed.rsplit("/", 1)[0]
-        + "/"
-    )
-
-    result = []
-
-    for url in expanded:
-
-        if not url.startswith(seed_parent):
-            continue
-
-        low = url.lower()
-
-        if any(
-            x in low
-            for x in (
-                "thumb",
-                "thmb",
-                "thumbnail",
-                "ico_",
-                "favicon",
-                "logo",
-            )
-        ):
-            continue
-
-        if url not in result:
-            result.append(url)
-
-    return result[:MAX_IMAGES]
-
+    return []
 
 
 def download_image(
@@ -634,8 +428,10 @@ def download_image(
         image_url,
         headers={
             **HEADERS,
-            "Referer": article_url,
+            "Referer":
+                article_url,
         },
+        allow_redirects=True,
         timeout=60,
     )
 
@@ -643,14 +439,17 @@ def download_image(
 
     content_type = (
         response.headers
-        .get("Content-Type", "")
+        .get(
+            "Content-Type",
+            "",
+        )
         .lower()
     )
 
-    if (
-        not content_type.startswith("image/")
-        and not is_image_url(image_url)
+    if not content_type.startswith(
+        "image/"
     ):
+
         return None
 
     data = response.content
@@ -671,7 +470,9 @@ def make_image_tiles(
     Image.MAX_IMAGE_PIXELS = None
 
     image = Image.open(
-        BytesIO(image_bytes)
+        BytesIO(
+            image_bytes
+        )
     )
 
     image.load()
@@ -685,12 +486,11 @@ def make_image_tiles(
     )
 
     print(
-        "     ?? ??? ??: "
-        f"{original_width}x{original_height}"
+        "     image size: "
+        f"{original_width}x"
+        f"{original_height}"
     )
 
-    # ?? ?? ?? ??:
-    # ?? ??? ?? 2? ???? ??
     target_width = 1600
 
     if original_width < target_width:
@@ -701,38 +501,36 @@ def make_image_tiles(
             2.0,
         )
 
-        new_width = int(
-            original_width
-            * scale
-        )
-
-        new_height = int(
-            original_height
-            * scale
-        )
-
         try:
+
             resample = (
                 Image.Resampling.LANCZOS
             )
+
         except AttributeError:
-            resample = Image.LANCZOS
+
+            resample = (
+                Image.LANCZOS
+            )
 
         image = image.resize(
             (
-                new_width,
-                new_height,
+                int(
+                    original_width
+                    * scale
+                ),
+                int(
+                    original_height
+                    * scale
+                ),
             ),
             resample,
         )
 
     width, height = image.size
 
-    # ? ?????? ?? ??
     tile_height = 1600
     overlap = 120
-
-    # ???? ? ???? ?? ? 18??
     max_tiles = 18
 
     if (
@@ -743,6 +541,7 @@ def make_image_tiles(
             - overlap
         )
     ):
+
         tile_height = (
             (
                 height
@@ -753,7 +552,6 @@ def make_image_tiles(
         ) + overlap
 
     ranges = []
-
     y = 0
 
     while y < height:
@@ -763,12 +561,11 @@ def make_image_tiles(
             height,
         )
 
-        # ??? ??? ?? ???
-        # ?? ??? ???.
         if (
             ranges
             and y2 - y < 350
         ):
+
             old_start, _ = (
                 ranges[-1]
             )
@@ -796,11 +593,11 @@ def make_image_tiles(
         )
 
     print(
-        "     ??? ??: "
-        f"{len(ranges)}??"
+        "     tiles: "
+        f"{len(ranges)}"
     )
 
-    tiles: list[bytes] = []
+    output = []
 
     for y1, y2 in ranges:
 
@@ -815,18 +612,97 @@ def make_image_tiles(
 
         buffer = BytesIO()
 
-        # ?? ??? ??? JPEG ??? ?? PNG ??
         crop.save(
             buffer,
             format="PNG",
             optimize=True,
         )
 
-        tiles.append(
+        output.append(
             buffer.getvalue()
         )
 
-    return tiles
+    return output
+
+
+def validate_transcription(
+    value: str,
+) -> str:
+
+    text = clean_text(
+        value
+    )
+
+    if not text:
+        return ""
+
+    if (
+        text.strip()
+        == "NO_ARTICLE_TEXT"
+    ):
+        return ""
+
+    low = text.lower()
+
+    forbidden = (
+        "the image shows",
+        "the image depicts",
+        "this image shows",
+        "in the image",
+        "the text on the",
+        "the text reads",
+        "the accompanying",
+        "this translates to",
+        "translates to",
+        "appears to show",
+        "exhibition booth",
+    )
+
+    if any(
+        item in low
+        for item in forbidden
+    ):
+        return ""
+
+    if "**" in text:
+        return ""
+
+    if re.search(
+        r"(^|\n)\s*>",
+        text,
+    ):
+        return ""
+
+    # The Korean newsroom source must contain
+    # a meaningful amount of visible Korean text.
+    hangul = len(
+        re.findall(
+            r"[\uac00-\ud7a3]",
+            text,
+        )
+    )
+
+    latin = len(
+        re.findall(
+            r"[A-Za-z]",
+            text,
+        )
+    )
+
+    if hangul < 30:
+        return ""
+
+    if (
+        hangul < 80
+        and latin
+        > hangul * 3
+    ):
+        return ""
+
+    if len(text) < 80:
+        return ""
+
+    return text
 
 
 def read_image_with_ollama(
@@ -836,62 +712,75 @@ def read_image_with_ollama(
     total: int,
 ) -> str:
 
-    image_b64 = base64.b64encode(
-        image_bytes
-    ).decode("ascii")
+    image_b64 = (
+        base64.b64encode(
+            image_bytes
+        )
+        .decode(
+            "ascii"
+        )
+    )
 
+    # ASCII-only prompt intentionally used here.
+    # This prevents Windows terminal/source encoding
+    # from corrupting the instruction text.
     prompt = f"""
-? ???? SK???? ???? ???? ?? ?
-? ????.
+You are transcribing visible text from one image that
+belongs to the current SK hynix Newsroom article.
 
-?? ??:
+Article title:
 {title}
 
-?? ??? ??:
+Image tile:
 {index}/{total}
 
-? ??? ??? ??? ??? ?? ???
-??? ? ???? ?? ???? ???.
-
-?? ??:
-- ???? ???.
-- ???? ??? ??? ??? ???.
-- ??? ?? ?? ??? ???? ???.
-- ?? ??? ???? ???.
-- ?? ?? ??? ??? ??? ???? ???.
-- ??, ??, ?? ??, ?? ??? ????.
-- ???, ???, ???, ???? ????.
-- ?? ??? ?? ??? ?? ? ??? ????.
-- ??? ??? ?? ??? ????.
-- ?? ??? ??? ??? ??? ??? ??? ???.
-- ??, ??, SNS ???? ?? ??? ????.
-- ?? ? ?? ??? ????.
-- Markdown ????? ???? ???.
-
-???? ?? ??? ?? ???
+STRICT RULES:
+1. Transcribe ONLY text that is visibly written in this image.
+2. Do NOT describe the scene, people, objects, booth, background, or layout.
+3. Do NOT summarize.
+4. Do NOT translate Korean into English.
+5. Do NOT add facts from the article title or from outside knowledge.
+6. Preserve Korean wording, numbers, units, product names,
+   technical terms, and acronyms as visibly written.
+7. Do NOT write phrases such as "the image shows",
+   "the text reads", "this translates to", or similar commentary.
+8. Do NOT use Markdown, bullets created by you, blockquotes,
+   bold markers, explanations, or headings that are not visible.
+9. If the image is mainly a photograph or decorative graphic
+   and does not contain enough substantive article text,
+   output exactly:
 NO_ARTICLE_TEXT
-??? ????.
+
+Return only the visible source text.
 """.strip()
 
     response = requests.post(
         OLLAMA_URL,
         json={
-            "model": VISION_MODEL,
-            "stream": False,
-            "think": False,
+            "model":
+                VISION_MODEL,
+            "stream":
+                False,
+            "think":
+                False,
             "messages": [
                 {
-                    "role": "user",
-                    "content": prompt,
+                    "role":
+                        "user",
+                    "content":
+                        prompt,
                     "images": [
                         image_b64
                     ],
                 }
             ],
             "options": {
-                "temperature": 0.05,
-                "num_ctx": 8192,
-                "num_predict": 2200,
+                "temperature":
+                    0.0,
+                "num_ctx":
+                    8192,
+                "num_predict":
+                    2400,
             },
         },
         timeout=300,
@@ -903,22 +792,19 @@ NO_ARTICLE_TEXT
 
     text = (
         result
-        .get("message", {})
-        .get("content", "")
+        .get(
+            "message",
+            {},
+        )
+        .get(
+            "content",
+            "",
+        )
     )
 
-    text = clean_text(
+    return validate_transcription(
         text
     )
-
-    if (
-        not text
-        or text
-        == "NO_ARTICLE_TEXT"
-    ):
-        return ""
-
-    return text
 
 
 def extract_article_image_text(
@@ -933,18 +819,19 @@ def extract_article_image_text(
     if not urls:
 
         print(
-            "  -> ??? ?? ??? URL ??"
+            "  -> no current-page "
+            "image source"
         )
 
         return None
 
     print(
-        "  -> ??? ?? ??? "
-        f"{len(urls)}? ??"
+        "  -> current-page assets: "
+        f"{len(urls)}"
     )
 
-    extracted_parts: list[str] = []
-    used_urls: list[str] = []
+    extracted_parts = []
+    used_urls = []
 
     for image_index, image_url in enumerate(
         urls,
@@ -952,21 +839,25 @@ def extract_article_image_text(
     ):
 
         print(
-            "  -> ?? ??? ?? "
-            f"{image_index}/{len(urls)}"
+            "  -> image asset "
+            f"{image_index}/"
+            f"{len(urls)}"
         )
 
         try:
 
-            image_bytes = download_image(
-                image_url,
-                article_url,
+            image_bytes = (
+                download_image(
+                    image_url,
+                    article_url,
+                )
             )
 
             if not image_bytes:
 
                 print(
-                    "     ??? ???? ??"
+                    "     not an image; "
+                    "rejected"
                 )
 
                 continue
@@ -978,7 +869,7 @@ def extract_article_image_text(
         except Exception as exc:
 
             print(
-                "     ??? ?? ??: "
+                "     image load failed: "
                 f"{exc}"
             )
 
@@ -986,21 +877,22 @@ def extract_article_image_text(
 
         image_parts = []
 
-        for tile_index, tile_bytes in enumerate(
+        for tile_index, tile in enumerate(
             tiles,
             1,
         ):
 
             print(
-                "     ?? ?? "
-                f"{tile_index}/{len(tiles)}"
+                "     transcribing tile "
+                f"{tile_index}/"
+                f"{len(tiles)}"
             )
 
             try:
 
                 text = (
                     read_image_with_ollama(
-                        tile_bytes,
+                        tile,
                         title,
                         tile_index,
                         len(tiles),
@@ -1010,21 +902,20 @@ def extract_article_image_text(
             except Exception as exc:
 
                 print(
-                    "       ?? ??: "
+                    "       vision failed: "
                     f"{exc}"
                 )
 
                 continue
 
             print(
-                "       ??: "
-                f"{len(text):,}?"
+                "       accepted chars: "
+                f"{len(text):,}"
             )
 
-            if len(text) < 30:
+            if not text:
                 continue
 
-            # ??? ??? ??? ??
             if text in image_parts:
                 continue
 
@@ -1035,14 +926,10 @@ def extract_article_image_text(
         if not image_parts:
             continue
 
-        combined_image_text = (
+        extracted_parts.append(
             "\n\n".join(
                 image_parts
             )
-        )
-
-        extracted_parts.append(
-            combined_image_text
         )
 
         used_urls.append(
@@ -1050,24 +937,20 @@ def extract_article_image_text(
         )
 
     if not extracted_parts:
-
         return None
 
     combined = "\n\n".join(
         extracted_parts
     ).strip()
 
-    print(
-        "  -> ??? ?? ?? ? ??: "
-        f"{len(combined):,}?"
-    )
-
-    # ?? 300? ?????? ?? ?? ??
     if len(combined) < 300:
         return None
 
     return {
-        "text": combined,
-        "image_urls": used_urls,
-        "model": VISION_MODEL,
+        "text":
+            combined,
+        "image_urls":
+            used_urls,
+        "model":
+            VISION_MODEL,
     }

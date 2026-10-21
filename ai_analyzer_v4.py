@@ -1,4 +1,6 @@
-﻿from __future__ import annotations
+from __future__ import annotations
+
+from source_guard import sanitize_article_source, source_is_safe
 
 import re
 from typing import Any
@@ -1017,9 +1019,9 @@ def select_five(
     description: str,
 ) -> list[dict[str, Any]]:
 
-    if len(candidates) < 5:
+    if len(candidates) < 3:
         raise OllamaAnalysisError(
-            "V4 후보가 5개 미만입니다."
+            "V4 후보가 3개 미만입니다."
         )
 
     article_type = infer_article_type(
@@ -1027,13 +1029,15 @@ def select_five(
         description,
     )
 
-    slots = (
+    all_slots = (
         "core",
         "detail",
         "concrete",
         "impact",
         "extra",
     )
+
+    slots = all_slots[:min(5, len(candidates))]
 
     selected = []
     used = set()
@@ -1793,6 +1797,21 @@ def analyze_with_ollama_v4(
     tags: list[str] | None = None,
 ) -> dict[str, Any]:
 
+    source = sanitize_article_source(
+        source,
+        title,
+    )
+
+    if not source_is_safe(
+        source,
+        title,
+        min_chars=300,
+    ):
+        raise OllamaAnalysisError(
+            "source integrity guard rejected input"
+        )
+
+
     evidence_result = analyze_evidence_v4(
         title,
         description,
@@ -1812,10 +1831,7 @@ def analyze_with_ollama_v4(
     # MAIN POINT:
     # core + detail을 그대로 사용.
     # 새로운 사실을 생성하지 않는다.
-    main_parts = [
-        key_points[0],
-        key_points[1],
-    ]
+    main_parts = key_points[:2]
 
     main_point = " ".join(
         part
@@ -1826,10 +1842,10 @@ def analyze_with_ollama_v4(
     # WHY IT MATTERS:
     # 선택기의 impact + extra 슬롯만 사용.
     # AI 해석을 추가하지 않는다.
-    why_parts = [
-        key_points[3],
-        key_points[4],
-    ]
+    if len(key_points) >= 5:
+        why_parts = key_points[3:5]
+    else:
+        why_parts = [key_points[-1]]
 
     why_it_matters = " ".join(
         part

@@ -769,13 +769,33 @@ def fetch_article_data(url: str) -> tuple[str, str, list[str], str]:
         break
 
     # 기사 뒤에 다시 붙는 연관 기사 영역 제거
-    related_pos = body.find(
-        "연관 기사",
-        500,
+    tail_markers = shell_markers + (
+        "\ubaa9\ub85d \ubcf4\uae30",
+        "\uba54\ub274 \ud1a0\uae00",
+        "\ub9e8 \uc704\ub85c",
+        "\ubb38\uc758\ud558\uae30",
+        "\uac1c\uc778\uc815\ubcf4\ucc98\ub9ac\ubc29\uce68",
+        "\ub274\uc2a4\ub8f8 \uc6b4\uc601\uc815\ucc45",
+        "\ub274\uc2a4\ub8f8 \uc774\uc6a9\uc548\ub0b4",
     )
 
-    if related_pos >= 0:
-        body = body[:related_pos]
+    cut_positions = []
+
+    for marker in tail_markers:
+
+        pos = body.find(
+            marker
+        )
+
+        if pos >= 0:
+            cut_positions.append(
+                pos
+            )
+
+    if cut_positions:
+        body = body[
+            :min(cut_positions)
+        ]
 
     body = clean_text(body)
 
