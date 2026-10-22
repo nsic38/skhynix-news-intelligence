@@ -954,3 +954,580 @@ def extract_article_image_text(
         "model":
             VISION_MODEL,
     }
+
+
+# === SAFE IMAGE PIPELINE V2 ===
+
+def _safe_current_assets(
+    article_url: str,
+) -> list[str]:
+
+    try:
+
+        response = requests.get(
+            article_url,
+            headers=HEADERS,
+            timeout=30,
+        )
+
+        response.raise_for_status()
+
+    except Exception:
+        return []
+
+    soup = BeautifulSoup(
+        response.text,
+        "html.parser",
+    )
+
+    # ?? ??? ?? ?? ???? ???? ??.
+    # ???? img ??? ???? ???.
+    for node in soup.find_all(
+        "a",
+        href=True,
+    ):
+
+        href = node.get(
+            "href",
+            "",
+        )
+
+        text = node.get_text(
+            " ",
+            strip=True,
+        )
+
+        if (
+            "????" in text
+            or "download.php"
+            in href
+        ):
+
+            return [
+                urljoin(
+                    article_url,
+                    href,
+                )
+            ]
+
+    # ????? ?? ????
+    # ?? NewsArticle JSON-LD image/contentUrl ??
+    result = []
+
+    def walk(value):
+
+        if isinstance(value, dict):
+
+            value_type = value.get(
+                "@type",
+                "",
+            )
+
+            if isinstance(
+                value_type,
+                list,
+            ):
+                types = [
+                    str(x).lower()
+                    for x in value_type
+                ]
+            else:
+                types = [
+                    str(
+                        value_type
+                    ).lower()
+                ]
+
+            if any(
+                t in (
+                    "newsarticle",
+                    "article",
+                    "blogposting",
+                )
+                for t in types
+            ):
+
+                image_value = value.get(
+                    "image"
+                )
+
+                def collect_image(v):
+
+                    if isinstance(v, str):
+                        result.append(v)
+
+                    elif isinstance(v, dict):
+
+                        for key in (
+                            "contentUrl",
+                            "url",
+                        ):
+                            if isinstance(
+                                v.get(key),
+                                str,
+                            ):
+                                result.append(
+                                    v[key]
+                                )
+
+                    elif isinstance(v, list):
+
+                        for x in v:
+                            collect_image(x)
+
+                collect_image(
+                    image_value
+                )
+
+            for child in value.values():
+                walk(child)
+
+        elif isinstance(value, list):
+
+            for child in value:
+                walk(child)
+
+    for script in soup.find_all(
+        "script",
+        attrs={
+            "type":
+                "application/ld+json"
+        },
+    ):
+
+        raw = (
+            script.string
+            or script.get_text()
+        )
+
+        if not raw:
+            continue
+
+        try:
+            data = json.loads(raw)
+        except Exception:
+            continue
+
+        walk(data)
+
+    final = []
+
+    for value in result:
+
+        url = normalize_image_url(
+            value,
+            article_url,
+        )
+
+        low = url.lower()
+
+        if not (
+            "/wp-content/uploads/"
+            in low
+            or "skhynix-prd-data"
+            in low
+        ):
+            continue
+
+        if url not in final:
+            final.append(url)
+
+    return final[:3]
+
+
+def find_article_image_urls(
+    article_url: str,
+) -> list[str]:
+
+    return _safe_current_assets(
+        article_url
+    )
+
+
+def download_image(
+    image_url: str,
+    article_url: str,
+) -> bytes | None:
+
+    response = requests.get(
+        image_url,
+        headers={
+            **HEADERS,
+            "Referer":
+                article_url,
+        },
+        allow_redirects=True,
+        timeout=60,
+    )
+
+    response.raise_for_status()
+
+    content_type = (
+        response.headers
+        .get(
+            "Content-Type",
+            "",
+        )
+        .lower()
+    )
+
+    if not content_type.startswith(
+        "image/"
+    ):
+        return None
+
+    data = response.content
+
+    if (
+        not data
+        or len(data)
+        > MAX_IMAGE_BYTES
+    ):
+        return None
+
+    return data
+
+
+def make_image_tiles(
+    image_bytes: bytes,
+) -> list[bytes]:
+
+    Image.MAX_IMAGE_PIXELS = None
+
+    image = Image.open(
+        BytesIO(image_bytes)
+    )
+
+    image.load()
+
+    image = image.convert(
+        "RGB"
+    )
+
+    width, height = image.size
+
+    print(
+        "     image size: "
+        f"{width}x{height}"
+    )
+
+    tile_w = min(
+        900,
+        width,
+    )
+
+    tile_h = min(
+        900,
+        height,
+    )
+
+    overlap = 120
+
+    def positions(
+        total,
+        size,
+    ):
+
+        if total <= size:
+            return [0]
+
+        values = []
+        pos = 0
+
+        while True:
+
+            if pos + size >= total:
+
+                last = max(
+                    0,
+                    total - size,
+                )
+
+                if last not in values:
+                    values.append(last)
+
+                break
+
+            values.append(pos)
+
+            pos += (
+                size
+                - overlap
+            )
+
+        return values
+
+    xs = positions(
+        width,
+        tile_w,
+    )
+
+    ys = positions(
+        height,
+        tile_h,
+    )
+
+    tiles = []
+
+    for y in ys:
+
+        for x in xs:
+
+            crop = image.crop(
+                (
+                    x,
+                    y,
+                    min(
+                        x + tile_w,
+                        width,
+                    ),
+                    min(
+                        y + tile_h,
+                        height,
+                    ),
+                )
+            )
+
+            cw, ch = crop.size
+
+            if cw < 1400:
+
+                scale = min(
+                    1600 / cw,
+                    2.2,
+                )
+
+                try:
+                    resample = (
+                        Image.Resampling.LANCZOS
+                    )
+                except AttributeError:
+                    resample = (
+                        Image.LANCZOS
+                    )
+
+                crop = crop.resize(
+                    (
+                        int(
+                            cw * scale
+                        ),
+                        int(
+                            ch * scale
+                        ),
+                    ),
+                    resample,
+                )
+
+            buffer = BytesIO()
+
+            crop.save(
+                buffer,
+                format="PNG",
+            )
+
+            tiles.append(
+                buffer.getvalue()
+            )
+
+    print(
+        "     tiles: "
+        f"{len(tiles)}"
+    )
+
+    return tiles[:12]
+
+
+def _safe_vision_output(
+    value: str,
+) -> str:
+
+    value = str(
+        value or ""
+    )
+
+    if (
+        not value
+        or value.strip()
+        == "NO_ARTICLE_TEXT"
+    ):
+        return ""
+
+    banned = (
+        "the image shows",
+        "the image depicts",
+        "the text on the",
+        "the text reads",
+        "translates to",
+        "the accompanying",
+        "exhibition context",
+        "forward-looking statements",
+        "sec filings",
+        "korea exchange",
+        "disclaimer",
+        "? ????",
+        "????",
+        "?? ?? ??",
+        "??? ??",
+        "??????",
+        "????? ??",
+    )
+
+    output = []
+
+    for raw in value.splitlines():
+
+        line = raw.strip()
+
+        line = re.sub(
+            r"^[#>*\-]+\s*",
+            "",
+            line,
+        )
+
+        line = (
+            line
+            .replace(
+                "**",
+                "",
+            )
+            .replace(
+                "__",
+                "",
+            )
+            .strip()
+        )
+
+        if not line:
+            continue
+
+        low = line.lower()
+
+        if any(
+            item in low
+            for item in banned
+        ):
+            continue
+
+        hangul = len(
+            re.findall(
+                r"[?-?]",
+                line,
+            )
+        )
+
+        latin = len(
+            re.findall(
+                r"[A-Za-z]",
+                line,
+            )
+        )
+
+        if (
+            hangul == 0
+            and latin >= 35
+        ):
+            continue
+
+        output.append(
+            line
+        )
+
+    return "\n".join(
+        output
+    ).strip()
+
+
+def read_image_with_ollama(
+    image_bytes: bytes,
+    title: str,
+    index: int,
+    total: int,
+) -> str:
+
+    image_b64 = base64.b64encode(
+        image_bytes
+    ).decode(
+        "ascii"
+    )
+
+    prompt = f"""
+Act only as an OCR transcription engine.
+
+Article title:
+{title}
+
+Image tile:
+{index}/{total}
+
+STRICT RULES:
+- Copy only text visibly written in the image.
+- Do not summarize.
+- Do not explain the image.
+- Do not describe diagrams, people, objects, photos or layouts.
+- Do not infer meaning.
+- Do not translate Korean into English.
+- Do not add information from the article title.
+- Do not add outside knowledge.
+- Do not generate Markdown.
+- Preserve visible Korean wording, numbers, units,
+  product names, technical terms and acronyms.
+- Ignore generic presentation disclaimers.
+- Never write phrases such as "the image shows",
+  "the text reads", "this translates to", or "in conclusion".
+- If substantive article text is not visibly present,
+  output exactly NO_ARTICLE_TEXT.
+
+Return only verbatim visible text.
+""".strip()
+
+    response = requests.post(
+        OLLAMA_URL,
+        json={
+            "model":
+                VISION_MODEL,
+            "stream":
+                False,
+            "think":
+                False,
+            "messages": [
+                {
+                    "role":
+                        "user",
+                    "content":
+                        prompt,
+                    "images": [
+                        image_b64
+                    ],
+                }
+            ],
+            "options": {
+                "temperature":
+                    0.0,
+                "num_ctx":
+                    8192,
+                "num_predict":
+                    2200,
+            },
+        },
+        timeout=300,
+    )
+
+    response.raise_for_status()
+
+    result = response.json()
+
+    raw = (
+        result
+        .get(
+            "message",
+            {},
+        )
+        .get(
+            "content",
+            "",
+        )
+    )
+
+    return _safe_vision_output(
+        raw
+    )

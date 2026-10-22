@@ -1,5 +1,17 @@
 from __future__ import annotations
 
+from image_article import (
+    extract_article_image_text,
+)
+
+from image_evidence import (
+    analyze_image_evidence,
+)
+
+from safe_article_text import (
+    sanitize_html_source,
+)
+
 from source_guard import (
     sanitize_article_source,
     source_is_safe,
@@ -118,7 +130,7 @@ def build_record_ai(
         getattr(
             entry,
             "title",
-            ""
+            "",
         )
     )
 
@@ -126,32 +138,28 @@ def build_record_ai(
         getattr(
             entry,
             "link",
-            ""
+            "",
         )
-    )
-
-    rss_text = extract_rss_text(
-        entry
     )
 
     rss_tags = [
         getattr(
             x,
             "term",
-            ""
+            "",
         )
         for x in (
             getattr(
                 entry,
                 "tags",
-                []
+                [],
             )
             or []
         )
         if getattr(
             x,
             "term",
-            ""
+            "",
         )
     ]
 
@@ -161,6 +169,7 @@ def build_record_ai(
     page_date = ""
 
     try:
+
         (
             description,
             body,
@@ -171,155 +180,90 @@ def build_record_ai(
         )
 
     except Exception as exc:
+
         print(
-            "  -> 뉴스룸 본문 요청 실패: "
+            "  -> ??? ?? ??: "
             f"{exc}"
         )
 
     tags = list(
         dict.fromkeys(
-            [
-                x
-                for x
-                in (
-                    rss_tags
-                    + page_tags
-                )
-                if x
-            ]
+            rss_tags
+            + (
+                page_tags
+                or []
+            )
+        )
+    )
+
+    safe_body = (
+        sanitize_html_source(
+            body,
+            title,
         )
     )
 
     analysis_source = ""
     content_source = ""
-    media_info = None
 
-    if usable_article_body(
-        body
-    ):
+    if len(safe_body) >= 500:
+
         analysis_source = (
-            html_to_text(
-                body
-            )
+            safe_body
         )
 
         content_source = (
             "article"
         )
 
-        print(
-            "  -> ??? ?? ??: "
-            f"{len(analysis_source):,}?"
+        analysis = (
+            analyze_with_ollama_v4(
+                title,
+                html_to_text(
+                    description
+                ),
+                analysis_source,
+                tags,
+            )
         )
 
     else:
 
         print(
-            "  -> HTML ?? ?? ??"
+            "  -> HTML ?? ??, "
+            "?? ?? ??? ??"
         )
 
-        image_info = None
-
-        try:
-
-            image_info = (
-                extract_article_image_text(
-                    url,
-                    title,
-                )
+        image_info = (
+            extract_article_image_text(
+                url,
+                title,
             )
-
-        except Exception as exc:
-
-            print(
-                "  -> ??? ??? ?? ?? ??: "
-                f"{exc}"
-            )
-
-        if image_info:
-
-            analysis_source = (
-                image_info[
-                    "text"
-                ]
-            )
-
-            content_source = (
-                "article-image"
-            )
-
-            print(
-                "  -> ??? ??? ?? ??: "
-                f"{len(analysis_source):,}?"
-            )
-
-        else:
-
-            print(
-                "  -> ??? ??? ??? ?? "
-                "-> ?? ??"
-            )
-
-    # ARTICLE-ONLY MODE:
-    # ?? ??? ??? HTML ?? ??
-    # ??? ?? ??? ?????.
-    if (
-        analysis_source
-        and content_source
-        not in (
-            "article",
-            "article-image",
-        )
-    ):
-        analysis_source = ""
-        media_info = None
-
-    if False and not analysis_source:
-
-        # ARTICLE-ONLY MODE:
-        # RSS/description은 기사 본문 대신 사용하지 않는다.
-        fallback = html_to_text(
-            rss_text
-            or description
         )
 
-        if (
-            len(fallback) >= 1500
-            and not is_junk_summary_text(
-                fallback
-            )
-        ):
-            analysis_source = (
-                fallback
+        if not image_info:
+
+            raise RuntimeError(
+                "?? ??? ?? ??? ?? ?????."
             )
 
-            content_source = (
-                "rss/content"
-            )
-
-            print(
-                "  -> RSS 본문 사용"
-            )
-
-    if not analysis_source:
-        raise RuntimeError(
-            "분석 가능한 기사 본문을 찾지 못했습니다."
+        analysis_source = (
+            image_info[
+                "text"
+            ]
         )
 
-    description_for_ai = (
-        html_to_text(
-            description
+        content_source = (
+            "article-image"
         )
-    )
 
-    analysis = (
-        analyze_with_ollama_v4(
-            title,
-            description_for_ai,
-            analysis_source,
-            tags,
+        analysis = (
+            analyze_image_evidence(
+                title,
+                analysis_source,
+                tags,
+            )
         )
-    )
 
     analysis = (
         enrich_role_analysis(
@@ -331,14 +275,18 @@ def build_record_ai(
     )
 
     record = {
-        "id": hashlib.sha1(
-            url.encode(
-                "utf-8"
-            )
-        ).hexdigest()[:12],
+        "id":
+            hashlib.sha1(
+                url.encode(
+                    "utf-8"
+                )
+            ).hexdigest()[:12],
 
-        "title": title,
-        "url": url,
+        "title":
+            title,
+
+        "url":
+            url,
 
         "published":
             page_date
@@ -369,30 +317,14 @@ def build_record_ai(
         "analysis_engine":
             AI_ENGINE,
 
+        "analysis_status":
+            "complete",
+
         **analysis,
     }
 
-    if media_info:
-
-        record[
-            "media_title"
-        ] = media_info[
-            "video_title"
-        ]
-
-        record[
-            "media_url"
-        ] = media_info[
-            "video_url"
-        ]
-
-        record[
-            "caption_language"
-        ] = media_info[
-            "caption_language"
-        ]
-
     return record
+
 
 
 def main() -> int:
