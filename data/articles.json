@@ -1,5 +1,148 @@
 [
   {
+    "id": "3a12178c6fad",
+    "title": "SK하이닉스, ‘초심 Crafted by SK hynix’ 전시 개최… 관람객과 함께 반도체 위에 초심을 새기다",
+    "url": "https://news.skhynix.co.kr/initial-aspiration-exhibition-07",
+    "published": "2026-10-26",
+    "date_source": "page",
+    "source": "SK hynix Newsroom",
+    "tags": [
+      "MEDIA",
+      "광고",
+      "초심"
+    ],
+    "created_at": "2026-10-27T10:53:37+09:00",
+    "content_source": "article-image-ocr",
+    "repair_version": 13,
+    "analysis_engine": "ollama-qwen3-4b-korean-newsroom-v1",
+    "analysis_status": "complete",
+    "main_point": "▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을 받았던 SK하이닉스는 브랜드를 대표하는 화두로 '초심'을 선택했습니다. 그리고 그 '초심'을 진정성 있게 돌아보기 위해 창립일부터 현재까지, 지난 43년의 기록을 들여다보았습니다.",
+    "key_points": [
+      "▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을 받았던 SK하이닉스는 브랜드를 대표하는 화두로 '초심'을 선택했습니다.",
+      "그리고 그 '초심'을 진정성 있게 돌아보기 위해 창립일부터 현재까지, 지난 43년의 기록을 들여다보았습니다.",
+      "SK하이닉스의 히로애락을 담은 기사 조각으로 지구본을 만들고, 자, 장에 담아 16단의 반도체를 만들었습니다.",
+      "초심 Crafted by SK hynix SK hynix 초심 제작자 SK하이닉스 SK하이닉스 뉴스룸 NO_ARTICLE_TEXT 초심 Crafted by SK hynix 시 세상을 이끄는 메모리의 소리 메모리소리"
+    ],
+    "why_it_matters": "초심 Crafted by SK hynix SK hynix 초심 제작자 SK하이닉스 SK하이닉스 뉴스룸 NO_ARTICLE_TEXT 초심 Crafted by SK hynix 시 세상을 이끄는 메모리의 소리 메모리소리",
+    "category": "Company / General",
+    "_evidence": [
+      {
+        "id": "S1",
+        "text": "▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을 받았던 SK하이닉스는 브랜드를 대표하는 화두로 '초심'을 선택했습니다."
+      },
+      {
+        "id": "S2",
+        "text": "그리고 그 '초심'을 진정성 있게 돌아보기 위해 창립일부터 현재까지, 지난 43년의 기록을 들여다보았습니다."
+      },
+      {
+        "id": "S3",
+        "text": "SK하이닉스의 히로애락을 담은 기사 조각으로 지구본을 만들고, 자, 장에 담아 16단의 반도체를 만들었습니다."
+      },
+      {
+        "id": "S4",
+        "text": "초심 Crafted by SK hynix SK hynix 초심 제작자 SK하이닉스 SK하이닉스 뉴스룸 NO_ARTICLE_TEXT 초심 Crafted by SK hynix 시 세상을 이끄는 메모리의 소리 메모리소리"
+      }
+    ],
+    "one_liner": "▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을 받았던 SK하이닉스는 브랜드를 대표하는 화두로 '초심'을 선택했습니다. 그리고 그 '초심'을 진정성 있게 돌아보기 위해 창립일부터 현재까지, 지난 43년의 기록을 들여다보았습니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산기술 P&T": {
+        "role": "양산기술 P&T",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "what_you_get": "양산기술 P&T 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 2,
+        "reason": "DRAM·HBM",
+        "dimensions": [
+          "DRAM·HBM"
+        ],
+        "matched_keywords": [
+          "메모리"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 1,
+      "reason": "직접 연관 신호가 적음",
+      "dimensions": [],
+      "matched_keywords": [],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
+    "importance": 1
+  },
+  {
     "id": "36917b7582c4",
     "title": "솔리다임 IPO 검토를 중단합니다 장기 성장과 주주가치 제고 노력은 이어갑니다",
     "url": "https://news.skhynix.co.kr/fact-12",
@@ -198,202 +341,9 @@
     ],
     "created_at": "2026-10-02T21:41:57+09:00",
     "repair_version": 13,
-    "takeaway": "양산기술 관점에서는 데이터 기반 개선·생산성·원가·HBM·패키징가 핵심 연결점입니다. '결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다. HBM은 * 분...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
-    "job_relevance": {
-      "role": "양산기술",
-      "score": 4,
-      "reason": "데이터 기반 개선 · 생산성·원가 · HBM·패키징",
-      "dimensions": [
-        "데이터 기반 개선",
-        "생산성·원가",
-        "HBM·패키징"
-      ],
-      "matched_keywords": [
-        "데이터",
-        "ai",
-        "효율",
-        "hbm"
-      ],
-      "lens": "공정 안정성·수율·생산성·양산 전환"
-    },
-    "importance": 4,
-    "analysis_status": "complete",
-    "main_point": "결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다. HBM은 * 분산형 시스템으로서의 근기억 가속기 네트워크: 고속 인터커넥트를 통해 메모리 근처에 위치한 여러 가속기가 밀집적으로 연결되어 각 가속기가 할당된 데이터를 처리하고 필요한 결과만 교환할 수 있는 아키텍처입니다. Tesseract는 메모리 근처 가속을 위한 연구 아키텍처로, 고속 인터커넥트를 통해 메모리 근처에 위치한 여러 가속기가 밀집적으로 연결된 시스템입니다.",
-    "one_liner": "결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다. HBM은 * 분산형 시스템으로서의 근기억 가속기 네트워크: 고속 인터커넥트를 통해 메모리 근처에 위치한 여러 가속기가 밀집적으로 연결되어 각 가속기가 할당된 데이터를 처리하고 필요한 결과만 교환할 수 있는 아키텍처입니다. Tesseract는 메모리 근처 가속을 위한 연구 아키텍처로, 고속 인터커넥트를 통해 메모리 근처에 위치한 여러 가속기가 밀집적으로 연결된 시스템입니다.",
-    "key_points": [
-      "결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다.",
-      "HBM은 * 분산형 시스템으로서의 근기억 가속기 네트워크: 고속 인터커넥트를 통해 메모리 근처에 위치한 여러 가속기가 밀집적으로 연결되어 각 가속기가 할당된 데이터를 처리하고 필요한 결과만 교환할 수 있는 아키텍처입니다. Tesseract는 메모리 근처 가속을 위한 연구 아키텍처로, 고속 인터커넥트를 통해 메모리 근처에 위치한 여러 가속기가 밀집적으로 연결된 시스템입니다.",
-      "DRAM에서 데이터를 추출하는 데 필요한 에너지는 단순한 산술 연산에 필요한 에너지의 150배에서 2,000배가 될 수 있습니다.",
-      "AI 워크로드가 데이터 볼륨과 접근 빈도에서 극적으로 성장했음에도 불구하고, 데이터 접근 및 데이터 이동이 시스템 효율성의 주요 장애물이 되어 왔습니다.",
-      "대형 머신러닝 모델에서 시스템 에너지의 90% 이상이 메모리 접근 및 데이터 이동에 소비되며 계산보다 * ."
-    ],
-    "why_it_matters": "AI 워크로드가 데이터 볼륨과 접근 빈도에서 극적으로 성장했음에도 불구하고, 데이터 접근 및 데이터 이동이 시스템 효율성의 주요 장애물이 되어 왔습니다. 대형 머신러닝 모델에서 시스템 에너지의 90% 이상이 메모리 접근 및 데이터 이동에 소비되며 계산보다 * .",
-    "category": "AI Infrastructure / CXL",
-    "_evidence": [
-      {
-        "id": "S14",
-        "text": "As a result, AI infrastructure competition is moving beyond simply deploying faster GPUs/NPUs/TPUs and larger clusters."
-      },
-      {
-        "id": "S94",
-        "text": "HBM is a representative example * Distributed system of tightly connected near-memory accelerators: An architecture that connects multiple accelerators located close to memory via high-speed interconnects, enabling each accelerator to process its assigned data and exchange only the necessary results * Tesseract: A research architecture for near-memory acceleration in which multiple accelerators located close to memory are tightly connected through high-speed interconnects."
-      },
-      {
-        "id": "S29",
-        "text": "The energy required to retrieve data from DRAM once can be 150 to 2,000 times greater than that required for a simple arithmetic operation."
-      },
-      {
-        "id": "S21",
-        "text": "As AI workloads have grown dramatically in both data volume and access frequency, however, data access and data movement have become major bottlenecks in system efficiency."
-      },
-      {
-        "id": "S31",
-        "text": "For large machine learning models, more than 90% of system energy can be consumed by memory access and data movement rather than computation * ."
-      }
-    ],
-    "role_analysis": {
-      "양산기술": {
-        "role": "양산기술",
-        "score": 4,
-        "reason": "데이터 기반 개선 · 생산성·원가 · HBM·패키징",
-        "dimensions": [
-          "데이터 기반 개선",
-          "생산성·원가",
-          "HBM·패키징"
-        ],
-        "matched_keywords": [
-          "데이터",
-          "ai",
-          "효율",
-          "hbm"
-        ],
-        "lens": "공정 안정성·수율·생산성·양산 전환",
-        "what_you_get": "양산기술 관점에서는 데이터 기반 개선·생산성·원가·HBM·패키징가 핵심 연결점입니다. '결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다. HBM은 * 분...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "양산기술 P&T": {
-        "role": "양산기술 P&T",
-        "score": 3,
-        "reason": "HBM·첨단 패키징",
-        "dimensions": [
-          "HBM·첨단 패키징"
-        ],
-        "matched_keywords": [
-          "hbm"
-        ],
-        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
-        "what_you_get": "양산기술 P&T 실무와 중간 정도의 관련성이 있습니다. HBM·첨단 패키징를 중심으로 '결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다. HB...'이 HBM·패키징·테스트 양산·수율·공정 안정화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
-      },
-      "양산관리": {
-        "role": "양산관리",
-        "score": 4,
-        "reason": "데이터·자동화 · 생산성",
-        "dimensions": [
-          "데이터·자동화",
-          "생산성"
-        ],
-        "matched_keywords": [
-          "데이터",
-          "ai",
-          "효율"
-        ],
-        "lens": "TAT·WIP·병목·생산계획·납기",
-        "what_you_get": "양산관리 관점에서는 데이터·자동화·생산성가 핵심 연결점입니다. '결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다. HBM은 * 분...'이라는 내용을 TAT·WIP·병목·생산계획·납기 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "공정기술": {
-        "role": "공정기술",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "공정 조건·Process Window·결함·미세화",
-        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다. HBM은 * 분...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "설비기술": {
-        "role": "설비기술",
-        "score": 3,
-        "reason": "고장·진단 · 자동화",
-        "dimensions": [
-          "고장·진단",
-          "자동화"
-        ],
-        "matched_keywords": [
-          "장애",
-          "데이터"
-        ],
-        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
-        "what_you_get": "설비기술 실무와 중간 정도의 관련성이 있습니다. 고장·진단·자동화를 중심으로 '결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다. HB...'이 장비 가동률·PM·고장 진단·설비 안정화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
-      },
-      "품질/신뢰성": {
-        "role": "품질/신뢰성",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "불량 원인·검사·신뢰성·품질 개선",
-        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다. HBM은 * 분...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "제품/소자": {
-        "role": "제품/소자",
-        "score": 5,
-        "reason": "DRAM·HBM · AI 메모리 · 성능·전력",
-        "dimensions": [
-          "DRAM·HBM",
-          "AI 메모리",
-          "성능·전력"
-        ],
-        "matched_keywords": [
-          "dram",
-          "hbm",
-          "메모리",
-          "ai",
-          "cxl",
-          "gpu"
-        ],
-        "lens": "메모리 구조·성능·전력·제품 로드맵",
-        "what_you_get": "제품/소자 관점에서는 DRAM·HBM·AI 메모리·성능·전력가 핵심 연결점입니다. '결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다. HBM은 * 분...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "IT": {
-        "role": "IT",
-        "score": 5,
-        "reason": "Cloud·Infra · 시스템·플랫폼 · 데이터 연계",
-        "dimensions": [
-          "Cloud·Infra",
-          "시스템·플랫폼",
-          "데이터 연계"
-        ],
-        "matched_keywords": [
-          "인프라",
-          "네트워크",
-          "시스템",
-          "데이터"
-        ],
-        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
-        "what_you_get": "IT 관점에서는 Cloud·Infra·시스템·플랫폼·데이터 연계가 핵심 연결점입니다. '결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다. HBM은 * 분...'이라는 내용을 MES·시스템 연계·인프라·보안·업무 자동화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "Data/AI": {
-        "role": "Data/AI",
-        "score": 5,
-        "reason": "AI·ML · AI Infra · 데이터 분석",
-        "dimensions": [
-          "AI·ML",
-          "AI Infra",
-          "데이터 분석"
-        ],
-        "matched_keywords": [
-          "ai",
-          "머신러닝",
-          "에이전틱",
-          "gpu",
-          "hbm",
-          "ai 인프라"
-        ],
-        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
-        "what_you_get": "Data/AI 관점에서는 AI·ML·AI Infra·데이터 분석가 핵심 연결점입니다. '결과적으로 AI 인프라 경쟁은 단순히 더 빠른 GPU/NPU/TPU를 배포하고 더 큰 클러스터를 구축하는 것 이상으로 진행되고 있습니다. HBM은 * 분...'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      }
-    },
-    "analysis_engine": "ollama-qwen3-4b-article-only-v2",
-    "content_source": "official-english-article",
-    "english_source_url": "https://news.skhynix.com/en/ai-ecosystem-series-ep3/"
+    "analysis_status": "pending",
+    "content_source": "korean-source-pending",
+    "analysis_error": "OCR ??? ?? ???? ????? ???? ????."
   },
   {
     "id": "619a915a6647",
@@ -410,26 +360,9 @@
     ],
     "created_at": "2026-09-23T10:16:10+09:00",
     "repair_version": 13,
-    "takeaway": "양산기술 관점에서는 데이터 기반 개선·생산성·원가·HBM·패키징가 핵심 연결점입니다. 'AI 시대의 전력 문제 해결을 위한 접근 방식을 제시합니다. 메모리와 프로세서 간 데이터 이동 시 발생하는 전력 소모를 설명하는 개념적 도표입니다.'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
-    "job_relevance": {
-      "role": "양산기술",
-      "score": 4,
-      "reason": "데이터 기반 개선 · 생산성·원가 · HBM·패키징",
-      "dimensions": [
-        "데이터 기반 개선",
-        "생산성·원가",
-        "HBM·패키징"
-      ],
-      "matched_keywords": [
-        "데이터",
-        "ai",
-        "효율",
-        "hbm"
-      ],
-      "lens": "공정 안정성·수율·생산성·양산 전환"
-    },
-    "importance": 4,
-    "analysis_status": "pending"
+    "analysis_status": "pending",
+    "content_source": "korean-source-pending",
+    "analysis_error": "??? ?? ??? OCR ???? ?? ?? ?????."
   },
   {
     "id": "21f6c3344395",
@@ -1051,207 +984,9 @@
     ],
     "created_at": "2026-10-14T22:28:16+09:00",
     "repair_version": 13,
-    "takeaway": "양산기술 관점에서는 공정 최적화·데이터 기반 개선·생산성·원가가 핵심 연결점입니다. '대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다. S...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
-    "job_relevance": {
-      "role": "양산기술",
-      "score": 5,
-      "reason": "공정 최적화 · 데이터 기반 개선 · 생산성·원가",
-      "dimensions": [
-        "공정 최적화",
-        "데이터 기반 개선",
-        "생산성·원가"
-      ],
-      "matched_keywords": [
-        "조건",
-        "최적화",
-        "데이터",
-        "ai",
-        "효율"
-      ],
-      "lens": "공정 안정성·수율·생산성·양산 전환"
-    },
-    "importance": 5,
-    "analysis_status": "complete",
-    "main_point": "대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다. SK hyn: AI 시스템을 위한 모든 주요 메모리 카테고리(고 밴드와이드 메모리(HBM), DRAM, NAND 플래시)에서 최적화된 AI 메모리 솔루션 포트폴리오를 제공합니다.",
-    "one_liner": "대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다. SK hyn: AI 시스템을 위한 모든 주요 메모리 카테고리(고 밴드와이드 메모리(HBM), DRAM, NAND 플래시)에서 최적화된 AI 메모리 솔루션 포트폴리오를 제공합니다.",
-    "key_points": [
-      "대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다.",
-      "SK hyn: AI 시스템을 위한 모든 주요 메모리 카테고리(고 밴드와이드 메모리(HBM), DRAM, NAND 플래시)에서 최적화된 AI 메모리 솔루션 포트폴리오를 제공합니다.",
-      "동일한 칩 면적 제약 조건 하에서도 전통적인 3D 배열보다 약 10~20배 높은 통과율 및 약 4,000~5,000배 더 나은 에너지 효율성을 달성했습니다.",
-      "이 기술은 대규모 AI 모델을 위한 고밀도 저장 가중치를 지원하는 방향으로 진화하고 있으며, 데이터 이동 및 재작성과 관련된 에너지 부하를 줄이고 컴퓨팅 효율성을 개선합니다.",
-      "Korean translation"
-    ],
-    "why_it_matters": "이 기술은 대규모 AI 모델을 위한 고밀도 저장 가중치를 지원하는 방향으로 진화하고 있으며, 데이터 이동 및 재작성과 관련된 에너지 부하를 줄이고 컴퓨팅 효율성을 개선합니다. Korean translation",
-    "category": "HBM / AI Memory",
-    "_evidence": [
-      {
-        "id": "S134",
-        "text": "From the perspective of developing an ultra-high-density, low-power in-memory computing platform for large-scale AI models, this research presents a new direction for the evolution of NAND technology."
-      },
-      {
-        "id": "S1",
-        "text": "SK hynix offers a full-stack portfolio of AI memory solutions optimized for AI systems across all major memory categories, including High Bandwidth Memory(HBM), DRAM, and NAND flash."
-      },
-      {
-        "id": "S33",
-        "text": "Under the same chip-area constraints, it also delivered approximately 10 to 20 times higher throughput and around 4,000 to 5,000 times greater energy efficiency than conventional 3D arrays."
-      },
-      {
-        "id": "S40",
-        "text": "It is evolving toward supporting high-density storage weights for large-scale AI models, reducing the energy burden associated with data movement and rewriting, and improving computational efficiency."
-      },
-      {
-        "id": "S48",
-        "text": "☑︎ Optimization point 1: Cell – Precise control of multi-level current states In A-CiM, memory cells do more than simply store 0s and 1s."
-      }
-    ],
-    "role_analysis": {
-      "양산기술": {
-        "role": "양산기술",
-        "score": 5,
-        "reason": "공정 최적화 · 데이터 기반 개선 · 생산성·원가",
-        "dimensions": [
-          "공정 최적화",
-          "데이터 기반 개선",
-          "생산성·원가"
-        ],
-        "matched_keywords": [
-          "조건",
-          "최적화",
-          "데이터",
-          "ai",
-          "효율"
-        ],
-        "lens": "공정 안정성·수율·생산성·양산 전환",
-        "what_you_get": "양산기술 관점에서는 공정 최적화·데이터 기반 개선·생산성·원가가 핵심 연결점입니다. '대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다. S...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "양산기술 P&T": {
-        "role": "양산기술 P&T",
-        "score": 4,
-        "reason": "공정 최적화 · HBM·첨단 패키징 · 열·구조 안정성",
-        "dimensions": [
-          "공정 최적화",
-          "HBM·첨단 패키징",
-          "열·구조 안정성"
-        ],
-        "matched_keywords": [
-          "조건",
-          "최적화",
-          "hbm",
-          "열"
-        ],
-        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
-        "what_you_get": "양산기술 P&T 관점에서는 공정 최적화·HBM·첨단 패키징·열·구조 안정성가 핵심 연결점입니다. '대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다. S...'이라는 내용을 HBM·패키징·테스트 양산·수율·공정 안정화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "양산관리": {
-        "role": "양산관리",
-        "score": 4,
-        "reason": "데이터·자동화 · 생산성",
-        "dimensions": [
-          "데이터·자동화",
-          "생산성"
-        ],
-        "matched_keywords": [
-          "데이터",
-          "ai",
-          "최적화",
-          "효율"
-        ],
-        "lens": "TAT·WIP·병목·생산계획·납기",
-        "what_you_get": "양산관리 관점에서는 데이터·자동화·생산성가 핵심 연결점입니다. '대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다. S...'이라는 내용을 TAT·WIP·병목·생산계획·납기 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "공정기술": {
-        "role": "공정기술",
-        "score": 2,
-        "reason": "공정 조건",
-        "dimensions": [
-          "공정 조건"
-        ],
-        "matched_keywords": [
-          "조건"
-        ],
-        "lens": "공정 조건·Process Window·결함·미세화",
-        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다. S...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "설비기술": {
-        "role": "설비기술",
-        "score": 2,
-        "reason": "자동화",
-        "dimensions": [
-          "자동화"
-        ],
-        "matched_keywords": [
-          "데이터"
-        ],
-        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
-        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다. S...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "품질/신뢰성": {
-        "role": "품질/신뢰성",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "불량 원인·검사·신뢰성·품질 개선",
-        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다. S...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "제품/소자": {
-        "role": "제품/소자",
-        "score": 5,
-        "reason": "DRAM·HBM · NAND·Storage · 소자 구조",
-        "dimensions": [
-          "DRAM·HBM",
-          "NAND·Storage",
-          "소자 구조"
-        ],
-        "matched_keywords": [
-          "dram",
-          "hbm",
-          "메모리",
-          "nand",
-          "3d"
-        ],
-        "lens": "메모리 구조·성능·전력·제품 로드맵",
-        "what_you_get": "제품/소자 관점에서는 DRAM·HBM·NAND·Storage·소자 구조가 핵심 연결점입니다. '대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다. S...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "IT": {
-        "role": "IT",
-        "score": 4,
-        "reason": "시스템·플랫폼 · 데이터 연계",
-        "dimensions": [
-          "시스템·플랫폼",
-          "데이터 연계"
-        ],
-        "matched_keywords": [
-          "시스템",
-          "플랫폼",
-          "데이터"
-        ],
-        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
-        "what_you_get": "IT 관점에서는 시스템·플랫폼·데이터 연계가 핵심 연결점입니다. '대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다. S...'이라는 내용을 MES·시스템 연계·인프라·보안·업무 자동화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "Data/AI": {
-        "role": "Data/AI",
-        "score": 5,
-        "reason": "AI·ML · 최적화 · 데이터 분석",
-        "dimensions": [
-          "AI·ML",
-          "최적화",
-          "데이터 분석"
-        ],
-        "matched_keywords": [
-          "ai",
-          "최적화",
-          "optimization",
-          "데이터"
-        ],
-        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
-        "what_you_get": "Data/AI 관점에서는 AI·ML·최적화·데이터 분석가 핵심 연결점입니다. '대규모 AI 모델을 위한 초고밀도·저전력 메모리 기반 컴퓨팅 플랫폼 개발을 고려할 때, 이 연구는 NAND 기술의 진화에 새로운 방향성을 제시합니다. S...'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      }
-    },
-    "analysis_engine": "ollama-qwen3-4b-article-only-v2",
-    "content_source": "official-english-article",
-    "english_source_url": "https://news.skhynix.com/en/research-inside-ep2/"
+    "analysis_status": "pending",
+    "content_source": "korean-source-pending",
+    "analysis_error": "V4 후보가 3개 미만입니다."
   },
   {
     "id": "a1897e46b305",
@@ -1268,26 +1003,9 @@
     ],
     "created_at": "2026-10-02T01:09:37+09:00",
     "repair_version": 13,
-    "takeaway": "양산기술 관점에서는 데이터 기반 개선·공정 최적화·생산성·원가가 핵심 연결점입니다. 'AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 --- **외부 전력 공급** -...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
-    "job_relevance": {
-      "role": "양산기술",
-      "score": 4,
-      "reason": "데이터 기반 개선 · 공정 최적화 · 생산성·원가",
-      "dimensions": [
-        "데이터 기반 개선",
-        "공정 최적화",
-        "생산성·원가"
-      ],
-      "matched_keywords": [
-        "데이터",
-        "ai",
-        "최적화",
-        "효율"
-      ],
-      "lens": "공정 안정성·수율·생산성·양산 전환"
-    },
-    "importance": 4,
-    "analysis_status": "pending"
+    "analysis_status": "pending",
+    "content_source": "korean-source-pending",
+    "analysis_error": "V4 후보가 3개 미만입니다."
   },
   {
     "id": "be5cd5fb61ac",
@@ -1308,17 +1026,9 @@
     ],
     "created_at": "2026-10-02T01:09:36+09:00",
     "repair_version": 13,
-    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'SK하이닉스가 2026년을 향해 파트너들과의 '원팀' 결속력을 재확인하고 계획을 공유한다. 이 이미지는 SK하이닉스 2026 파트너스데이 행사 장면을 담...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
-    "job_relevance": {
-      "role": "양산기술",
-      "score": 1,
-      "reason": "직접 연관 신호가 적음",
-      "dimensions": [],
-      "matched_keywords": [],
-      "lens": "공정 안정성·수율·생산성·양산 전환"
-    },
-    "importance": 1,
-    "analysis_status": "pending"
+    "analysis_status": "pending",
+    "content_source": "korean-source-pending",
+    "analysis_error": "??? ?? ??? OCR ???? ?? ?? ?????."
   },
   {
     "id": "722c532c9111",
@@ -1332,7 +1042,164 @@
       "반도체 산업"
     ],
     "created_at": "2026-09-10T07:15:49+09:00",
-    "takeaway": "양산기술 관점에서는 양산 전환·HBM·패키징·데이터 기반 개선가 핵심 연결점입니다. '[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌 반도체 공급...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
+    "date_source": "page",
+    "repair_version": 13,
+    "analysis_status": "complete",
+    "main_point": "[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌 반도체 공급망 강화를 위해 미국 인디애나주에 첨단 패키징 팹 건설의 첫 삽을 뜹니다.",
+    "key_points": [
+      "[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생!",
+      "SK하이닉스가 글로벌 반도체 공급망 강화를 위해 미국 인디애나주에 첨단 패키징 팹 건설의 첫 삽을 뜹니다.",
+      "그 본격적인 시작을 알리는 기공식 현장을 실시간 생중계로 함께해 주세요.",
+      "* Disclaimer Please note that CEO presentation includes forward-looking statements.",
+      "Please refer to SK hynix’s SEC filings and Korea Exchange disclosures for related risks and uncertainties."
+    ],
+    "why_it_matters": "* Disclaimer Please note that CEO presentation includes forward-looking statements. Please refer to SK hynix’s SEC filings and Korea Exchange disclosures for related risks and uncertainties.",
+    "category": "Company / General",
+    "_evidence": [
+      {
+        "id": "S1",
+        "text": "[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생!"
+      },
+      {
+        "id": "S2",
+        "text": "SK하이닉스가 글로벌 반도체 공급망 강화를 위해 미국 인디애나주에 첨단 패키징 팹 건설의 첫 삽을 뜹니다."
+      },
+      {
+        "id": "S3",
+        "text": "그 본격적인 시작을 알리는 기공식 현장을 실시간 생중계로 함께해 주세요."
+      },
+      {
+        "id": "S4",
+        "text": "* Disclaimer Please note that CEO presentation includes forward-looking statements."
+      },
+      {
+        "id": "S5",
+        "text": "Please refer to SK hynix’s SEC filings and Korea Exchange disclosures for related risks and uncertainties."
+      }
+    ],
+    "one_liner": "[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌 반도체 공급망 강화를 위해 미국 인디애나주에 첨단 패키징 팹 건설의 첫 삽을 뜹니다.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 5,
+        "reason": "양산 전환 · HBM·패키징 · 데이터 기반 개선",
+        "dimensions": [
+          "양산 전환",
+          "HBM·패키징",
+          "데이터 기반 개선"
+        ],
+        "matched_keywords": [
+          "생산",
+          "fab",
+          "팹",
+          "패키징",
+          "ai"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 관점에서는 양산 전환·HBM·패키징·데이터 기반 개선가 핵심 연결점입니다. '[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌 반도체 공급...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산기술 P&T": {
+        "role": "양산기술 P&T",
+        "score": 3,
+        "reason": "HBM·첨단 패키징 · 양산·생산성",
+        "dimensions": [
+          "HBM·첨단 패키징",
+          "양산·생산성"
+        ],
+        "matched_keywords": [
+          "패키징",
+          "생산"
+        ],
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "what_you_get": "양산기술 P&T 실무와 중간 정도의 관련성이 있습니다. HBM·첨단 패키징·양산·생산성를 중심으로 '[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌...'이 HBM·패키징·테스트 양산·수율·공정 안정화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 3,
+        "reason": "생산성 · 데이터·자동화",
+        "dimensions": [
+          "생산성",
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "생산",
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 실무와 중간 정도의 관련성이 있습니다. 생산성·데이터·자동화를 중심으로 '[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌...'이 TAT·WIP·병목·생산계획·납기에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 2,
+        "reason": "패키징 공정",
+        "dimensions": [
+          "패키징 공정"
+        ],
+        "matched_keywords": [
+          "패키징"
+        ],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌 반도체 공급...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌 반도체 공급...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌 반도체 공급...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 4,
+        "reason": "제품 로드맵 · DRAM·HBM · AI 메모리",
+        "dimensions": [
+          "제품 로드맵",
+          "DRAM·HBM",
+          "AI 메모리"
+        ],
+        "matched_keywords": [
+          "차세대",
+          "세대",
+          "메모리",
+          "ai"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 제품 로드맵·DRAM·HBM·AI 메모리가 핵심 연결점입니다. '[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌 반도체 공급...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌 반도체 공급...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 3,
+        "reason": "AI·ML",
+        "dimensions": [
+          "AI·ML"
+        ],
+        "matched_keywords": [
+          "ai"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 실무와 중간 정도의 관련성이 있습니다. AI·ML를 중심으로 '[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌...'이 데이터 분석·ML·예측·최적화·AI 서비스에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      }
+    },
     "job_relevance": {
       "role": "양산기술",
       "score": 5,
@@ -1351,10 +1218,10 @@
       ],
       "lens": "공정 안정성·수율·생산성·양산 전환"
     },
+    "takeaway": "양산기술 관점에서는 양산 전환·HBM·패키징·데이터 기반 개선가 핵심 연결점입니다. '[LIVE] SK하이닉스 미국 인디애나 팹(Indiana Fab) 기공식 차세대 AI 메모리 생산의 새로운 거점 탄생! SK하이닉스가 글로벌 반도체 공급...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
     "importance": 5,
-    "date_source": "page",
-    "repair_version": 13,
-    "analysis_status": "pending"
+    "content_source": "article",
+    "analysis_engine": "ollama-qwen3-4b-korean-newsroom-v1"
   },
   {
     "id": "2823929e5213",
@@ -2038,28 +1905,9 @@
     ],
     "created_at": "2026-10-14T22:28:18+09:00",
     "repair_version": 13,
-    "takeaway": "양산기술 관점에서는 수율·품질·양산 전환·공정 최적화가 핵심 연결점입니다. '--- ### 🟢 **중앙 핵심 문구** > **반도체 생애주기 전반의 품질 기준을 제시하고 신뢰성을 지키는 품질보증** 이 시스템은 반도체 제품의 **...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
-    "job_relevance": {
-      "role": "양산기술",
-      "score": 5,
-      "reason": "수율·품질 · 양산 전환 · 공정 최적화",
-      "dimensions": [
-        "수율·품질",
-        "양산 전환",
-        "공정 최적화"
-      ],
-      "matched_keywords": [
-        "불량",
-        "품질",
-        "신뢰성",
-        "검사",
-        "양산",
-        "생산"
-      ],
-      "lens": "공정 안정성·수율·생산성·양산 전환"
-    },
-    "importance": 5,
-    "analysis_status": "pending"
+    "analysis_status": "pending",
+    "content_source": "korean-source-pending",
+    "analysis_error": "V4 후보가 3개 미만입니다."
   },
   {
     "id": "36adb391b4d6",
@@ -2718,23 +2566,11 @@
       "지속가능경영"
     ],
     "created_at": "2026-09-17T22:05:31+09:00",
-    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 'The text on the wall reads: > “We Do Green Technology” The accompanying Korean text m...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
-    "job_relevance": {
-      "role": "양산기술",
-      "score": 1,
-      "reason": "데이터 기반 개선",
-      "dimensions": [
-        "데이터 기반 개선"
-      ],
-      "matched_keywords": [
-        "ai"
-      ],
-      "lens": "공정 안정성·수율·생산성·양산 전환"
-    },
-    "importance": 1,
     "date_source": "page",
     "repair_version": 13,
-    "analysis_status": "pending"
+    "analysis_status": "pending",
+    "content_source": "korean-source-pending",
+    "analysis_error": "??? ?? ??? OCR ???? ?? ?? ?????."
   },
   {
     "id": "b418d3c8d952",
@@ -3411,172 +3247,9 @@
     ],
     "created_at": "2026-09-23T10:16:08+09:00",
     "repair_version": 13,
-    "role_analysis": {
-      "양산기술": {
-        "role": "양산기술",
-        "score": 3,
-        "reason": "데이터 기반 개선 · HBM·패키징",
-        "dimensions": [
-          "데이터 기반 개선",
-          "HBM·패키징"
-        ],
-        "matched_keywords": [
-          "ai",
-          "hbm"
-        ],
-        "lens": "공정 안정성·수율·생산성·양산 전환",
-        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. 데이터 기반 개선·HBM·패키징를 중심으로 'SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한...'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
-      },
-      "양산기술 P&T": {
-        "role": "양산기술 P&T",
-        "score": 3,
-        "reason": "HBM·첨단 패키징",
-        "dimensions": [
-          "HBM·첨단 패키징"
-        ],
-        "matched_keywords": [
-          "hbm"
-        ],
-        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
-        "what_you_get": "양산기술 P&T 실무와 중간 정도의 관련성이 있습니다. HBM·첨단 패키징를 중심으로 'SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한...'이 HBM·패키징·테스트 양산·수율·공정 안정화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
-      },
-      "양산관리": {
-        "role": "양산관리",
-        "score": 2,
-        "reason": "데이터·자동화",
-        "dimensions": [
-          "데이터·자동화"
-        ],
-        "matched_keywords": [
-          "ai"
-        ],
-        "lens": "TAT·WIP·병목·생산계획·납기",
-        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 'SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한 기술 비전과...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "공정기술": {
-        "role": "공정기술",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "공정 조건·Process Window·결함·미세화",
-        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한 기술 비전과...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "설비기술": {
-        "role": "설비기술",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
-        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한 기술 비전과...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "품질/신뢰성": {
-        "role": "품질/신뢰성",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "불량 원인·검사·신뢰성·품질 개선",
-        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한 기술 비전과...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "제품/소자": {
-        "role": "제품/소자",
-        "score": 5,
-        "reason": "DRAM·HBM · 제품 로드맵 · AI 메모리",
-        "dimensions": [
-          "DRAM·HBM",
-          "제품 로드맵",
-          "AI 메모리"
-        ],
-        "matched_keywords": [
-          "hbm",
-          "메모리",
-          "제품",
-          "세대",
-          "ai"
-        ],
-        "lens": "메모리 구조·성능·전력·제품 로드맵",
-        "what_you_get": "제품/소자 관점에서는 DRAM·HBM·제품 로드맵·AI 메모리가 핵심 연결점입니다. 'SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한 기술 비전과...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "IT": {
-        "role": "IT",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
-        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 'SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한 기술 비전과...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "Data/AI": {
-        "role": "Data/AI",
-        "score": 4,
-        "reason": "AI·ML · AI Infra",
-        "dimensions": [
-          "AI·ML",
-          "AI Infra"
-        ],
-        "matched_keywords": [
-          "ai",
-          "hbm"
-        ],
-        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
-        "what_you_get": "Data/AI 관점에서는 AI·ML·AI Infra가 핵심 연결점입니다. 'SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한 기술 비전과...'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      }
-    },
-    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. 데이터 기반 개선·HBM·패키징를 중심으로 'SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한...'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
-    "job_relevance": {
-      "role": "양산기술",
-      "score": 3,
-      "reason": "데이터 기반 개선 · HBM·패키징",
-      "dimensions": [
-        "데이터 기반 개선",
-        "HBM·패키징"
-      ],
-      "matched_keywords": [
-        "ai",
-        "hbm"
-      ],
-      "lens": "공정 안정성·수율·생산성·양산 전환"
-    },
-    "one_liner": "SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한 기술 비전과 미래 전략을 공유했습니다. 이 회사는 현재 AI 생태계를 선도하는 HBM을 포함한 리더 제품 및 다음 세대 메모리 솔루션을 발표했습니다.",
-    "importance": 3,
-    "main_point": "SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한 기술 비전과 미래 전략을 공유했습니다. 이 회사는 현재 AI 생태계를 선도하는 HBM을 포함한 리더 제품 및 다음 세대 메모리 솔루션을 발표했습니다.",
-    "key_points": [
-      "SK hynix는 18일(현지 시간) 미국 캘리포니아주 산타클라라의 마리오트 호텔에서 '2026 글로벌 포럼'을 개최하고, AI 시대에 대한 기술 비전과 미래 전략을 공유했습니다.",
-      "이 회사는 현재 AI 생태계를 선도하는 HBM을 포함한 리더 제품 및 다음 세대 메모리 솔루션을 발표했습니다.",
-      "SK hynix는 2012년부터 매년 글로벌 테크놀로지 인재들에게 자체 기술 비전과 성장 방향을 소개하기 위해 포럼을 개최해 왔습니다.",
-      "패널리스트들은 AI의 급속한 발전이 메모리 산업에 중요한 전환점을 가져오고 있음을 관찰했습니다.",
-      "SK hynix가 AI 메모리 시장에서 선도적인 위치를 차지할 수 있는 강점은 유연하고 수평적인 조직 문화에 있습니다."
-    ],
-    "why_it_matters": "패널리스트들은 AI의 급속한 발전이 메모리 산업에 중요한 전환점을 가져오고 있음을 관찰했습니다. SK hynix가 AI 메모리 시장에서 선도적인 위치를 차지할 수 있는 강점은 유연하고 수평적인 조직 문화에 있습니다.",
-    "category": "HBM / AI Memory",
-    "_evidence": [
-      {
-        "id": "S1",
-        "text": "SK hynix Hosts ‘2026 Global Forum,’ Sharing Its Technology Vision and Future Strategy for the AI Era On the 18th (local time), SK hynix hosted its ‘2026 Global Forum’ at the Marriott Hotel in Santa Clara, California, US."
-      },
-      {
-        "id": "S25",
-        "text": "The company displayed its flagship products leading the current AI ecosystem, such as HBM, as well as its next-generation memory solutions."
-      },
-      {
-        "id": "S2",
-        "text": "SK hynix has held the forum every year since 2012 to introduce its technology vision and growth direction to global talent."
-      },
-      {
-        "id": "S13",
-        "text": "The panelists observed that the rapid advancement of AI is bringing a crucial turning point for the memory industry."
-      },
-      {
-        "id": "S19",
-        "text": "“The strength that has allowed SK hynix to lead the AI memory market lies in an organizational culture that is both flexible and horizontal,” Jin stressed."
-      }
-    ],
-    "analysis_engine": "ollama-qwen3-4b-article-only-v2",
-    "analysis_status": "complete",
-    "content_source": "official-english-article",
-    "english_source_url": "https://news.skhynix.com/en/2026-global-forum/"
+    "analysis_status": "pending",
+    "content_source": "korean-source-pending",
+    "analysis_error": "??? ?? ??? OCR ???? ?? ?? ?????."
   },
   {
     "id": "4b1bfb2f134e",
@@ -3592,207 +3265,11 @@
       "SK하이닉스 미래포럼"
     ],
     "created_at": "2026-09-10T07:15:57+09:00",
-    "takeaway": "양산기술 관점에서는 공정 최적화·HBM·패키징·양산 전환가 핵심 연결점입니다. '그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다. 이를 해결하기 위해 그는 HBM, DRA...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
-    "job_relevance": {
-      "role": "양산기술",
-      "score": 5,
-      "reason": "공정 최적화 · HBM·패키징 · 양산 전환",
-      "dimensions": [
-        "공정 최적화",
-        "HBM·패키징",
-        "양산 전환"
-      ],
-      "matched_keywords": [
-        "공정",
-        "최적화",
-        "hbm",
-        "패키징",
-        "제조"
-      ],
-      "lens": "공정 안정성·수율·생산성·양산 전환"
-    },
-    "one_liner": "그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다. 이를 해결하기 위해 그는 HBM, DRAM, CXL, SSD 및 새로운 메모리 레벨을 각 작업 부하에 맞게 배포하고 시스템 수준에서 다양한 악세서리와 함께 최적화함으로써 AI 인프라의 성능과 총 소유 비용을 개선해야 한다고 강조했습니다.",
-    "importance": 5,
-    "role_analysis": {
-      "양산기술": {
-        "role": "양산기술",
-        "score": 5,
-        "reason": "공정 최적화 · HBM·패키징 · 양산 전환",
-        "dimensions": [
-          "공정 최적화",
-          "HBM·패키징",
-          "양산 전환"
-        ],
-        "matched_keywords": [
-          "공정",
-          "최적화",
-          "hbm",
-          "패키징",
-          "제조"
-        ],
-        "lens": "공정 안정성·수율·생산성·양산 전환",
-        "what_you_get": "양산기술 관점에서는 공정 최적화·HBM·패키징·양산 전환가 핵심 연결점입니다. '그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다. 이를 해결하기 위해 그는 HBM, DRA...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "양산기술 P&T": {
-        "role": "양산기술 P&T",
-        "score": 5,
-        "reason": "HBM·첨단 패키징 · 공정 최적화 · 열·구조 안정성",
-        "dimensions": [
-          "HBM·첨단 패키징",
-          "공정 최적화",
-          "열·구조 안정성"
-        ],
-        "matched_keywords": [
-          "hbm",
-          "패키징",
-          "공정",
-          "최적화",
-          "열"
-        ],
-        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
-        "what_you_get": "양산기술 P&T 관점에서는 HBM·첨단 패키징·공정 최적화·열·구조 안정성가 핵심 연결점입니다. '그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다. 이를 해결하기 위해 그는 HBM, DRA...'이라는 내용을 HBM·패키징·테스트 양산·수율·공정 안정화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "양산관리": {
-        "role": "양산관리",
-        "score": 3,
-        "reason": "데이터·자동화",
-        "dimensions": [
-          "데이터·자동화"
-        ],
-        "matched_keywords": [
-          "ai",
-          "최적화"
-        ],
-        "lens": "TAT·WIP·병목·생산계획·납기",
-        "what_you_get": "양산관리 실무와 중간 정도의 관련성이 있습니다. 데이터·자동화를 중심으로 '그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다. 이를 해결하기 위해 그는 HB...'이 TAT·WIP·병목·생산계획·납기에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
-      },
-      "공정기술": {
-        "role": "공정기술",
-        "score": 3,
-        "reason": "공정 조건 · 패키징 공정",
-        "dimensions": [
-          "공정 조건",
-          "패키징 공정"
-        ],
-        "matched_keywords": [
-          "공정",
-          "패키징"
-        ],
-        "lens": "공정 조건·Process Window·결함·미세화",
-        "what_you_get": "공정기술 실무와 중간 정도의 관련성이 있습니다. 공정 조건·패키징 공정를 중심으로 '그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다. 이를 해결하기 위해 그는 HB...'이 공정 조건·Process Window·결함·미세화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
-      },
-      "설비기술": {
-        "role": "설비기술",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
-        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다. 이를 해결하기 위해 그는 HBM, DRA...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "품질/신뢰성": {
-        "role": "품질/신뢰성",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "불량 원인·검사·신뢰성·품질 개선",
-        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다. 이를 해결하기 위해 그는 HBM, DRA...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "제품/소자": {
-        "role": "제품/소자",
-        "score": 5,
-        "reason": "DRAM·HBM · AI 메모리 · NAND·Storage",
-        "dimensions": [
-          "DRAM·HBM",
-          "AI 메모리",
-          "NAND·Storage"
-        ],
-        "matched_keywords": [
-          "dram",
-          "hbm",
-          "메모리",
-          "ai",
-          "cxl",
-          "ssd"
-        ],
-        "lens": "메모리 구조·성능·전력·제품 로드맵",
-        "what_you_get": "제품/소자 관점에서는 DRAM·HBM·AI 메모리·NAND·Storage가 핵심 연결점입니다. '그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다. 이를 해결하기 위해 그는 HBM, DRA...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "IT": {
-        "role": "IT",
-        "score": 4,
-        "reason": "시스템·플랫폼 · Cloud·Infra · 데이터 연계",
-        "dimensions": [
-          "시스템·플랫폼",
-          "Cloud·Infra",
-          "데이터 연계"
-        ],
-        "matched_keywords": [
-          "시스템",
-          "인프라",
-          "통합"
-        ],
-        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
-        "what_you_get": "IT 관점에서는 시스템·플랫폼·Cloud·Infra·데이터 연계가 핵심 연결점입니다. '그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다. 이를 해결하기 위해 그는 HBM, DRA...'이라는 내용을 MES·시스템 연계·인프라·보안·업무 자동화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "Data/AI": {
-        "role": "Data/AI",
-        "score": 4,
-        "reason": "AI Infra · AI·ML · 최적화",
-        "dimensions": [
-          "AI Infra",
-          "AI·ML",
-          "최적화"
-        ],
-        "matched_keywords": [
-          "hbm",
-          "ai 인프라",
-          "ai",
-          "최적화"
-        ],
-        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
-        "what_you_get": "Data/AI 관점에서는 AI Infra·AI·ML·최적화가 핵심 연결점입니다. '그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다. 이를 해결하기 위해 그는 HBM, DRA...'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      }
-    },
     "date_source": "page",
     "repair_version": 13,
-    "main_point": "그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다. 이를 해결하기 위해 그는 HBM, DRAM, CXL, SSD 및 새로운 메모리 레벨을 각 작업 부하에 맞게 배포하고 시스템 수준에서 다양한 악세서리와 함께 최적화함으로써 AI 인프라의 성능과 총 소유 비용을 개선해야 한다고 강조했습니다.",
-    "key_points": [
-      "그는 AI를 통해 재료, 장치, 패키징, 아키텍처 네 영역을 연결하는 3D 통합 설계 프레임워크를 제안했습니다.",
-      "이를 해결하기 위해 그는 HBM, DRAM, CXL, SSD 및 새로운 메모리 레벨을 각 작업 부하에 맞게 배포하고 시스템 수준에서 다양한 악세서리와 함께 최적화함으로써 AI 인프라의 성능과 총 소유 비용을 개선해야 한다고 강조했습니다.",
-      "이 점에 대해 김 부사장은 \"3D 스택 DRAM을 실제 제품으로 도입하기 위해서는 과거와 달리 설계 최적화뿐만 아니라 열 방출 및 공정 복잡성과 같은 기술적 도전 과제를 해결해야 한다\"고 말했으며, \"3D 기술은 제조 및 패키징 간의 기술 경계 자체를 재구성하고 있다\"며 \"고도의 패키징 혁신을 병행할 때, 기존 경계를 넘어선 획기적인 분야 간 최적화와 새로운 협업 프레임워크 구축이 중요하다\"고 강조했다. 손 부사장도 추가로 말했습니다.",
-      "종합적으로 CEO 강은 기업이 어떻게 앞으로 나아가고 변화해야 하는지에 대해 이 해 SK hynix Future Forum에서 얻은 통찰을 바탕으로 '함께 반성하고 적절히 조정할 수 있도록 하자'고 희망했습니다.",
-      "AI 도입에 따른 주요 변화는 Gilyoung Song이 지적한 바와 같이 '조직 및 시스템의 리디자인'입니다."
-    ],
-    "why_it_matters": "종합적으로 CEO 강은 기업이 어떻게 앞으로 나아가고 변화해야 하는지에 대해 이 해 SK hynix Future Forum에서 얻은 통찰을 바탕으로 '함께 반성하고 적절히 조정할 수 있도록 하자'고 희망했습니다. AI 도입에 따른 주요 변화는 Gilyoung Song이 지적한 바와 같이 '조직 및 시스템의 리디자인'입니다.",
-    "category": "AI Infrastructure / CXL",
-    "_evidence": [
-      {
-        "id": "S37",
-        "text": "He proposed a 3D integrated design framework that links four domains—materials, devices, packaging, and architecture—through AI."
-      },
-      {
-        "id": "S30",
-        "text": "To address this, he stressed, HBM, DRAM, CXL, SSD, and new memory tiers should be deployed to suit each workload and optimized at the system level together with a range of accelerators, thereby improving both the performance and the total cost of ownership * of AI infrastructure."
-      },
-      {
-        "id": "S42",
-        "text": "On this point, Vice President Kim said, “Bringing 3D stacked DRAM into an actual product will require solving not just design optimization but also technical challenges unlike those of the past, such as heat dissipation and process complexity.” “3D technology is even reshaping the technical boundary between fab and packaging,” emphasizing that “along with innovation in advanced packaging, it is important to build cross-domain co-optimization and new collaboration frameworks that go beyond existing boundaries.” Vice President Son added."
-      },
-      {
-        "id": "S11",
-        "text": "In closing, CEO Kwak said he hopes that, drawing on the insights gained through this year’s SK hynix Future Forum, “We can reflect together on how our company should move forward and change accordingly.” AI Collaboration Reshapes How We Work, Calling for New Directions in Memory The keynote presentations began by diagnosing how AI has changed the way we work."
-      },
-      {
-        "id": "S17",
-        "text": "Author Gilyoung Song pointed to the ‘redesign of organizations and systems’ as the key change brought by AI adoption."
-      }
-    ],
-    "analysis_engine": "ollama-qwen3-4b-article-only-v2",
-    "analysis_status": "complete",
-    "content_source": "official-english-article",
-    "english_source_url": "https://news.skhynix.com/en/future-forum-2026/"
+    "analysis_status": "pending",
+    "content_source": "korean-source-pending",
+    "analysis_error": "??? ?? ??? OCR ???? ?? ?? ?????."
   },
   {
     "id": "982b8a5090f6",
