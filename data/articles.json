@@ -1,383 +1,5 @@
 [
   {
-    "id": "59074d387a05",
-    "title": "[미래인재 CLASS] 기술 패권의 중심에 선 반도체, 경쟁력의 근간은 ‘AI 생태계’",
-    "url": "https://news.skhynix.co.kr/future-talents-class-ep5",
-    "published": "2026-10-27",
-    "date_source": "page",
-    "source": "SK hynix Newsroom",
-    "tags": [
-      "STORY",
-      "TECH&AI",
-      "SK하이닉스 앰버서더",
-      "반도체 산업",
-      "반도체 생태계"
-    ],
-    "created_at": "2026-10-28T00:03:59+09:00",
-    "content_source": "article",
-    "repair_version": 13,
-    "analysis_engine": "ollama-qwen3-4b-korean-newsroom-v1",
-    "analysis_status": "complete",
-    "main_point": "6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다. 반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인공지능(AI) 및 반도체 산업을 이끌 미래인재를 양성하는 데 힘을 더하기 위해 [미래인재 CLASS] 를 기획하고, 반도체 산업을 둘러싼 다양한 주제를 짚어 나가고 있다.",
-    "key_points": [
-      "6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다.",
-      "반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인공지능(AI) 및 반도체 산업을 이끌 미래인재를 양성하는 데 힘을 더하기 위해 [미래인재 CLASS] 를 기획하고, 반도체 산업을 둘러싼 다양한 주제를 짚어 나가고 있다.",
-      "이처럼 국가가 직접 나서서 대규모 인프라를 구축할 만큼 반도체를 바라보는 시각이 바뀐 겁니다.” * 3대 메가 프로젝트(Mega Project): 2026년 6월 정부가 발표한 국가 전략 프로젝트.",
-      "SK하이닉스는 용인 반도체 클러스터 내에서 공용 테스트 팹 '트리니티 팹'을 구축해 국내 소부장 업체의 기술 검증을 지원할 계획이다.",
-      "권석준 교수(성균관대학교 화학공학부)는 반도체 경쟁력의 근간이 '생태계'라고 강조했다."
-    ],
-    "why_it_matters": "SK하이닉스는 용인 반도체 클러스터 내에서 공용 테스트 팹 '트리니티 팹'을 구축해 국내 소부장 업체의 기술 검증을 지원할 계획이다. 권석준 교수(성균관대학교 화학공학부)는 반도체 경쟁력의 근간이 '생태계'라고 강조했다.",
-    "category": "Company / General",
-    "_evidence": [
-      {
-        "id": "S20",
-        "text": "“6월 말에 청와대가 메가팹(Mega FAB), AI 데이터센터, 피지컬 AI * 관련한 3대 메가 프로젝트를 발표했죠."
-      },
-      {
-        "id": "S1",
-        "text": "반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인공지능(AI) 및 반도체 산업을 이끌 미래인재를 양성하는 데 힘을 더하기 위해 [미래인재 CLASS] 를 기획하고, 반도체 산업을 둘러싼 다양한 주제를 짚어 나가고 있다."
-      },
-      {
-        "id": "S22",
-        "text": "이처럼 국가가 직접 나서서 대규모 인프라를 구축할 만큼 반도체를 바라보는 시각이 바뀐 겁니다.” * 3대 메가 프로젝트(Mega Project): 2026년 6월 정부가 발표한 국가 전략 프로젝트."
-      },
-      {
-        "id": "S45",
-        "text": "그런데 최근 SK하이닉스가 그 난제를 해결할 설루션을 제시해서 주목받고 있죠.” ▲ SK하이닉스 용인 반도체 클러스터와 트리니티 팹 조감도 향후 SK하이닉스는 지자체와 협력해 용인 반도체 클러스터 안에 공용 테스트 팹인 ‘트리니티 팹 * ’을 구축, 국내 소부장 업체가 실제 양산 환경에서 기술을 검증할 수 있도록 지원할 계획이다."
-      },
-      {
-        "id": "S7",
-        "text": "이 모든 건 촘촘히 연결돼 있는데, 우리가 생태계에 주목해야 하는 이유가 여기에 있어요.” 이 가운데 권석준 교수(성균관대학교 화학공학부)는 “반도체 경쟁력의 근간에는 ‘생태계’가 있다”고 강조한다."
-      }
-    ],
-    "one_liner": "6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다. 반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인공지능(AI) 및 반도체 산업을 이끌 미래인재를 양성하는 데 힘을 더하기 위해 [미래인재 CLASS] 를 기획하고, 반도체 산업을 둘러싼 다양한 주제를 짚어 나가고 있다.",
-    "role_analysis": {
-      "양산기술": {
-        "role": "양산기술",
-        "score": 4,
-        "reason": "양산 전환 · 데이터 기반 개선 · 공정 최적화",
-        "dimensions": [
-          "양산 전환",
-          "데이터 기반 개선",
-          "공정 최적화"
-        ],
-        "matched_keywords": [
-          "양산",
-          "생산",
-          "fab",
-          "팹",
-          "데이터",
-          "ai"
-        ],
-        "lens": "공정 안정성·수율·생산성·양산 전환",
-        "what_you_get": "양산기술 관점에서는 양산 전환·데이터 기반 개선·공정 최적화가 핵심 연결점입니다. '6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다. 반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인공지능(AI...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "양산기술 P&T": {
-        "role": "양산기술 P&T",
-        "score": 3,
-        "reason": "Test·검사 · 양산·생산성 · 공정 최적화",
-        "dimensions": [
-          "Test·검사",
-          "양산·생산성",
-          "공정 최적화"
-        ],
-        "matched_keywords": [
-          "테스트",
-          "양산",
-          "생산",
-          "공정",
-          "조건"
-        ],
-        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
-        "what_you_get": "양산기술 P&T 실무와 중간 정도의 관련성이 있습니다. Test·검사·양산·생산성·공정 최적화를 중심으로 '6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다. 반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인...'이 HBM·패키징·테스트 양산·수율·공정 안정화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
-      },
-      "양산관리": {
-        "role": "양산관리",
-        "score": 3,
-        "reason": "데이터·자동화 · 생산성",
-        "dimensions": [
-          "데이터·자동화",
-          "생산성"
-        ],
-        "matched_keywords": [
-          "데이터",
-          "ai",
-          "생산"
-        ],
-        "lens": "TAT·WIP·병목·생산계획·납기",
-        "what_you_get": "양산관리 실무와 중간 정도의 관련성이 있습니다. 데이터·자동화·생산성를 중심으로 '6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다. 반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인...'이 TAT·WIP·병목·생산계획·납기에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
-      },
-      "공정기술": {
-        "role": "공정기술",
-        "score": 2,
-        "reason": "공정 조건 · Etch·Depo·Litho",
-        "dimensions": [
-          "공정 조건",
-          "Etch·Depo·Litho"
-        ],
-        "matched_keywords": [
-          "공정",
-          "조건",
-          "lithography"
-        ],
-        "lens": "공정 조건·Process Window·결함·미세화",
-        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다. 반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인공지능(AI...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "설비기술": {
-        "role": "설비기술",
-        "score": 2,
-        "reason": "자동화 · 장비·설비",
-        "dimensions": [
-          "자동화",
-          "장비·설비"
-        ],
-        "matched_keywords": [
-          "데이터",
-          "장비",
-          "equipment"
-        ],
-        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
-        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다. 반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인공지능(AI...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "품질/신뢰성": {
-        "role": "품질/신뢰성",
-        "score": 3,
-        "reason": "검사·계측 · 신뢰성",
-        "dimensions": [
-          "검사·계측",
-          "신뢰성"
-        ],
-        "matched_keywords": [
-          "테스트",
-          "신뢰성"
-        ],
-        "lens": "불량 원인·검사·신뢰성·품질 개선",
-        "what_you_get": "품질/신뢰성 실무와 중간 정도의 관련성이 있습니다. 검사·계측·신뢰성를 중심으로 '6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다. 반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인...'이 불량 원인·검사·신뢰성·품질 개선에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
-      },
-      "제품/소자": {
-        "role": "제품/소자",
-        "score": 4,
-        "reason": "AI 메모리 · DRAM·HBM · 성능·전력",
-        "dimensions": [
-          "AI 메모리",
-          "DRAM·HBM",
-          "성능·전력"
-        ],
-        "matched_keywords": [
-          "ai",
-          "gpu",
-          "hbm",
-          "메모리",
-          "전력"
-        ],
-        "lens": "메모리 구조·성능·전력·제품 로드맵",
-        "what_you_get": "제품/소자 관점에서는 AI 메모리·DRAM·HBM·성능·전력가 핵심 연결점입니다. '6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다. 반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인공지능(AI...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      },
-      "IT": {
-        "role": "IT",
-        "score": 3,
-        "reason": "Cloud·Infra · 데이터 연계 · 시스템·플랫폼",
-        "dimensions": [
-          "Cloud·Infra",
-          "데이터 연계",
-          "시스템·플랫폼"
-        ],
-        "matched_keywords": [
-          "인프라",
-          "네트워크",
-          "데이터",
-          "시스템"
-        ],
-        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
-        "what_you_get": "IT 실무와 중간 정도의 관련성이 있습니다. Cloud·Infra·데이터 연계·시스템·플랫폼를 중심으로 '6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다. 반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인...'이 MES·시스템 연계·인프라·보안·업무 자동화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
-      },
-      "Data/AI": {
-        "role": "Data/AI",
-        "score": 5,
-        "reason": "AI·ML · AI Infra · 데이터 분석",
-        "dimensions": [
-          "AI·ML",
-          "AI Infra",
-          "데이터 분석"
-        ],
-        "matched_keywords": [
-          "ai",
-          "인공지능",
-          "gpu",
-          "hbm",
-          "데이터센터",
-          "데이터"
-        ],
-        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
-        "what_you_get": "Data/AI 관점에서는 AI·ML·AI Infra·데이터 분석가 핵심 연결점입니다. '6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다. 반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인공지능(AI...'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
-      }
-    },
-    "job_relevance": {
-      "role": "양산기술",
-      "score": 4,
-      "reason": "양산 전환 · 데이터 기반 개선 · 공정 최적화",
-      "dimensions": [
-        "양산 전환",
-        "데이터 기반 개선",
-        "공정 최적화"
-      ],
-      "matched_keywords": [
-        "양산",
-        "생산",
-        "fab",
-        "팹",
-        "데이터",
-        "ai"
-      ],
-      "lens": "공정 안정성·수율·생산성·양산 전환"
-    },
-    "takeaway": "양산기술 관점에서는 양산 전환·데이터 기반 개선·공정 최적화가 핵심 연결점입니다. '6월 말 청와대는 메가팹, AI 데이터센터, 피지컬 AI 관련 3대 메가 프로젝트를 발표했다. 반도체의 경쟁력은 사람에서 나온다. 뉴스룸은 인공지능(AI...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
-    "importance": 4
-  },
-  {
-    "id": "3a12178c6fad",
-    "title": "SK하이닉스, ‘초심 Crafted by SK hynix’ 전시 개최… 관람객과 함께 반도체 위에 초심을 새기다",
-    "url": "https://news.skhynix.co.kr/initial-aspiration-exhibition-07",
-    "published": "2026-10-26",
-    "date_source": "page",
-    "source": "SK hynix Newsroom",
-    "tags": [
-      "MEDIA",
-      "광고",
-      "초심"
-    ],
-    "created_at": "2026-10-27T10:53:37+09:00",
-    "content_source": "article-image-ocr",
-    "repair_version": 13,
-    "analysis_engine": "ollama-qwen3-4b-korean-newsroom-v1",
-    "analysis_status": "complete",
-    "main_point": "▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을 받았던 SK하이닉스는 브랜드를 대표하는 화두로 '초심'을 선택했습니다. 그리고 그 '초심'을 진정성 있게 돌아보기 위해 창립일부터 현재까지, 지난 43년의 기록을 들여다보았습니다.",
-    "key_points": [
-      "▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을 받았던 SK하이닉스는 브랜드를 대표하는 화두로 '초심'을 선택했습니다.",
-      "그리고 그 '초심'을 진정성 있게 돌아보기 위해 창립일부터 현재까지, 지난 43년의 기록을 들여다보았습니다.",
-      "SK하이닉스의 히로애락을 담은 기사 조각으로 지구본을 만들고, 자, 장에 담아 16단의 반도체를 만들었습니다.",
-      "초심 Crafted by SK hynix SK hynix 초심 제작자 SK하이닉스 SK하이닉스 뉴스룸 NO_ARTICLE_TEXT 초심 Crafted by SK hynix 시 세상을 이끄는 메모리의 소리 메모리소리"
-    ],
-    "why_it_matters": "초심 Crafted by SK hynix SK hynix 초심 제작자 SK하이닉스 SK하이닉스 뉴스룸 NO_ARTICLE_TEXT 초심 Crafted by SK hynix 시 세상을 이끄는 메모리의 소리 메모리소리",
-    "category": "Company / General",
-    "_evidence": [
-      {
-        "id": "S1",
-        "text": "▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을 받았던 SK하이닉스는 브랜드를 대표하는 화두로 '초심'을 선택했습니다."
-      },
-      {
-        "id": "S2",
-        "text": "그리고 그 '초심'을 진정성 있게 돌아보기 위해 창립일부터 현재까지, 지난 43년의 기록을 들여다보았습니다."
-      },
-      {
-        "id": "S3",
-        "text": "SK하이닉스의 히로애락을 담은 기사 조각으로 지구본을 만들고, 자, 장에 담아 16단의 반도체를 만들었습니다."
-      },
-      {
-        "id": "S4",
-        "text": "초심 Crafted by SK hynix SK hynix 초심 제작자 SK하이닉스 SK하이닉스 뉴스룸 NO_ARTICLE_TEXT 초심 Crafted by SK hynix 시 세상을 이끄는 메모리의 소리 메모리소리"
-      }
-    ],
-    "one_liner": "▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을 받았던 SK하이닉스는 브랜드를 대표하는 화두로 '초심'을 선택했습니다. 그리고 그 '초심'을 진정성 있게 돌아보기 위해 창립일부터 현재까지, 지난 43년의 기록을 들여다보았습니다.",
-    "role_analysis": {
-      "양산기술": {
-        "role": "양산기술",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "공정 안정성·수율·생산성·양산 전환",
-        "what_you_get": "양산기술 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "양산기술 P&T": {
-        "role": "양산기술 P&T",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
-        "what_you_get": "양산기술 P&T 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "양산관리": {
-        "role": "양산관리",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "TAT·WIP·병목·생산계획·납기",
-        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "공정기술": {
-        "role": "공정기술",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "공정 조건·Process Window·결함·미세화",
-        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "설비기술": {
-        "role": "설비기술",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
-        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "품질/신뢰성": {
-        "role": "품질/신뢰성",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "불량 원인·검사·신뢰성·품질 개선",
-        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "제품/소자": {
-        "role": "제품/소자",
-        "score": 2,
-        "reason": "DRAM·HBM",
-        "dimensions": [
-          "DRAM·HBM"
-        ],
-        "matched_keywords": [
-          "메모리"
-        ],
-        "lens": "메모리 구조·성능·전력·제품 로드맵",
-        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "IT": {
-        "role": "IT",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
-        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      },
-      "Data/AI": {
-        "role": "Data/AI",
-        "score": 1,
-        "reason": "직접 연관 신호가 적음",
-        "dimensions": [],
-        "matched_keywords": [],
-        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
-        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
-      }
-    },
-    "job_relevance": {
-      "role": "양산기술",
-      "score": 1,
-      "reason": "직접 연관 신호가 적음",
-      "dimensions": [],
-      "matched_keywords": [],
-      "lens": "공정 안정성·수율·생산성·양산 전환"
-    },
-    "takeaway": "양산기술 직접 관련성은 낮은 편입니다. 다만 '▲ ‘초심 Crafted by SK hynix’ 전시를 즐기고 있는 관람객들 초심 Crafted by SK hynix 2026년, 세상의 뜨거운 관심을...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다.",
-    "importance": 1
-  },
-  {
     "id": "36917b7582c4",
     "title": "솔리다임 IPO 검토를 중단합니다 장기 성장과 주주가치 제고 노력은 이어갑니다",
     "url": "https://news.skhynix.co.kr/fact-12",
@@ -597,7 +219,7 @@
     "repair_version": 13,
     "analysis_status": "pending",
     "content_source": "korean-source-pending",
-    "analysis_error": "??? ?? ??? OCR ???? ?? ?? ?????."
+    "analysis_error": "V4 후보가 3개 미만입니다."
   },
   {
     "id": "21f6c3344395",
@@ -1240,7 +862,7 @@
     "repair_version": 13,
     "analysis_status": "pending",
     "content_source": "korean-source-pending",
-    "analysis_error": "V4 후보가 3개 미만입니다."
+    "analysis_error": "OCR ??? ?? ???? ????? ???? ????."
   },
   {
     "id": "be5cd5fb61ac",
@@ -2805,7 +2427,7 @@
     "repair_version": 13,
     "analysis_status": "pending",
     "content_source": "korean-source-pending",
-    "analysis_error": "??? ?? ??? OCR ???? ?? ?? ?????."
+    "analysis_error": "V4 후보가 3개 미만입니다."
   },
   {
     "id": "b418d3c8d952",
@@ -3482,9 +3104,183 @@
     ],
     "created_at": "2026-09-23T10:16:08+09:00",
     "repair_version": 13,
-    "analysis_status": "pending",
-    "content_source": "korean-source-pending",
-    "analysis_error": "??? ?? ??? OCR ???? ?? ?? ?????."
+    "analysis_status": "complete",
+    "content_source": "article-image-ocr",
+    "main_point": "2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI Memory Creator 2026 SK Hynix Global Forum Share the Vision, Shape the Future, Together Full Stack AI Memory Creator 2026 SK hynix Global Forum Share the Vision, Shape the Future, Together 2026 Global Forum Share the Vision, Shape the Future, Together SOLID HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash Full S SK hy driving the fut We deliver t the world's m built on reliability a SALT-KV PIM Boost Your AI SK hyunix SK hyunix xPU PIM HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash SK hynix Full Stack AI Memory Creator 2026 SK hyunix Future Forum 잠시 후, 0900 부터 ‘SK하이닉스 미래포럼’을 시작합니다. 2026 SKHynix Future Forum AI Memory Solution Creator의 기술 비전과 미래 전략 공유 AI Ecosystem 병목의 실체: 연산이 아닌 데이터 HBM ! 체: 아닌 데이터",
+    "key_points": [
+      "2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI Memory Creator 2026 SK Hynix Global Forum Share the Vision, Shape the Future, Together Full Stack AI Memory Creator 2026 SK hynix Global Forum Share the Vision, Shape the Future, Together 2026 Global Forum Share the Vision, Shape the Future, Together SOLID HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash Full S SK hy driving the fut We deliver t the world's m built on reliability a SALT-KV PIM Boost Your AI SK hyunix SK hyunix xPU PIM HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash SK hynix Full Stack AI Memory Creator 2026 SK hyunix Future Forum 잠시 후, 0900 부터 ‘SK하이닉스 미래포럼’을 시작합니다.",
+      "2026 SKHynix Future Forum AI Memory Solution Creator의 기술 비전과 미래 전략 공유 AI Ecosystem 병목의 실체: 연산이 아닌 데이터 HBM ! 체: 아닌 데이터",
+      "시대 Golden Time, AI Memory Solution Creator가 세상을 바꾸는 지금 2026 SK hynix Future Forum 잠시 후, 09:00 부터 ‘SK하이닉스 미래포럼’을 시작합니다."
+    ],
+    "why_it_matters": "시대 Golden Time, AI Memory Solution Creator가 세상을 바꾸는 지금 2026 SK hynix Future Forum 잠시 후, 09:00 부터 ‘SK하이닉스 미래포럼’을 시작합니다.",
+    "category": "Quality / Reliability",
+    "_evidence": [
+      {
+        "id": "S1",
+        "text": "2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI Memory Creator 2026 SK Hynix Global Forum Share the Vision, Shape the Future, Together Full Stack AI Memory Creator 2026 SK hynix Global Forum Share the Vision, Shape the Future, Together 2026 Global Forum Share the Vision, Shape the Future, Together SOLID HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash Full S SK hy driving the fut We deliver t the world's m built on reliability a SALT-KV PIM Boost Your AI SK hyunix SK hyunix xPU PIM HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash SK hynix Full Stack AI Memory Creator 2026 SK hyunix Future Forum 잠시 후, 0900 부터 ‘SK하이닉스 미래포럼’을 시작합니다."
+      },
+      {
+        "id": "S3",
+        "text": "2026 SKHynix Future Forum AI Memory Solution Creator의 기술 비전과 미래 전략 공유 AI Ecosystem 병목의 실체: 연산이 아닌 데이터 HBM ! 체: 아닌 데이터"
+      },
+      {
+        "id": "S2",
+        "text": "시대 Golden Time, AI Memory Solution Creator가 세상을 바꾸는 지금 2026 SK hynix Future Forum 잠시 후, 09:00 부터 ‘SK하이닉스 미래포럼’을 시작합니다."
+      }
+    ],
+    "one_liner": "2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI Memory Creator 2026 SK Hynix Global Forum Share the Vision, Shape the Future, Together Full Stack AI Memory Creator 2026 SK hynix Global Forum Share the Vision, Shape the Future, Together 2026 Global Forum Share the Vision, Shape the Future, Together SOLID HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash Full S SK hy driving the fut We deliver t the world's m built on reliability a SALT-KV PIM Boost Your AI SK hyunix SK hyunix xPU PIM HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash SK hynix Full Stack AI Memory Creator 2026 SK hyunix Future Forum 잠시 후, 0900 부터 ‘SK하이닉스 미래포럼’을 시작합니다. 2026 SKHynix Future Forum AI Memory Solution Creator의 기술 비전과 미래 전략 공유 AI Ecosystem 병목의 실체: 연산이 아닌 데이터 HBM ! 체: 아닌 데이터",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 4,
+        "reason": "데이터 기반 개선 · HBM·패키징",
+        "dimensions": [
+          "데이터 기반 개선",
+          "HBM·패키징"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai",
+          "hbm"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 관점에서는 데이터 기반 개선·HBM·패키징가 핵심 연결점입니다. '2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산기술 P&T": {
+        "role": "양산기술 P&T",
+        "score": 3,
+        "reason": "HBM·첨단 패키징 · 수율·품질",
+        "dimensions": [
+          "HBM·첨단 패키징",
+          "수율·품질"
+        ],
+        "matched_keywords": [
+          "hbm",
+          "reliability"
+        ],
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "what_you_get": "양산기술 P&T 실무와 중간 정도의 관련성이 있습니다. HBM·첨단 패키징·수율·품질를 중심으로 '2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full St...'이 HBM·패키징·테스트 양산·수율·공정 안정화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 4,
+        "reason": "데이터·자동화 · 병목 관리",
+        "dimensions": [
+          "데이터·자동화",
+          "병목 관리"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai",
+          "병목"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 관점에서는 데이터·자동화·병목 관리가 핵심 연결점입니다. '2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI...'이라는 내용을 TAT·WIP·병목·생산계획·납기 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 2,
+        "reason": "자동화",
+        "dimensions": [
+          "자동화"
+        ],
+        "matched_keywords": [
+          "데이터"
+        ],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 2,
+        "reason": "신뢰성",
+        "dimensions": [
+          "신뢰성"
+        ],
+        "matched_keywords": [
+          "reliability"
+        ],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 5,
+        "reason": "AI 메모리 · DRAM·HBM · 성능·전력",
+        "dimensions": [
+          "AI 메모리",
+          "DRAM·HBM",
+          "성능·전력"
+        ],
+        "matched_keywords": [
+          "ai",
+          "pim",
+          "hbf",
+          "hbm",
+          "메모리",
+          "bandwidth"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 AI 메모리·DRAM·HBM·성능·전력가 핵심 연결점입니다. '2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 2,
+        "reason": "데이터 연계",
+        "dimensions": [
+          "데이터 연계"
+        ],
+        "matched_keywords": [
+          "데이터"
+        ],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 4,
+        "reason": "AI·ML · 데이터 분석 · AI Infra",
+        "dimensions": [
+          "AI·ML",
+          "데이터 분석",
+          "AI Infra"
+        ],
+        "matched_keywords": [
+          "ai",
+          "데이터",
+          "hbm"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 관점에서는 AI·ML·데이터 분석·AI Infra가 핵심 연결점입니다. '2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI...'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      }
+    },
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 4,
+      "reason": "데이터 기반 개선 · HBM·패키징",
+      "dimensions": [
+        "데이터 기반 개선",
+        "HBM·패키징"
+      ],
+      "matched_keywords": [
+        "데이터",
+        "ai",
+        "hbm"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "takeaway": "양산기술 관점에서는 데이터 기반 개선·HBM·패키징가 핵심 연결점입니다. '2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
+    "importance": 4,
+    "analysis_engine": "ollama-qwen3-4b-korean-newsroom-v1"
   },
   {
     "id": "4b1bfb2f134e",
@@ -3502,9 +3298,190 @@
     "created_at": "2026-09-10T07:15:57+09:00",
     "date_source": "page",
     "repair_version": 13,
-    "analysis_status": "pending",
-    "content_source": "korean-source-pending",
-    "analysis_error": "??? ?? ??? OCR ???? ?? ?? ?????."
+    "analysis_status": "complete",
+    "content_source": "article-image-ocr",
+    "main_point": "2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Creator가 세상을 바꾸는 지금' 2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI Memory Creator 2026 SK hynix Global Forum Share the Vision, Shape the Future, Together Full Stack AI Memory Creator 2026 SK hyunix Global Forum Share the Vision, Shape the Future, Together 2026 Global Forum Share the Vision, Shape the Future, Together SOLID HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash Full S SK hy driving the fut We deliver t the world's m built on reliability a SALT-KV PIM Boost Your AI SK hyunix SK hyunix xPU PIM SK hyunix HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash SK hynix Full Stack AI Memory Creator 2026 SK hyunix Future Forum 잠시 후, 0900 부터 ‘SK하이닉스 미래포럼’을 시작합니다. AI Ecosystem 병목의 실체: 연산이 아닌 데이터 HBM ! 체: 아닌 데이터",
+    "key_points": [
+      "2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Creator가 세상을 바꾸는 지금' 2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI Memory Creator 2026 SK hynix Global Forum Share the Vision, Shape the Future, Together Full Stack AI Memory Creator 2026 SK hyunix Global Forum Share the Vision, Shape the Future, Together 2026 Global Forum Share the Vision, Shape the Future, Together SOLID HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash Full S SK hy driving the fut We deliver t the world's m built on reliability a SALT-KV PIM Boost Your AI SK hyunix SK hyunix xPU PIM SK hyunix HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash SK hynix Full Stack AI Memory Creator 2026 SK hyunix Future Forum 잠시 후, 0900 부터 ‘SK하이닉스 미래포럼’을 시작합니다.",
+      "AI Ecosystem 병목의 실체: 연산이 아닌 데이터 HBM ! 체: 아닌 데이터",
+      "시대 Golden Time, AI Memory Solution Creator가 세상을 바꾸는 지금 2026 SK hynix Future Forum 잠시 후, 0900 부터 ‘SK하이닉스 미래포럼’을 시작합니다.",
+      "2026 SK hynix Future Forum AI Memory Solution Creator의 도약의 골든 타임."
+    ],
+    "why_it_matters": "2026 SK hynix Future Forum AI Memory Solution Creator의 도약의 골든 타임.",
+    "category": "Quality / Reliability",
+    "_evidence": [
+      {
+        "id": "S1",
+        "text": "2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Creator가 세상을 바꾸는 지금' 2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI Memory Creator 2026 SK hynix Global Forum Share the Vision, Shape the Future, Together Full Stack AI Memory Creator 2026 SK hyunix Global Forum Share the Vision, Shape the Future, Together 2026 Global Forum Share the Vision, Shape the Future, Together SOLID HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash Full S SK hy driving the fut We deliver t the world's m built on reliability a SALT-KV PIM Boost Your AI SK hyunix SK hyunix xPU PIM SK hyunix HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash SK hynix Full Stack AI Memory Creator 2026 SK hyunix Future Forum 잠시 후, 0900 부터 ‘SK하이닉스 미래포럼’을 시작합니다."
+      },
+      {
+        "id": "S4",
+        "text": "AI Ecosystem 병목의 실체: 연산이 아닌 데이터 HBM ! 체: 아닌 데이터"
+      },
+      {
+        "id": "S2",
+        "text": "시대 Golden Time, AI Memory Solution Creator가 세상을 바꾸는 지금 2026 SK hynix Future Forum 잠시 후, 0900 부터 ‘SK하이닉스 미래포럼’을 시작합니다."
+      },
+      {
+        "id": "S3",
+        "text": "2026 SK hynix Future Forum AI Memory Solution Creator의 도약의 골든 타임."
+      }
+    ],
+    "one_liner": "2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Creator가 세상을 바꾸는 지금' 2026 Global Forum Share the Vision, Shape the Future, Together SK Hynix Full Stack AI Memory Creator 2026 SK hynix Global Forum Share the Vision, Shape the Future, Together Full Stack AI Memory Creator 2026 SK hyunix Global Forum Share the Vision, Shape the Future, Together 2026 Global Forum Share the Vision, Shape the Future, Together SOLID HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash Full S SK hy driving the fut We deliver t the world's m built on reliability a SALT-KV PIM Boost Your AI SK hyunix SK hyunix xPU PIM SK hyunix HBF Unlocking the Next Scale of AI HBE HIGH BANDWIDTH FLASH Introducing HBF - High Bandwidth Flash SK hynix Full Stack AI Memory Creator 2026 SK hyunix Future Forum 잠시 후, 0900 부터 ‘SK하이닉스 미래포럼’을 시작합니다. AI Ecosystem 병목의 실체: 연산이 아닌 데이터 HBM ! 체: 아닌 데이터",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 3,
+        "reason": "데이터 기반 개선 · HBM·패키징",
+        "dimensions": [
+          "데이터 기반 개선",
+          "HBM·패키징"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai",
+          "hbm"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. 데이터 기반 개선·HBM·패키징를 중심으로 '2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Cr...'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산기술 P&T": {
+        "role": "양산기술 P&T",
+        "score": 3,
+        "reason": "HBM·첨단 패키징 · 수율·품질",
+        "dimensions": [
+          "HBM·첨단 패키징",
+          "수율·품질"
+        ],
+        "matched_keywords": [
+          "hbm",
+          "reliability"
+        ],
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "what_you_get": "양산기술 P&T 실무와 중간 정도의 관련성이 있습니다. HBM·첨단 패키징·수율·품질를 중심으로 '2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Cr...'이 HBM·패키징·테스트 양산·수율·공정 안정화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 3,
+        "reason": "데이터·자동화 · 병목 관리",
+        "dimensions": [
+          "데이터·자동화",
+          "병목 관리"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai",
+          "병목"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 실무와 중간 정도의 관련성이 있습니다. 데이터·자동화·병목 관리를 중심으로 '2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Cr...'이 TAT·WIP·병목·생산계획·납기에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Creator가...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 2,
+        "reason": "자동화",
+        "dimensions": [
+          "자동화"
+        ],
+        "matched_keywords": [
+          "데이터"
+        ],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Creator가...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 2,
+        "reason": "신뢰성",
+        "dimensions": [
+          "신뢰성"
+        ],
+        "matched_keywords": [
+          "reliability"
+        ],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Creator가...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 5,
+        "reason": "AI 메모리 · DRAM·HBM · 성능·전력",
+        "dimensions": [
+          "AI 메모리",
+          "DRAM·HBM",
+          "성능·전력"
+        ],
+        "matched_keywords": [
+          "ai",
+          "pim",
+          "hbf",
+          "hbm",
+          "메모리",
+          "bandwidth"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 AI 메모리·DRAM·HBM·성능·전력가 핵심 연결점입니다. '2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Creator가...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 3,
+        "reason": "데이터 연계 · 자동화·DX",
+        "dimensions": [
+          "데이터 연계",
+          "자동화·DX"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ax"
+        ],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 실무와 중간 정도의 관련성이 있습니다. 데이터 연계·자동화·DX를 중심으로 '2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Cr...'이 MES·시스템 연계·인프라·보안·업무 자동화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 4,
+        "reason": "AI·ML · 데이터 분석 · AI Infra",
+        "dimensions": [
+          "AI·ML",
+          "데이터 분석",
+          "AI Infra"
+        ],
+        "matched_keywords": [
+          "ai",
+          "데이터",
+          "hbm"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 관점에서는 AI·ML·데이터 분석·AI Infra가 핵심 연결점입니다. '2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Creator가...'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      }
+    },
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 3,
+      "reason": "데이터 기반 개선 · HBM·패키징",
+      "dimensions": [
+        "데이터 기반 개선",
+        "HBM·패키징"
+      ],
+      "matched_keywords": [
+        "데이터",
+        "ai",
+        "hbm"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. 데이터 기반 개선·HBM·패키징를 중심으로 '2026 SK하이닉스 미래포럼 20 AI Memory 2026 SK hynix Future FORUM 'AI Memory Solution Cr...'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
+    "importance": 3,
+    "analysis_engine": "ollama-qwen3-4b-korean-newsroom-v1"
   },
   {
     "id": "982b8a5090f6",
