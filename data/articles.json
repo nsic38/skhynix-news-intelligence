@@ -1,5 +1,391 @@
 [
   {
+    "id": "ecc2a9eb549d",
+    "title": "[We Do Together] 협력사의 도전이 SK하이닉스의 경쟁력으로… 기술혁신기업과 R&D 도전보상제 이야기",
+    "url": "https://news.skhynix.co.kr/we-do-together-ep1-4",
+    "published": "2026-11-24",
+    "date_source": "page",
+    "source": "SK hynix Newsroom",
+    "tags": [
+      "MEDIA",
+      "R&D 도전보상제",
+      "SV",
+      "We Do Together",
+      "기술혁신기업",
+      "상생",
+      "협력사"
+    ],
+    "created_at": "2026-11-25T19:20:56+09:00",
+    "content_source": "article-image-ocr",
+    "repair_version": 13,
+    "analysis_engine": "ollama-qwen3-4b-korean-newsroom-v1",
+    "analysis_status": "complete",
+    "main_point": "협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기 식각 장비 SK하이닉스 제조용 장비로 구매 2019 3기 3개사 선정 지원 분야를 후공정까지 확대 2020 지원 2023 7기 4개사 선정 2기 티이엠씨 코스닥 상장 2024 5·6기 성과공유회 7기 중간 점검 2025 8기 2개사 선정 누적 18개사 7기 CVD 장비·프로브카드 국산화 성공 2026 R&D 도전보상제 신설 5년 1,000억 원 • Ep_1",
+    "key_points": [
+      "협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기 식각 장비 SK하이닉스 제조용 장비로 구매 2019 3기 3개사 선정 지원 분야를 후공정까지 확대 2020",
+      "지원 2023 7기 4개사 선정 2기 티이엠씨 코스닥 상장 2024 5·6기 성과공유회 7기 중간 점검 2025 8기 2개사 선정 누적 18개사 7기 CVD 장비·프로브카드 국산화 성공 2026 R&D 도전보상제 신설 5년 1,000억 원 • Ep_1",
+      "4기 3개사 선정 2기 특수가스 공동개발 조기 완료·양산 2021 5기 선정 환경 분야 첫 공동개발 과제 1기 오로스테크놀로지 코스닥 상장 2022 6기 선정 타 업종 기술 기업의 반도체 진입 지원 2022 6기 선정 타 업종 기술 기업의 반도체 진입",
+      "기술개발 지원 We Do Together 청년의 블롯이 지역을 밝히다 SK 이이넥스 산업보건 선진화지속위원회 성과 공유회 일하는 모두가 안전한 환경과 건강, 10년의 경험과 시사점 - 일시: 2026년 11월 5일(목) | 장소: 워커힐 아카디아 메이플홀"
+    ],
+    "why_it_matters": "기술개발 지원 We Do Together 청년의 블롯이 지역을 밝히다 SK 이이넥스 산업보건 선진화지속위원회 성과 공유회 일하는 모두가 안전한 환경과 건강, 10년의 경험과 시사점 - 일시: 2026년 11월 5일(목) | 장소: 워커힐 아카디아 메이플홀",
+    "category": "Supply Chain / Partnership",
+    "_evidence": [
+      {
+        "id": "S1",
+        "text": "협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기 식각 장비 SK하이닉스 제조용 장비로 구매 2019 3기 3개사 선정 지원 분야를 후공정까지 확대 2020"
+      },
+      {
+        "id": "S3",
+        "text": "지원 2023 7기 4개사 선정 2기 티이엠씨 코스닥 상장 2024 5·6기 성과공유회 7기 중간 점검 2025 8기 2개사 선정 누적 18개사 7기 CVD 장비·프로브카드 국산화 성공 2026 R&D 도전보상제 신설 5년 1,000억 원 • Ep_1"
+      },
+      {
+        "id": "S2",
+        "text": "4기 3개사 선정 2기 특수가스 공동개발 조기 완료·양산 2021 5기 선정 환경 분야 첫 공동개발 과제 1기 오로스테크놀로지 코스닥 상장 2022 6기 선정 타 업종 기술 기업의 반도체 진입 지원 2022 6기 선정 타 업종 기술 기업의 반도체 진입"
+      },
+      {
+        "id": "S4",
+        "text": "기술개발 지원 We Do Together 청년의 블롯이 지역을 밝히다 SK 이이넥스 산업보건 선진화지속위원회 성과 공유회 일하는 모두가 안전한 환경과 건강, 10년의 경험과 시사점 - 일시: 2026년 11월 5일(목) | 장소: 워커힐 아카디아 메이플홀"
+      }
+    ],
+    "one_liner": "협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기 식각 장비 SK하이닉스 제조용 장비로 구매 2019 3기 3개사 선정 지원 분야를 후공정까지 확대 2020 지원 2023 7기 4개사 선정 2기 티이엠씨 코스닥 상장 2024 5·6기 성과공유회 7기 중간 점검 2025 8기 2개사 선정 누적 18개사 7기 CVD 장비·프로브카드 국산화 성공 2026 R&D 도전보상제 신설 5년 1,000억 원 • Ep_1",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 5,
+        "reason": "양산 전환 · 공정 최적화",
+        "dimensions": [
+          "양산 전환",
+          "공정 최적화"
+        ],
+        "matched_keywords": [
+          "양산",
+          "제조",
+          "라인",
+          "공정"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 관점에서는 양산 전환·공정 최적화가 핵심 연결점입니다. '협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기 식각 장비...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산기술 P&T": {
+        "role": "양산기술 P&T",
+        "score": 3,
+        "reason": "양산·생산성 · 공정 최적화",
+        "dimensions": [
+          "양산·생산성",
+          "공정 최적화"
+        ],
+        "matched_keywords": [
+          "양산",
+          "공정"
+        ],
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "what_you_get": "양산기술 P&T 실무와 중간 정도의 관련성이 있습니다. 양산·생산성·공정 최적화를 중심으로 '협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기...'이 HBM·패키징·테스트 양산·수율·공정 안정화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기 식각 장비...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 4,
+        "reason": "공정 조건 · Etch·Depo·Litho",
+        "dimensions": [
+          "공정 조건",
+          "Etch·Depo·Litho"
+        ],
+        "matched_keywords": [
+          "공정",
+          "식각"
+        ],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 관점에서는 공정 조건·Etch·Depo·Litho가 핵심 연결점입니다. '협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기 식각 장비...'이라는 내용을 공정 조건·Process Window·결함·미세화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 3,
+        "reason": "장비·설비",
+        "dimensions": [
+          "장비·설비"
+        ],
+        "matched_keywords": [
+          "장비"
+        ],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 실무와 중간 정도의 관련성이 있습니다. 장비·설비를 중심으로 '협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기...'이 장비 가동률·PM·고장 진단·설비 안정화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기 식각 장비...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 직접 관련성은 낮은 편입니다. 다만 '협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기 식각 장비...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기 식각 장비...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 '협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기 식각 장비...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 5,
+      "reason": "양산 전환 · 공정 최적화",
+      "dimensions": [
+        "양산 전환",
+        "공정 최적화"
+      ],
+      "matched_keywords": [
+        "양산",
+        "제조",
+        "라인",
+        "공정"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "takeaway": "양산기술 관점에서는 양산 전환·공정 최적화가 핵심 연결점입니다. '협력사 기술개발 지원 타임라인 협력사와 함께 만든 상생의 여정 2017 17기 3개사 선정 기술혁신기업 도입 2018 2기 3개사 선정 1기 식각 장비...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
+    "importance": 5
+  },
+  {
+    "id": "1e4ee6f75757",
+    "title": "SK하이닉스, 2026년 3분기 경영실적 발표",
+    "url": "https://news.skhynix.co.kr/q3-2026-business-results-2",
+    "published": "2026-10-28",
+    "date_source": "page",
+    "source": "SK hynix Newsroom",
+    "tags": [
+      "MEDIA",
+      "2026경영실적",
+      "경영실적",
+      "실적발표"
+    ],
+    "created_at": "2026-10-30T20:28:38+09:00",
+    "content_source": "article-image-ocr",
+    "repair_version": 13,
+    "analysis_engine": "ollama-qwen3-4b-korean-newsroom-v1",
+    "analysis_status": "complete",
+    "main_point": "Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'26 경영실적 (단위:원) 사상 최대 분기 실적 +32% 79. 14개 주요 고객과 LTA 체결, 2027~2028년 생산능력 50% 이상 확보 제품별 주요 실적 2030년까지 메모리 수요처 확대 AI·피지컬 AI 학산으로 메모리 수요가 공급을 웃도는 흐름이 2030년까지 이어질 전망 주주환원 확대 올해 약 100조 원 환원, 키옥시아 투자 수익 대부분 주주와 공유 제품별 주요 실적 HBM (High Bandwidth Memory) • HBM4 출하 본격화 • 4분기 출하량·매출 HBM3E 추월 전망 • 연말까지 M15X 생산능력 최대 가동 D램 (DRAM) • 서버용 DDR5 판매 대폭 • 1c 공정 비중 확대 • AI 서버용 LPDDR5 SOC 판매 확대 D램 (DRAM) 용 DDR5 판매 대폭 증가 공정 비중 확대 버용 LPDDR5 SOCAMM 확대 낸드 (NAND) • 321단 TLC eSSD 판매 확대 • 4분기 321단 비중 국내 생산능력 절반 이상 • AI 서비스 처리량·경제성 위한 HBF 개발 Q3.",
+    "key_points": [
+      "Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'26 경영실적 (단위:원) 사상 최대 분기 실적 +32% 79.",
+      "14개 주요 고객과 LTA 체결, 2027~2028년 생산능력 50% 이상 확보 제품별 주요 실적 2030년까지 메모리 수요처 확대 AI·피지컬 AI 학산으로 메모리 수요가 공급을 웃도는 흐름이 2030년까지 이어질 전망 주주환원 확대 올해 약 100조 원 환원, 키옥시아 투자 수익 대부분 주주와 공유 제품별 주요 실적 HBM (High Bandwidth Memory) • HBM4 출하 본격화 • 4분기 출하량·매출 HBM3E 추월 전망 • 연말까지 M15X 생산능력 최대 가동 D램 (DRAM) • 서버용 DDR5 판매 대폭 • 1c 공정 비중 확대 • AI 서버용 LPDDR5 SOC 판매 확대 D램 (DRAM) 용 DDR5 판매 대폭 증가 공정 비중 확대 버용 LPDDR5 SOCAMM 확대 낸드 (NAND) • 321단 TLC eSSD 판매 확대 • 4분기 321단 비중 국내 생산능력 절반 이상 • AI 서비스 처리량·경제성 위한 HBF 개발 Q3.",
+      "3조 104. 6조 +38% 60. 5조 83.",
+      "3 +32% 79. 3조 104. 0조 2Q' 26 3Q' 26 104 조 6,155억 매출액 +38% 60.",
+      "5조 83. 3 2Q' 26 3Q' 83 조 3,33 (영업이익률 80%) 영업이익 재무 구조 개선 114."
+    ],
+    "why_it_matters": "3 +32% 79. 3조 104. 0조 2Q' 26 3Q' 26 104 조 6,155억 매출액 +38% 60. 5조 83. 3 2Q' 26 3Q' 83 조 3,33 (영업이익률 80%) 영업이익 재무 구조 개선 114.",
+    "category": "HBM / AI Memory",
+    "_evidence": [
+      {
+        "id": "S1",
+        "text": "Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'26 경영실적 (단위:원) 사상 최대 분기 실적 +32% 79."
+      },
+      {
+        "id": "S9",
+        "text": "14개 주요 고객과 LTA 체결, 2027~2028년 생산능력 50% 이상 확보 제품별 주요 실적 2030년까지 메모리 수요처 확대 AI·피지컬 AI 학산으로 메모리 수요가 공급을 웃도는 흐름이 2030년까지 이어질 전망 주주환원 확대 올해 약 100조 원 환원, 키옥시아 투자 수익 대부분 주주와 공유 제품별 주요 실적 HBM (High Bandwidth Memory) • HBM4 출하 본격화 • 4분기 출하량·매출 HBM3E 추월 전망 • 연말까지 M15X 생산능력 최대 가동 D램 (DRAM) • 서버용 DDR5 판매 대폭 • 1c 공정 비중 확대 • AI 서버용 LPDDR5 SOC 판매 확대 D램 (DRAM) 용 DDR5 판매 대폭 증가 공정 비중 확대 버용 LPDDR5 SOCAMM 확대 낸드 (NAND) • 321단 TLC eSSD 판매 확대 • 4분기 321단 비중 국내 생산능력 절반 이상 • AI 서비스 처리량·경제성 위한 HBF 개발 Q3."
+      },
+      {
+        "id": "S2",
+        "text": "3조 104. 6조 +38% 60. 5조 83."
+      },
+      {
+        "id": "S3",
+        "text": "3 +32% 79. 3조 104. 0조 2Q' 26 3Q' 26 104 조 6,155억 매출액 +38% 60."
+      },
+      {
+        "id": "S4",
+        "text": "5조 83. 3 2Q' 26 3Q' 83 조 3,33 (영업이익률 80%) 영업이익 재무 구조 개선 114."
+      }
+    ],
+    "one_liner": "Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'26 경영실적 (단위:원) 사상 최대 분기 실적 +32% 79. 14개 주요 고객과 LTA 체결, 2027~2028년 생산능력 50% 이상 확보 제품별 주요 실적 2030년까지 메모리 수요처 확대 AI·피지컬 AI 학산으로 메모리 수요가 공급을 웃도는 흐름이 2030년까지 이어질 전망 주주환원 확대 올해 약 100조 원 환원, 키옥시아 투자 수익 대부분 주주와 공유 제품별 주요 실적 HBM (High Bandwidth Memory) • HBM4 출하 본격화 • 4분기 출하량·매출 HBM3E 추월 전망 • 연말까지 M15X 생산능력 최대 가동 D램 (DRAM) • 서버용 DDR5 판매 대폭 • 1c 공정 비중 확대 • AI 서버용 LPDDR5 SOC 판매 확대 D램 (DRAM) 용 DDR5 판매 대폭 증가 공정 비중 확대 버용 LPDDR5 SOCAMM 확대 낸드 (NAND) • 321단 TLC eSSD 판매 확대 • 4분기 321단 비중 국내 생산능력 절반 이상 • AI 서비스 처리량·경제성 위한 HBF 개발 Q3.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 4,
+        "reason": "양산 전환 · 공정 최적화 · HBM·패키징",
+        "dimensions": [
+          "양산 전환",
+          "공정 최적화",
+          "HBM·패키징"
+        ],
+        "matched_keywords": [
+          "생산",
+          "공정",
+          "hbm"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 관점에서는 양산 전환·공정 최적화·HBM·패키징가 핵심 연결점입니다. 'Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'26 경영실적...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산기술 P&T": {
+        "role": "양산기술 P&T",
+        "score": 4,
+        "reason": "HBM·첨단 패키징 · 양산·생산성 · 공정 최적화",
+        "dimensions": [
+          "HBM·첨단 패키징",
+          "양산·생산성",
+          "공정 최적화"
+        ],
+        "matched_keywords": [
+          "hbm",
+          "생산",
+          "공정"
+        ],
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "what_you_get": "양산기술 P&T 관점에서는 HBM·첨단 패키징·양산·생산성·공정 최적화가 핵심 연결점입니다. 'Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'26 경영실적...'이라는 내용을 HBM·패키징·테스트 양산·수율·공정 안정화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 3,
+        "reason": "생산성 · 데이터·자동화",
+        "dimensions": [
+          "생산성",
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "가동",
+          "생산",
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 실무와 중간 정도의 관련성이 있습니다. 생산성·데이터·자동화를 중심으로 'Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'2...'이 TAT·WIP·병목·생산계획·납기에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 3,
+        "reason": "공정 조건",
+        "dimensions": [
+          "공정 조건"
+        ],
+        "matched_keywords": [
+          "공정"
+        ],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 실무와 중간 정도의 관련성이 있습니다. 공정 조건를 중심으로 'Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'2...'이 공정 조건·Process Window·결함·미세화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 2,
+        "reason": "가동률",
+        "dimensions": [
+          "가동률"
+        ],
+        "matched_keywords": [
+          "가동"
+        ],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 'Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'26 경영실적...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 2,
+        "reason": "고객 품질",
+        "dimensions": [
+          "고객 품질"
+        ],
+        "matched_keywords": [
+          "고객"
+        ],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'26 경영실적...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 5,
+        "reason": "DRAM·HBM · AI 메모리 · NAND·Storage",
+        "dimensions": [
+          "DRAM·HBM",
+          "AI 메모리",
+          "NAND·Storage"
+        ],
+        "matched_keywords": [
+          "dram",
+          "hbm",
+          "lpddr",
+          "메모리",
+          "ai",
+          "hbf"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 DRAM·HBM·AI 메모리·NAND·Storage가 핵심 연결점입니다. 'Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'26 경영실적...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 3,
+        "reason": "시스템·플랫폼 · Cloud·Infra",
+        "dimensions": [
+          "시스템·플랫폼",
+          "Cloud·Infra"
+        ],
+        "matched_keywords": [
+          "서비스",
+          "서버"
+        ],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 실무와 중간 정도의 관련성이 있습니다. 시스템·플랫폼·Cloud·Infra를 중심으로 'Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'2...'이 MES·시스템 연계·인프라·보안·업무 자동화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 3,
+        "reason": "AI·ML · AI Infra",
+        "dimensions": [
+          "AI·ML",
+          "AI Infra"
+        ],
+        "matched_keywords": [
+          "ai",
+          "hbm"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 실무와 중간 정도의 관련성이 있습니다. AI·ML·AI Infra를 중심으로 'Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'2...'이 데이터 분석·ML·예측·최적화·AI 서비스에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      }
+    },
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 4,
+      "reason": "양산 전환 · 공정 최적화 · HBM·패키징",
+      "dimensions": [
+        "양산 전환",
+        "공정 최적화",
+        "HBM·패키징"
+      ],
+      "matched_keywords": [
+        "생산",
+        "공정",
+        "hbm"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "takeaway": "양산기술 관점에서는 양산 전환·공정 최적화·HBM·패키징가 핵심 연결점입니다. 'Earnings Release SK하이닉스 2026년 3분기 경영실적 역대 최대 분기 실적 달성·분기 매출 사상 첫 100조 원 돌파 3Q'26 경영실적...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
+    "importance": 4
+  },
+  {
     "id": "36917b7582c4",
     "title": "솔리다임 IPO 검토를 중단합니다 장기 성장과 주주가치 제고 노력은 이어갑니다",
     "url": "https://news.skhynix.co.kr/fact-12",
@@ -217,9 +603,171 @@
     ],
     "created_at": "2026-09-23T10:16:10+09:00",
     "repair_version": 13,
-    "analysis_status": "pending",
-    "content_source": "korean-source-pending",
-    "analysis_error": "V4 후보가 3개 미만입니다."
+    "analysis_status": "complete",
+    "content_source": "article-image-ocr",
+    "main_point": "▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hynix DIGITAL SHOVEL MINIPOD DDC One Stop for DDC & Development Amphor WE BUY RETIRED GPUs 'Tech Note 'GPU를 수만 개 모아도 AI는 왜 기다릴까? 실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' AI INSIGHT NFRASSTRUCTURE AI Ecosystem 반도체 패러다임의 이동: 메모리 중심으로",
+    "key_points": [
+      "▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hynix DIGITAL SHOVEL MINIPOD DDC One Stop for DDC & Development Amphor WE BUY RETIRED GPUs 'Tech Note 'GPU를 수만 개 모아도 AI는 왜 기다릴까?",
+      "실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' AI INSIGHT NFRASSTRUCTURE AI Ecosystem 반도체 패러다임의 이동: 메모리 중심으로"
+    ],
+    "why_it_matters": "실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' AI INSIGHT NFRASSTRUCTURE AI Ecosystem 반도체 패러다임의 이동: 메모리 중심으로",
+    "category": "AI Infrastructure / CXL",
+    "_evidence": [
+      {
+        "id": "S1",
+        "text": "▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hynix DIGITAL SHOVEL MINIPOD DDC One Stop for DDC & Development Amphor WE BUY RETIRED GPUs 'Tech Note 'GPU를 수만 개 모아도 AI는 왜 기다릴까?"
+      },
+      {
+        "id": "S2",
+        "text": "실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' AI INSIGHT NFRASSTRUCTURE AI Ecosystem 반도체 패러다임의 이동: 메모리 중심으로"
+      }
+    ],
+    "one_liner": "▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hynix DIGITAL SHOVEL MINIPOD DDC One Stop for DDC & Development Amphor WE BUY RETIRED GPUs 'Tech Note 'GPU를 수만 개 모아도 AI는 왜 기다릴까? 실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' AI INSIGHT NFRASSTRUCTURE AI Ecosystem 반도체 패러다임의 이동: 메모리 중심으로",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 3,
+        "reason": "데이터 기반 개선 · HBM·패키징",
+        "dimensions": [
+          "데이터 기반 개선",
+          "HBM·패키징"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai",
+          "hbm"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 실무와 중간 정도의 관련성이 있습니다. 데이터 기반 개선·HBM·패키징를 중심으로 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hyni...'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산기술 P&T": {
+        "role": "양산기술 P&T",
+        "score": 3,
+        "reason": "HBM·첨단 패키징",
+        "dimensions": [
+          "HBM·첨단 패키징"
+        ],
+        "matched_keywords": [
+          "hbm"
+        ],
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "what_you_get": "양산기술 P&T 실무와 중간 정도의 관련성이 있습니다. HBM·첨단 패키징를 중심으로 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hyni...'이 HBM·패키징·테스트 양산·수율·공정 안정화에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 3,
+        "reason": "데이터·자동화",
+        "dimensions": [
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 실무와 중간 정도의 관련성이 있습니다. 데이터·자동화를 중심으로 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hyni...'이 TAT·WIP·병목·생산계획·납기에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hynix DIGI...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 2,
+        "reason": "자동화",
+        "dimensions": [
+          "자동화"
+        ],
+        "matched_keywords": [
+          "데이터"
+        ],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hynix DIGI...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hynix DIGI...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 5,
+        "reason": "DRAM·HBM · AI 메모리 · 성능·전력",
+        "dimensions": [
+          "DRAM·HBM",
+          "AI 메모리",
+          "성능·전력"
+        ],
+        "matched_keywords": [
+          "hbm",
+          "lpddr",
+          "메모리",
+          "ai",
+          "gpu",
+          "전력"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 DRAM·HBM·AI 메모리·성능·전력가 핵심 연결점입니다. '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hynix DIGI...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 2,
+        "reason": "데이터 연계",
+        "dimensions": [
+          "데이터 연계"
+        ],
+        "matched_keywords": [
+          "데이터"
+        ],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hynix DIGI...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 5,
+        "reason": "AI·ML · AI Infra · 데이터 분석",
+        "dimensions": [
+          "AI·ML",
+          "AI Infra",
+          "데이터 분석"
+        ],
+        "matched_keywords": [
+          "ai",
+          "gpu",
+          "hbm",
+          "데이터"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 관점에서는 AI·ML·AI Infra·데이터 분석가 핵심 연결점입니다. '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hynix DIGI...'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      }
+    },
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 3,
+      "reason": "데이터 기반 개선 · HBM·패키징",
+      "dimensions": [
+        "데이터 기반 개선",
+        "HBM·패키징"
+      ],
+      "matched_keywords": [
+        "데이터",
+        "ai",
+        "hbm"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "takeaway": "양산기술 실무와 중간 정도의 관련성이 있습니다. 데이터 기반 개선·HBM·패키징를 중심으로 '▲ 메모리에서의 전하 소모 (데이터 이동 중 소모) 메모리 메모리 메모리-프로세서 간 데이터 이동 시 전력 소모 SK hynix SK hyni...'이 공정 안정성·수율·생산성·양산 전환에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다.",
+    "importance": 3,
+    "analysis_engine": "ollama-qwen3-4b-korean-newsroom-v1"
   },
   {
     "id": "21f6c3344395",
@@ -841,9 +1389,184 @@
     ],
     "created_at": "2026-10-14T22:28:16+09:00",
     "repair_version": 13,
-    "analysis_status": "pending",
-    "content_source": "korean-source-pending",
-    "analysis_error": "V4 후보가 3개 미만입니다."
+    "analysis_status": "complete",
+    "content_source": "article-image-ocr",
+    "main_point": "실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimization AI INFRASTRUCTURE INSIGHT 최적화 포인트 3 : 페이지 – 연산 순서와 데이터 배치 최적화 IPP로 연산흐름을 파이프라인화하여 병렬성을 높이고, 페이지 분할로 데이터 배치를 유연하게 하여 페이지 전환과 대기를 줄임.",
+    "key_points": [
+      "실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimization AI INFRASTRUCTURE INSIGHT",
+      "최적화 포인트 3 : 페이지 – 연산 순서와 데이터 배치 최적화 IPP로 연산흐름을 파이프라인화하여 병렬성을 높이고, 페이지 분할로 데이터 배치를 유연하게 하여 페이지 전환과 대기를 줄임.",
+      "최적화 전 BEFORE: IPP 미작용 (순차 처리) L1 → L2 → L3 순차적 처리 시간 t1 t2 t3 t4 t5 t6 t7 t8 t9 Input A ■ L1 L2 L3 Input B □ L1 L2 L3 Input C △ L1 L2 L3 전체 처리 시간 최적화 후 AFTER: IPP 작용 (파이프라인 처리) t1 시간 동안 L1, L2, L3 동시 처리 시간 t1 t2 t3 t4 t5 t6 t7 t8 t9 Input A ■ L1 L2 L3 Input B □ L1 L2 L3 Input C △ L1 L2 L3 전체 처리 시간 단축 16KB 페이지 실제 활용 데이터 ■ 비활용 데이터 □ 4KB 서버페이지 4개로 분할하여 공간 활용 극대화 Layer A Layer B Layer C Layer D 'Tech Note 'GPU를 수만 개 모아도 AI는 왜 기다릴까?"
+    ],
+    "why_it_matters": "최적화 전 BEFORE: IPP 미작용 (순차 처리) L1 → L2 → L3 순차적 처리 시간 t1 t2 t3 t4 t5 t6 t7 t8 t9 Input A ■ L1 L2 L3 Input B □ L1 L2 L3 Input C △ L1 L2 L3 전체 처리 시간 최적화 후 AFTER: IPP 작용 (파이프라인 처리) t1 시간 동안 L1, L2, L3 동시 처리 시간 t1 t2 t3 t4 t5 t6 t7 t8 t9 Input A ■ L1 L2 L3 Input B □ L1 L2 L3 Input C △ L1 L2 L3 전체 처리 시간 단축 16KB 페이지 실제 활용 데이터 ■ 비활용 데이터 □ 4KB 서버페이지 4개로 분할하여 공간 활용 극대화 Layer A Layer B Layer C Layer D 'Tech Note 'GPU를 수만 개 모아도 AI는 왜 기다릴까?",
+    "category": "NAND / Storage",
+    "_evidence": [
+      {
+        "id": "S3",
+        "text": "실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimization AI INFRASTRUCTURE INSIGHT"
+      },
+      {
+        "id": "S1",
+        "text": "최적화 포인트 3 : 페이지 – 연산 순서와 데이터 배치 최적화 IPP로 연산흐름을 파이프라인화하여 병렬성을 높이고, 페이지 분할로 데이터 배치를 유연하게 하여 페이지 전환과 대기를 줄임."
+      },
+      {
+        "id": "S2",
+        "text": "최적화 전 BEFORE: IPP 미작용 (순차 처리) L1 → L2 → L3 순차적 처리 시간 t1 t2 t3 t4 t5 t6 t7 t8 t9 Input A ■ L1 L2 L3 Input B □ L1 L2 L3 Input C △ L1 L2 L3 전체 처리 시간 최적화 후 AFTER: IPP 작용 (파이프라인 처리) t1 시간 동안 L1, L2, L3 동시 처리 시간 t1 t2 t3 t4 t5 t6 t7 t8 t9 Input A ■ L1 L2 L3 Input B □ L1 L2 L3 Input C △ L1 L2 L3 전체 처리 시간 단축 16KB 페이지 실제 활용 데이터 ■ 비활용 데이터 □ 4KB 서버페이지 4개로 분할하여 공간 활용 극대화 Layer A Layer B Layer C Layer D 'Tech Note 'GPU를 수만 개 모아도 AI는 왜 기다릴까?"
+      }
+    ],
+    "one_liner": "실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimization AI INFRASTRUCTURE INSIGHT 최적화 포인트 3 : 페이지 – 연산 순서와 데이터 배치 최적화 IPP로 연산흐름을 파이프라인화하여 병렬성을 높이고, 페이지 분할로 데이터 배치를 유연하게 하여 페이지 전환과 대기를 줄임.",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 4,
+        "reason": "데이터 기반 개선 · 양산 전환 · 공정 최적화",
+        "dimensions": [
+          "데이터 기반 개선",
+          "양산 전환",
+          "공정 최적화"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai",
+          "라인",
+          "최적화"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 관점에서는 데이터 기반 개선·양산 전환·공정 최적화가 핵심 연결점입니다. '실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimizati...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산기술 P&T": {
+        "role": "양산기술 P&T",
+        "score": 2,
+        "reason": "공정 최적화",
+        "dimensions": [
+          "공정 최적화"
+        ],
+        "matched_keywords": [
+          "최적화"
+        ],
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "what_you_get": "양산기술 P&T 직접 관련성은 낮은 편입니다. 다만 '실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimizati...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 4,
+        "reason": "데이터·자동화 · 병목 관리",
+        "dimensions": [
+          "데이터·자동화",
+          "병목 관리"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai",
+          "최적화",
+          "대기"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 관점에서는 데이터·자동화·병목 관리가 핵심 연결점입니다. '실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimizati...'이라는 내용을 TAT·WIP·병목·생산계획·납기 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 '실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimizati...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 2,
+        "reason": "자동화",
+        "dimensions": [
+          "자동화"
+        ],
+        "matched_keywords": [
+          "데이터"
+        ],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimizati...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 '실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimizati...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 5,
+        "reason": "AI 메모리 · NAND·Storage · 소자 구조",
+        "dimensions": [
+          "AI 메모리",
+          "NAND·Storage",
+          "소자 구조"
+        ],
+        "matched_keywords": [
+          "ai",
+          "gpu",
+          "nand",
+          "3d"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 AI 메모리·NAND·Storage·소자 구조가 핵심 연결점입니다. '실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimizati...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 4,
+        "reason": "Cloud·Infra · 데이터 연계",
+        "dimensions": [
+          "Cloud·Infra",
+          "데이터 연계"
+        ],
+        "matched_keywords": [
+          "infra",
+          "서버",
+          "데이터"
+        ],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 관점에서는 Cloud·Infra·데이터 연계가 핵심 연결점입니다. '실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimizati...'이라는 내용을 MES·시스템 연계·인프라·보안·업무 자동화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 5,
+        "reason": "최적화 · AI·ML · 데이터 분석",
+        "dimensions": [
+          "최적화",
+          "AI·ML",
+          "데이터 분석"
+        ],
+        "matched_keywords": [
+          "최적화",
+          "optimization",
+          "ai",
+          "데이터"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 관점에서는 최적화·AI·ML·데이터 분석가 핵심 연결점입니다. '실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimizati...'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      }
+    },
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 4,
+      "reason": "데이터 기반 개선 · 양산 전환 · 공정 최적화",
+      "dimensions": [
+        "데이터 기반 개선",
+        "양산 전환",
+        "공정 최적화"
+      ],
+      "matched_keywords": [
+        "데이터",
+        "ai",
+        "라인",
+        "최적화"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "takeaway": "양산기술 관점에서는 데이터 기반 개선·양산 전환·공정 최적화가 핵심 연결점입니다. '실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' Published in IEEE RESEARCH INSIDE 3D FeNAND Co-optimizati...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
+    "importance": 4,
+    "analysis_engine": "ollama-qwen3-4b-korean-newsroom-v1"
   },
   {
     "id": "a1897e46b305",
@@ -860,9 +1583,180 @@
     ],
     "created_at": "2026-10-02T01:09:37+09:00",
     "repair_version": 13,
-    "analysis_status": "pending",
-    "content_source": "korean-source-pending",
-    "analysis_error": "OCR ??? ?? ???? ????? ???? ????."
+    "analysis_status": "complete",
+    "content_source": "article-image-ocr",
+    "main_point": "AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망 등에서 전력 공급 전력 변환·분배 전력 변환 분배 과정에서 에너지 소비, 효율 손실 발생 장비 전력 소비 연산, 데이터처리, 저장, 네트워크 등 IT 장비에서 전력 소비 냉각 전력 소비 발생한 열을 제거하기 위해 냉각 시스템이 추가 전력 소비 발열 발생 '수출 1조 달러' 넘어 더 큰 도약으로 AI Ecosystem AI의 완성, 피지컬 AI와 메모리 'Tech Note 'GPU를 수만 개 모아도 AI는 왜 기다릴까? 실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' AI INSIGHT NFRASSTRUCTURE",
+    "key_points": [
+      "AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망 등에서 전력 공급 전력 변환·분배 전력 변환 분배 과정에서 에너지 소비, 효율 손실 발생 장비 전력 소비 연산, 데이터처리, 저장, 네트워크 등 IT 장비에서 전력 소비 냉각 전력 소비 발생한 열을 제거하기 위해 냉각 시스템이 추가 전력 소비 발열 발생 '수출 1조 달러' 넘어 더 큰 도약으로 AI Ecosystem AI의 완성, 피지컬 AI와 메모리 'Tech Note 'GPU를 수만 개 모아도 AI는 왜 기다릴까?",
+      "실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' AI INSIGHT NFRASSTRUCTURE"
+    ],
+    "why_it_matters": "실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' AI INSIGHT NFRASSTRUCTURE",
+    "category": "Company / General",
+    "_evidence": [
+      {
+        "id": "S1",
+        "text": "AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망 등에서 전력 공급 전력 변환·분배 전력 변환 분배 과정에서 에너지 소비, 효율 손실 발생 장비 전력 소비 연산, 데이터처리, 저장, 네트워크 등 IT 장비에서 전력 소비 냉각 전력 소비 발생한 열을 제거하기 위해 냉각 시스템이 추가 전력 소비 발열 발생 '수출 1조 달러' 넘어 더 큰 도약으로 AI Ecosystem AI의 완성, 피지컬 AI와 메모리 'Tech Note 'GPU를 수만 개 모아도 AI는 왜 기다릴까?"
+      },
+      {
+        "id": "S2",
+        "text": "실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' AI INSIGHT NFRASSTRUCTURE"
+      }
+    ],
+    "one_liner": "AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망 등에서 전력 공급 전력 변환·분배 전력 변환 분배 과정에서 에너지 소비, 효율 손실 발생 장비 전력 소비 연산, 데이터처리, 저장, 네트워크 등 IT 장비에서 전력 소비 냉각 전력 소비 발생한 열을 제거하기 위해 냉각 시스템이 추가 전력 소비 발열 발생 '수출 1조 달러' 넘어 더 큰 도약으로 AI Ecosystem AI의 완성, 피지컬 AI와 메모리 'Tech Note 'GPU를 수만 개 모아도 AI는 왜 기다릴까? 실리콘 포토닉스와 CPO가 놓는 '빛의 고속도로' AI INSIGHT NFRASSTRUCTURE",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 4,
+        "reason": "데이터 기반 개선 · 생산성·원가",
+        "dimensions": [
+          "데이터 기반 개선",
+          "생산성·원가"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai",
+          "효율"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 관점에서는 데이터 기반 개선·생산성·원가가 핵심 연결점입니다. 'AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산기술 P&T": {
+        "role": "양산기술 P&T",
+        "score": 2,
+        "reason": "열·구조 안정성",
+        "dimensions": [
+          "열·구조 안정성"
+        ],
+        "matched_keywords": [
+          "열"
+        ],
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "what_you_get": "양산기술 P&T 직접 관련성은 낮은 편입니다. 다만 'AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 4,
+        "reason": "데이터·자동화 · 생산성",
+        "dimensions": [
+          "데이터·자동화",
+          "생산성"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "ai",
+          "효율"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 관점에서는 데이터·자동화·생산성가 핵심 연결점입니다. 'AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망...'이라는 내용을 TAT·WIP·병목·생산계획·납기 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 직접 관련성은 낮은 편입니다. 다만 'AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 4,
+        "reason": "자동화 · 장비·설비",
+        "dimensions": [
+          "자동화",
+          "장비·설비"
+        ],
+        "matched_keywords": [
+          "데이터",
+          "장비"
+        ],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 관점에서는 자동화·장비·설비가 핵심 연결점입니다. 'AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망...'이라는 내용을 장비 가동률·PM·고장 진단·설비 안정화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 직접 관련성은 낮은 편입니다. 다만 'AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 5,
+        "reason": "AI 메모리 · 성능·전력 · DRAM·HBM",
+        "dimensions": [
+          "AI 메모리",
+          "성능·전력",
+          "DRAM·HBM"
+        ],
+        "matched_keywords": [
+          "ai",
+          "gpu",
+          "전력",
+          "메모리"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 관점에서는 AI 메모리·성능·전력·DRAM·HBM가 핵심 연결점입니다. 'AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망...'이라는 내용을 메모리 구조·성능·전력·제품 로드맵 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 5,
+        "reason": "Cloud·Infra · 데이터 연계 · 시스템·플랫폼",
+        "dimensions": [
+          "Cloud·Infra",
+          "데이터 연계",
+          "시스템·플랫폼"
+        ],
+        "matched_keywords": [
+          "infra",
+          "인프라",
+          "네트워크",
+          "데이터",
+          "시스템"
+        ],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 관점에서는 Cloud·Infra·데이터 연계·시스템·플랫폼가 핵심 연결점입니다. 'AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망...'이라는 내용을 MES·시스템 연계·인프라·보안·업무 자동화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 5,
+        "reason": "AI Infra · AI·ML · 데이터 분석",
+        "dimensions": [
+          "AI Infra",
+          "AI·ML",
+          "데이터 분석"
+        ],
+        "matched_keywords": [
+          "gpu",
+          "ai 인프라",
+          "데이터센터",
+          "ai",
+          "데이터"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 관점에서는 AI Infra·AI·ML·데이터 분석가 핵심 연결점입니다. 'AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망...'이라는 내용을 데이터 분석·ML·예측·최적화·AI 서비스 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      }
+    },
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 4,
+      "reason": "데이터 기반 개선 · 생산성·원가",
+      "dimensions": [
+        "데이터 기반 개선",
+        "생산성·원가"
+      ],
+      "matched_keywords": [
+        "데이터",
+        "ai",
+        "효율"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "takeaway": "양산기술 관점에서는 데이터 기반 개선·생산성·원가가 핵심 연결점입니다. 'AI 시스템은 어디에서 에너지를 쓰는가? 전력 변환·분배부터 연산과 데이터 처리, 냉각까지 시스템 전반에서 에너지 소비 외부 전력 공급 발전소, 전력망...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
+    "importance": 4,
+    "analysis_engine": "ollama-qwen3-4b-korean-newsroom-v1"
   },
   {
     "id": "be5cd5fb61ac",
@@ -885,7 +1779,7 @@
     "repair_version": 13,
     "analysis_status": "pending",
     "content_source": "korean-source-pending",
-    "analysis_error": "??? ?? ??? OCR ???? ?? ?? ?????."
+    "analysis_error": "V4 후보가 3개 미만입니다."
   },
   {
     "id": "722c532c9111",
@@ -1762,9 +2656,188 @@
     ],
     "created_at": "2026-10-14T22:28:18+09:00",
     "repair_version": 13,
-    "analysis_status": "pending",
-    "content_source": "korean-source-pending",
-    "analysis_error": "V4 후보가 3개 미만입니다."
+    "analysis_status": "complete",
+    "content_source": "article-image-ocr",
+    "main_point": "양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체 생애주기 전반의 품질 기준을 제시하고 신뢰성을 지키는 고객품질 고객 불량 대응 및 사용 환경 파악을 통한 내부 품질 개선 제품인증 품질 완성도 학보를 위한 평가 기준 수립 및 제품 인증 수행 제6강 미래 전략 미래인재 CLASS SK하이닉스 대학생 앰버서더 해단식 26. 10. 30(금) 2026 SK하이닉스 대학생 앰버서더 해단식 2026 AMBASSADOR AMBASSADOR 2026 AMBASSADOR SK하이닉스 대학생 앰버서더 해단식",
+    "key_points": [
+      "양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체 생애주기 전반의 품질 기준을 제시하고 신뢰성을 지키는 고객품질 고객 불량 대응 및 사용 환경 파악을 통한 내부 품질 개선 제품인증 품질 완성도 학보를 위한 평가 기준 수립 및 제품 인증 수행 제6강 미래 전략 미래인재 CLASS SK하이닉스 대학생 앰버서더 해단식 26.",
+      "10. 30(금) 2026 SK하이닉스 대학생 앰버서더 해단식 2026 AMBASSADOR AMBASSADOR 2026 AMBASSADOR SK하이닉스 대학생 앰버서더 해단식"
+    ],
+    "why_it_matters": "10. 30(금) 2026 SK하이닉스 대학생 앰버서더 해단식 2026 AMBASSADOR AMBASSADOR 2026 AMBASSADOR SK하이닉스 대학생 앰버서더 해단식",
+    "category": "Quality / Reliability",
+    "_evidence": [
+      {
+        "id": "S1",
+        "text": "양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체 생애주기 전반의 품질 기준을 제시하고 신뢰성을 지키는 고객품질 고객 불량 대응 및 사용 환경 파악을 통한 내부 품질 개선 제품인증 품질 완성도 학보를 위한 평가 기준 수립 및 제품 인증 수행 제6강 미래 전략 미래인재 CLASS SK하이닉스 대학생 앰버서더 해단식 26."
+      },
+      {
+        "id": "S2",
+        "text": "10. 30(금) 2026 SK하이닉스 대학생 앰버서더 해단식 2026 AMBASSADOR AMBASSADOR 2026 AMBASSADOR SK하이닉스 대학생 앰버서더 해단식"
+      }
+    ],
+    "one_liner": "양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체 생애주기 전반의 품질 기준을 제시하고 신뢰성을 지키는 고객품질 고객 불량 대응 및 사용 환경 파악을 통한 내부 품질 개선 제품인증 품질 완성도 학보를 위한 평가 기준 수립 및 제품 인증 수행 제6강 미래 전략 미래인재 CLASS SK하이닉스 대학생 앰버서더 해단식 26. 10. 30(금) 2026 SK하이닉스 대학생 앰버서더 해단식 2026 AMBASSADOR AMBASSADOR 2026 AMBASSADOR SK하이닉스 대학생 앰버서더 해단식",
+    "role_analysis": {
+      "양산기술": {
+        "role": "양산기술",
+        "score": 5,
+        "reason": "수율·품질 · 양산 전환 · 공정 최적화",
+        "dimensions": [
+          "수율·품질",
+          "양산 전환",
+          "공정 최적화"
+        ],
+        "matched_keywords": [
+          "불량",
+          "품질",
+          "신뢰성",
+          "검사",
+          "양산",
+          "라인"
+        ],
+        "lens": "공정 안정성·수율·생산성·양산 전환",
+        "what_you_get": "양산기술 관점에서는 수율·품질·양산 전환·공정 최적화가 핵심 연결점입니다. '양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산기술 P&T": {
+        "role": "양산기술 P&T",
+        "score": 5,
+        "reason": "수율·품질 · Test·검사 · 양산·생산성",
+        "dimensions": [
+          "수율·품질",
+          "Test·검사",
+          "양산·생산성"
+        ],
+        "matched_keywords": [
+          "불량",
+          "품질",
+          "신뢰성",
+          "검사",
+          "양산"
+        ],
+        "lens": "HBM·패키징·테스트 양산·수율·공정 안정화",
+        "what_you_get": "양산기술 P&T 관점에서는 수율·품질·Test·검사·양산·생산성가 핵심 연결점입니다. '양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체...'이라는 내용을 HBM·패키징·테스트 양산·수율·공정 안정화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "양산관리": {
+        "role": "양산관리",
+        "score": 2,
+        "reason": "데이터·자동화",
+        "dimensions": [
+          "데이터·자동화"
+        ],
+        "matched_keywords": [
+          "모니터링"
+        ],
+        "lens": "TAT·WIP·병목·생산계획·납기",
+        "what_you_get": "양산관리 직접 관련성은 낮은 편입니다. 다만 '양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "공정기술": {
+        "role": "공정기술",
+        "score": 4,
+        "reason": "계측·분석 · 공정 조건 · 수율·결함",
+        "dimensions": [
+          "계측·분석",
+          "공정 조건",
+          "수율·결함"
+        ],
+        "matched_keywords": [
+          "분석",
+          "검사",
+          "공정",
+          "불량"
+        ],
+        "lens": "공정 조건·Process Window·결함·미세화",
+        "what_you_get": "공정기술 관점에서는 계측·분석·공정 조건·수율·결함가 핵심 연결점입니다. '양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체...'이라는 내용을 공정 조건·Process Window·결함·미세화 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "설비기술": {
+        "role": "설비기술",
+        "score": 2,
+        "reason": "센서·제어",
+        "dimensions": [
+          "센서·제어"
+        ],
+        "matched_keywords": [
+          "모니터링"
+        ],
+        "lens": "장비 가동률·PM·고장 진단·설비 안정화",
+        "what_you_get": "설비기술 직접 관련성은 낮은 편입니다. 다만 '양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "품질/신뢰성": {
+        "role": "품질/신뢰성",
+        "score": 5,
+        "reason": "품질·불량 · 고객 품질 · 원인 분석",
+        "dimensions": [
+          "품질·불량",
+          "고객 품질",
+          "원인 분석"
+        ],
+        "matched_keywords": [
+          "품질",
+          "불량",
+          "품질 개선",
+          "고객",
+          "인증",
+          "원인"
+        ],
+        "lens": "불량 원인·검사·신뢰성·품질 개선",
+        "what_you_get": "품질/신뢰성 관점에서는 품질·불량·고객 품질·원인 분석가 핵심 연결점입니다. '양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체...'이라는 내용을 불량 원인·검사·신뢰성·품질 개선 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다."
+      },
+      "제품/소자": {
+        "role": "제품/소자",
+        "score": 3,
+        "reason": "제품 로드맵",
+        "dimensions": [
+          "제품 로드맵"
+        ],
+        "matched_keywords": [
+          "제품"
+        ],
+        "lens": "메모리 구조·성능·전력·제품 로드맵",
+        "what_you_get": "제품/소자 실무와 중간 정도의 관련성이 있습니다. 제품 로드맵를 중심으로 '양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보...'이 메모리 구조·성능·전력·제품 로드맵에 어떤 영향을 줄지 연결해서 보는 것이 핵심입니다."
+      },
+      "IT": {
+        "role": "IT",
+        "score": 1,
+        "reason": "직접 연관 신호가 적음",
+        "dimensions": [],
+        "matched_keywords": [],
+        "lens": "MES·시스템 연계·인프라·보안·업무 자동화",
+        "what_you_get": "IT 직접 관련성은 낮은 편입니다. 다만 '양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      },
+      "Data/AI": {
+        "role": "Data/AI",
+        "score": 2,
+        "reason": "데이터 분석",
+        "dimensions": [
+          "데이터 분석"
+        ],
+        "matched_keywords": [
+          "분석"
+        ],
+        "lens": "데이터 분석·ML·예측·최적화·AI 서비스",
+        "what_you_get": "Data/AI 직접 관련성은 낮은 편입니다. 다만 '양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체...'을 회사와 산업의 배경지식으로 이해해두면 좋습니다."
+      }
+    },
+    "job_relevance": {
+      "role": "양산기술",
+      "score": 5,
+      "reason": "수율·품질 · 양산 전환 · 공정 최적화",
+      "dimensions": [
+        "수율·품질",
+        "양산 전환",
+        "공정 최적화"
+      ],
+      "matched_keywords": [
+        "불량",
+        "품질",
+        "신뢰성",
+        "검사",
+        "양산",
+        "라인"
+      ],
+      "lens": "공정 안정성·수율·생산성·양산 전환"
+    },
+    "takeaway": "양산기술 관점에서는 수율·품질·양산 전환·공정 최적화가 핵심 연결점입니다. '양산품질보증 공정 모니터링 및 출하 검사 등 양산 라인 품질 관리 불량분석 인증·양산·고객 단계별 불량 원인을 규명하는 정밀 제품 분석 품질보증 반도체...'이라는 내용을 공정 안정성·수율·생산성·양산 전환 관점으로 연결하면 직무 이해와 면접 답변의 근거로 활용할 수 있습니다.",
+    "importance": 5,
+    "analysis_engine": "ollama-qwen3-4b-korean-newsroom-v1"
   },
   {
     "id": "36adb391b4d6",
